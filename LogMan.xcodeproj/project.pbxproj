@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC6DCFAA2355D96400308F43 /* CustomSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */; };
+		FC6DCFAC2355DB6400308F43 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DCFAB2355DB6400308F43 /* SearchItem.swift */; };
+		FC7D29DC235BA6380080A167 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D29DB235BA6370080A167 /* CoreDataStack.swift */; };
 		FCBD22382353A8F500699B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBD22372353A8F500699B52 /* AppDelegate.swift */; };
 		FCBD223A2353A8F500699B52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBD22392353A8F500699B52 /* ViewController.swift */; };
 		FCBD223D2353A8F600699B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBD223B2353A8F600699B52 /* Main.storyboard */; };
@@ -15,6 +18,8 @@
 		FCBD22452353A8FA00699B52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBD22432353A8FA00699B52 /* LaunchScreen.storyboard */; };
 		FCBD22502353A8FA00699B52 /* LogManTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBD224F2353A8FA00699B52 /* LogManTests.swift */; };
 		FCBD225B2353A8FA00699B52 /* LogManUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBD225A2353A8FA00699B52 /* LogManUITests.swift */; };
+		FCBD22692355532E00699B52 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBD22682355532E00699B52 /* AddItemViewController.swift */; };
+		FCBD226B2355534C00699B52 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBD226A2355534C00699B52 /* ItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchTextField.swift; sourceTree = "<group>"; };
+		FC6DCFAB2355DB6400308F43 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		FC7D29DB235BA6370080A167 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		FCBD22342353A8F500699B52 /* LogMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBD22372353A8F500699B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBD22392353A8F500699B52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +57,8 @@
 		FCBD22562353A8FA00699B52 /* LogManUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogManUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBD225A2353A8FA00699B52 /* LogManUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManUITests.swift; sourceTree = "<group>"; };
 		FCBD225C2353A8FA00699B52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBD22682355532E00699B52 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		FCBD226A2355534C00699B52 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +112,15 @@
 				FCBD22372353A8F500699B52 /* AppDelegate.swift */,
 				FCBD22392353A8F500699B52 /* ViewController.swift */,
 				FCBD223B2353A8F600699B52 /* Main.storyboard */,
+				FCBD22682355532E00699B52 /* AddItemViewController.swift */,
+				FC7D29DB235BA6370080A167 /* CoreDataStack.swift */,
+				FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */,
+				FCBD226A2355534C00699B52 /* ItemsTableViewController.swift */,
 				FCBD22412353A8FA00699B52 /* Assets.xcassets */,
 				FCBD22432353A8FA00699B52 /* LaunchScreen.storyboard */,
 				FCBD22462353A8FA00699B52 /* Info.plist */,
 				FCBD223E2353A8F600699B52 /* LogMan.xcdatamodeld */,
+				FC6DCFAB2355DB6400308F43 /* SearchItem.swift */,
 			);
 			path = LogMan;
 			sourceTree = "<group>";
@@ -259,9 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC6DCFAA2355D96400308F43 /* CustomSearchTextField.swift in Sources */,
 				FCBD22402353A8F600699B52 /* LogMan.xcdatamodeld in Sources */,
+				FCBD22692355532E00699B52 /* AddItemViewController.swift in Sources */,
+				FCBD226B2355534C00699B52 /* ItemsTableViewController.swift in Sources */,
 				FCBD223A2353A8F500699B52 /* ViewController.swift in Sources */,
+				FC6DCFAC2355DB6400308F43 /* SearchItem.swift in Sources */,
 				FCBD22382353A8F500699B52 /* AppDelegate.swift in Sources */,
+				FC7D29DC235BA6380080A167 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
