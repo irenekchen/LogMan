@@ -223,7 +223,8 @@ extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
         print("selected row")
         self.text = resultsList[indexPath.row].getStringText()
         tableView.isHidden = true
-        self.endEditing(true)
+        //self.endEditing(true)
+        
     }
     
     

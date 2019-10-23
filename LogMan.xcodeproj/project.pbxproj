@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC5C8EDA235FABAA00B87A73 /* CargoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */; };
 		FC6DCFAA2355D96400308F43 /* CustomSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */; };
 		FC6DCFAC2355DB6400308F43 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DCFAB2355DB6400308F43 /* SearchItem.swift */; };
 		FC7D29DC235BA6380080A167 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D29DB235BA6370080A167 /* CoreDataStack.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoDetailTableViewCell.swift; sourceTree = "<group>"; };
 		FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchTextField.swift; sourceTree = "<group>"; };
 		FC6DCFAB2355DB6400308F43 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
 		FC7D29DB235BA6370080A167 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				FCBD22372353A8F500699B52 /* AppDelegate.swift */,
 				FCBD22392353A8F500699B52 /* ViewController.swift */,
 				FCBD223B2353A8F600699B52 /* Main.storyboard */,
+				FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */,
 				FCBD22682355532E00699B52 /* AddItemViewController.swift */,
 				FC7D29DB235BA6370080A167 /* CoreDataStack.swift */,
 				FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */,
@@ -281,6 +284,7 @@
 				FCBD223A2353A8F500699B52 /* ViewController.swift in Sources */,
 				FC6DCFAC2355DB6400308F43 /* SearchItem.swift in Sources */,
 				FCBD22382353A8F500699B52 /* AppDelegate.swift in Sources */,
+				FC5C8EDA235FABAA00B87A73 /* CargoDetailTableViewCell.swift in Sources */,
 				FC7D29DC235BA6380080A167 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,12 +13,27 @@ class ItemsTableViewController: UITableViewController {
     
     // MARK: - Properties
     
-    var resultsController: NSFetchedResultsController<Cargos>!
-    let coreDataStack = CoreDataStack()
+    //var resultsController: NSFetchedResultsController<Cargos>!
+    //let cargoSearch = CustomSearchTextField()
+    var cargoNames : [String] = [String]()
+    var dataSource : [CargoDetailTableViewCellContent] = [CargoDetailTableViewCellContent]()
+    //var managedContext: NSManagedObjectContext
+    var editIndex:Int?
+    var priorityForCargo:[String:Int] = [String:Int]()
+    //@IBOutlet weak var addCargoTextField: UITextField!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        cargoNames = ["Hammer, UPC-654207165712", "Tank, EAN-4895135119798", "Air Compressor Tank, UPC-818223185547"]
+        dataSource = [CargoDetailTableViewCellContent(name: "Hammer, UPC-654207165712"), CargoDetailTableViewCellContent(name: "Tank, EAN-4895135119798"), CargoDetailTableViewCellContent(name: "Air Compressor Tank, UPC-818223185547")]
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bkg3")!)
+        self.tableView.estimatedRowHeight = 60
+        self.tableView.rowHeight = UITableView.automaticDimension
+
+
+
+        /*
         // Request
         let request:NSFetchRequest<Cargos> = Cargos.fetchRequest()
         let sortDescriptors = NSSortDescriptor(key: "cargoName", ascending: true)
@@ -33,7 +48,7 @@ class ItemsTableViewController: UITableViewController {
         } catch {
             print("Perform fetch error: \(error)")
         }
-
+*/
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -42,49 +57,138 @@ class ItemsTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.backgroundColor = UIColor(patternImage: UIImage(named: "bkg3")!)
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 2
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 
+        let sectionName: String
+        switch section {
+            case 0:
+                sectionName = NSLocalizedString("  Deployment Plan C465", comment: "  Plan C456")
+            case 1:
+                sectionName = NSLocalizedString("  Deployment Plan A106", comment: "  Plan A106")
+            // ...
+            default:
+                sectionName = ""
+        }
+        return sectionName
+    }
+    /*
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.white.withAlphaComponent(0.4)
+    }*/
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+            let headerView = UIView()
+        
+            //headerView.backgroundColor = UIColor.lightGray
+
+            let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width:
+                tableView.bounds.size.width+32, height: tableView.bounds.size.height))
+        headerLabel.font = UIFont(name: "AvenirNext-Bold", size: 22)
+            headerLabel.textColor = UIColor.white
+        headerLabel.backgroundColor = UIColor.lightGray.withAlphaComponent(0.2)
+            headerLabel.text = self.tableView(self.tableView, titleForHeaderInSection: section)
+            headerLabel.sizeToFit()
+            headerView.addSubview(headerLabel)
+        
+
+            return headerView
+        }
+
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    /*
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        let myLabel = UILabel()
+        myLabel.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 30)
+        myLabel.font = UIFont.boldSystemFont(ofSize: 20)
+        myLabel.textColor = UIColor.darkGray
+        myLabel.text = self.tableView(tableView, titleForHeaderInSection: section)
+        myLabel.backgroundColor = UIColor.white.withAlphaComponent(0.4)
+
+        let headerView = UIView()
+        headerView.addSubview(myLabel)
+
+        return headerView
+    }*/
+    
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return resultsController.sections?[section].objects?.count ?? 0
+        return cargoNames.count //resultsController.sections?[section].objects?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CargoItem", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CargoItem", for: indexPath) as! CargoDetailTableViewCell
 
         // Configure the cell...
-        let cargo = resultsController.object(at: indexPath)
-        cell.textLabel?.text = cargo.cargoName
-        cell.imageView?.image = UIImage(named: "\(cargo.cargoName)")
+        //let cargoName : String = cargoNames[indexPath.row]
+        //let cargoData = cargoName.components(separatedBy: ", ")
+        //cell.textLabel?.text = cargoData[0]
+        //cell.imageView?.image = UIImage(named: "\(cargoData[0])")
+        //cell.detailTextLabel?.text = cargoData[1]
+        
+        //let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: CargoDetailTableViewCell.self), for: indexPath) as! ExpandingTableViewCell
+        cell.set(content: dataSource[indexPath.row])
+        //cell.imageView?.image = UIImage(named: "\(cargoData[0])")
 
         return cell
     }
     
     // MARK: - Table View Delegate
     
+    func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in
-            
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in
+            self.cargoNames.remove(at: indexPath.row)
+            self.dataSource.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            print(self.cargoNames)
             completion(true)
         }
+        
+        //self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
         //action.image = UIImage(named: "Image")
-        action.image = UIGraphicsImageRenderer(size: CGSize(width: 30, height: 30)).image { _ in
+        deleteAction.image = UIGraphicsImageRenderer(size: CGSize(width: 30, height: 30)).image { _ in
             UIImage(named: "Trash")?.draw(in: CGRect(x: 0, y: 0, width: 30, height: 30))
         }
-        action.backgroundColor = .red
-        return UISwipeActionsConfiguration(actions: [action])
+        deleteAction.backgroundColor = .red
+        
+        let editAction = UIContextualAction(style: .destructive, title: "Edit") { (action, view, completion) in
+            self.editIndex = indexPath.row
+            self.performSegue(withIdentifier: "editItem", sender: action)
+            completion(true)
+        }
+        
+        editAction.image = UIGraphicsImageRenderer(size: CGSize(width: 30, height: 30)).image { _ in
+            UIImage(named: "Edit")?.draw(in: CGRect(x: 0, y: 0, width: 30, height: 30))
+        }
+        editAction.backgroundColor = .gray
+        return UISwipeActionsConfiguration(actions: [deleteAction, editAction])
     }
     
     override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let action = UIContextualAction(style: .destructive, title: "Check") { (action, view, completion) in
+            self.cargoNames.remove(at: indexPath.row)
+            self.dataSource.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            print(self.cargoNames)
             completion(true)
         }
         action.image = UIGraphicsImageRenderer(size: CGSize(width: 30, height: 30)).image { _ in
@@ -93,28 +197,7 @@ class ItemsTableViewController: UITableViewController {
         action.backgroundColor = .green
         return UISwipeActionsConfiguration(actions: [action])
     }
-
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
 
     /*
     // Override to support rearranging the table view.
@@ -130,15 +213,100 @@ class ItemsTableViewController: UITableViewController {
         return true
     }
     */
+    
+    
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        /*
+        if segue.identifier == "done" {
+            let detailVC = segue.source as! AddItemViewController
+            
+               //let index = detailViewController.index
+            
+               //let modelString = detailViewController.editedModel
+                cargoNames.append(detailVC.textView.text ?? "")
+            
+               tableView.reloadData()
+        }*/
+        /*
+        if segue.identifier == "editItem"{
+          let rowClicked = (self.tableView.indexPathForSelectedRow?.row)!
+          let destVC = segue.destination as! AddItemViewController
+          destVC.currentIndexPath = rowClicked
+            destVC.textView.text = cargoNames[rowClicked]
+            destVC.segmentedControl.selectedSegmentIndex = priorityForCargo[cargoNames[rowClicked]] ?? 0
+        } else
+            */
+        if let _ = sender as? UIButton, let destVC = segue.destination as? AddItemViewController {
+            destVC.currentIndexPath = -1
+        } else if let _ = sender as? UIContextualAction, let destVC = segue.destination as? AddItemViewController {
+            let rowClicked = self.editIndex!
+            let destVC = segue.destination as! AddItemViewController
+            destVC.currentIndexPath = rowClicked
+            print(cargoNames, rowClicked, cargoNames[rowClicked])
+            destVC.currentTextFieldName = cargoNames[rowClicked]
+              destVC.currentPriority = priorityForCargo[cargoNames[rowClicked]] ?? 0
+        }
     }
-    */
+    
+    @IBAction func done(segue:UIStoryboardSegue) {
+        let detailVC = segue.source as! AddItemViewController
+            
+               //let index = detailViewController.index
+            
+               //let modelString = detailViewController.editedModel
+               //cargoNames.append(detailVC.textView.text ?? "")
+            
+               tableView.reloadData()
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let content = dataSource[indexPath.row]
+        content.expanded = !content.expanded
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+    
+    
+    
+    
 
+}
+
+extension UITableViewRowAction {
+
+  func setIcon(iconImage: UIImage, backColor: UIColor, cellHeight: CGFloat, iconSizePercentage: CGFloat)
+  {
+    let iconHeight = cellHeight * iconSizePercentage
+    let margin = (cellHeight - iconHeight) / 2 as CGFloat
+
+    UIGraphicsBeginImageContextWithOptions(CGSize(width: cellHeight, height: cellHeight), false, 0)
+    let context = UIGraphicsGetCurrentContext()
+
+    backColor.setFill()
+    context!.fill(CGRect(x:0, y:0, width:cellHeight, height:cellHeight))
+
+    iconImage.draw(in: CGRect(x: margin+10.0, y: margin+10, width: iconHeight-20, height: iconHeight-20))
+
+    let actionImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
+    self.backgroundColor = UIColor.init(patternImage: self.imageWithImage(image: UIImage(named: "Trash")!, scaledToSize: CGSize(width: iconHeight*1.5, height: iconHeight*1.5)))
+  }
+
+    func imageWithImage(image:UIImage, scaledToSize newSize:CGSize) -> UIImage{
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0);
+        image.draw(in: CGRect(origin: CGPoint.zero, size: CGSize(width: newSize.width, height: newSize.height)))
+        let newImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return newImage
+    }
+
+    
 }

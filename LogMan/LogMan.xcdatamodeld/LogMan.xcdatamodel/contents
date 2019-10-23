@@ -3,13 +3,14 @@
     <entity name="Cargos" representedClassName="Cargos" syncable="YES" codeGenerationType="class">
         <attribute name="cargoName" optional="YES" attributeType="String"/>
         <attribute name="cargoProductCode" optional="YES" attributeType="String"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Cities" representedClassName="Cities" syncable="YES" codeGenerationType="class">
         <attribute name="cityName" optional="YES" attributeType="String"/>
         <attribute name="countryName" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Cargos" positionX="-63" positionY="0" width="128" height="73"/>
+        <element name="Cargos" positionX="-63" positionY="0" width="128" height="88"/>
         <element name="Cities" positionX="-63" positionY="-18" width="128" height="73"/>
     </elements>
 </model>
