@@ -14,7 +14,7 @@ class NewDeploymentViewController: ViewController<NewDeploymentViewModel> {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var createDeploymentButton: UIView!
     @IBOutlet weak var nameField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         activityIndicator.isHidden = true

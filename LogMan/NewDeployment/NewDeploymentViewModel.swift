@@ -19,7 +19,7 @@ class NewDeploymentViewModel {
         let newDeployment = try! FirestoreEncoder().encode(Deployment(ownerId: (Auth.auth().currentUser?.uid)!, name: name))
 
         let firestore = Firestore.firestore()
-        let deploymentCollection = firestore.collection("deployments")
+        let deploymentCollection = firestore.collection("DeploymentPlan")
 
         let newDeploymentReference = deploymentCollection.document()
 

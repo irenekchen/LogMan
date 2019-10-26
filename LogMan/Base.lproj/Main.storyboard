@@ -1211,7 +1211,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ayV-lu-nht"/>
                     <connections>
-                        <outlet property="createDeploymentButton" destination="9bl-gz-Jnh" id="AAT-HJ-DZh"/>
+                        <outlet property="createDeploymentButton" destination="PNP-I3-zxj" id="sXL-Xv-8RW"/>
                         <outlet property="tableView" destination="rBL-Ux-gsN" id="zMW-aI-27r"/>
                         <segue destination="uWv-Oz-sDU" kind="show" identifier="showDetail" id="xQ3-zF-Iin"/>
                         <segue destination="xYo-KS-ax3" kind="presentation" identifier="addDeployment" id="4EI-Xd-Yn3"/>
@@ -1330,10 +1330,10 @@
             </objects>
             <point key="canvasLocation" x="1577" y="-1483"/>
         </scene>
-        <!--New Train View Controller-->
+        <!--New Deployment View Controller-->
         <scene sceneID="MqM-IX-gtV">
             <objects>
-                <viewController storyboardIdentifier="NewTrainViewController" id="xYo-KS-ax3" customClass="NewTrainViewController" customModule="LunchTrain" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewTrainViewController" id="xYo-KS-ax3" customClass="NewDeploymentViewController" customModule="LogMan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t5Z-nQ-aja">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1368,26 +1368,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFA-Ob-nWn">
-                                <rect key="frame" x="25" y="84" width="364" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-0f-z8j">
-                                <rect key="frame" x="0.0" y="144" width="414" height="216"/>
-                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="TQc-cB-AMF" firstAttribute="leading" secondItem="6zw-nF-vuS" secondAttribute="leading" constant="25" id="0au-oe-ZYh"/>
-                            <constraint firstItem="6zw-nF-vuS" firstAttribute="trailing" secondItem="e2A-0f-z8j" secondAttribute="trailing" id="5JX-Tv-zHL"/>
-                            <constraint firstItem="cFA-Ob-nWn" firstAttribute="leading" secondItem="6zw-nF-vuS" secondAttribute="leading" constant="25" id="7Uh-sx-NQe"/>
                             <constraint firstItem="6zw-nF-vuS" firstAttribute="trailing" secondItem="TQc-cB-AMF" secondAttribute="trailing" constant="25" id="IFY-g5-UTO"/>
                             <constraint firstItem="6zw-nF-vuS" firstAttribute="trailing" secondItem="0e9-8l-iHP" secondAttribute="trailing" id="Phv-HD-yuD"/>
-                            <constraint firstItem="e2A-0f-z8j" firstAttribute="leading" secondItem="6zw-nF-vuS" secondAttribute="leading" id="Tma-9j-RT5"/>
-                            <constraint firstItem="6zw-nF-vuS" firstAttribute="trailing" secondItem="cFA-Ob-nWn" secondAttribute="trailing" constant="25" id="XBc-nV-XD1"/>
-                            <constraint firstItem="e2A-0f-z8j" firstAttribute="top" secondItem="cFA-Ob-nWn" secondAttribute="bottom" constant="26" id="bnc-hO-Nfj"/>
-                            <constraint firstItem="cFA-Ob-nWn" firstAttribute="top" secondItem="TQc-cB-AMF" secondAttribute="bottom" constant="25" id="eVq-Gz-tM4"/>
                             <constraint firstItem="0e9-8l-iHP" firstAttribute="leading" secondItem="6zw-nF-vuS" secondAttribute="leading" id="qaK-sF-25z"/>
                             <constraint firstItem="6zw-nF-vuS" firstAttribute="bottom" secondItem="0e9-8l-iHP" secondAttribute="bottom" id="vaM-Eu-yIi"/>
                             <constraint firstItem="TQc-cB-AMF" firstAttribute="top" secondItem="6zw-nF-vuS" secondAttribute="top" constant="25" id="yA5-TY-xtw"/>
@@ -1395,11 +1381,9 @@
                         <viewLayoutGuide key="safeArea" id="6zw-nF-vuS"/>
                     </view>
                     <connections>
-                        <outlet property="activityIndicator" destination="UKA-38-fBw" id="GQB-Zo-ZeS"/>
-                        <outlet property="createTrainButton" destination="0e9-8l-iHP" id="BSH-Ja-CXm"/>
-                        <outlet property="datePicker" destination="e2A-0f-z8j" id="LE0-f1-50n"/>
-                        <outlet property="placeField" destination="cFA-Ob-nWn" id="kdz-jD-DWC"/>
-                        <outlet property="titleField" destination="TQc-cB-AMF" id="i5v-sf-EtQ"/>
+                        <outlet property="activityIndicator" destination="UKA-38-fBw" id="8Md-eT-Vml"/>
+                        <outlet property="createDeploymentButton" destination="0e9-8l-iHP" id="du8-NV-sQC"/>
+                        <outlet property="nameField" destination="TQc-cB-AMF" id="x7A-R0-U8k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dx-Tf-RT1" userLabel="First Responder" sceneMemberID="firstResponder"/>

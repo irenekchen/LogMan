@@ -46,7 +46,7 @@ class DeploymentService {
         let newDeployment = try! FirestoreEncoder().encode(instance)
         
         let firestore = Firestore.firestore()
-        let deploymentCollection = firestore.collection("deloyments")
+        let deploymentCollection = firestore.collection("DeploymentPlan")
         
         let newDeploymentReference = deploymentCollection.document()
         
