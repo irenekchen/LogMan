@@ -32,6 +32,9 @@
 		FCB5162123643784004B55DA /* DeploymentDetailViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB5162023643784004B55DA /* DeploymentDetailViewData.swift */; };
 		FCB5162323643794004B55DA /* DeploymentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB5162223643794004B55DA /* DeploymentDetailViewController.swift */; };
 		FCB51625236437A0004B55DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB51624236437A0004B55DA /* User.swift */; };
+		FCB516282364BDC9004B55DA /* DeploymentLoadLIstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB516272364BDC9004B55DA /* DeploymentLoadLIstViewModel.swift */; };
+		FCB5162A2364BDE5004B55DA /* DeploymentLoadListViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB516292364BDE5004B55DA /* DeploymentLoadListViewData.swift */; };
+		FCB5162C2364BDFC004B55DA /* DeploymentLoadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB5162B2364BDFC004B55DA /* DeploymentLoadListViewController.swift */; };
 		FCBD22382353A8F500699B52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBD22372353A8F500699B52 /* AppDelegate.swift */; };
 		FCBD223D2353A8F600699B52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBD223B2353A8F600699B52 /* Main.storyboard */; };
 		FCBD22402353A8F600699B52 /* LogMan.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBD223E2353A8F600699B52 /* LogMan.xcdatamodeld */; };
@@ -95,6 +98,9 @@
 		FCB5162023643784004B55DA /* DeploymentDetailViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentDetailViewData.swift; sourceTree = "<group>"; };
 		FCB5162223643794004B55DA /* DeploymentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentDetailViewController.swift; sourceTree = "<group>"; };
 		FCB51624236437A0004B55DA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FCB516272364BDC9004B55DA /* DeploymentLoadLIstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentLoadLIstViewModel.swift; sourceTree = "<group>"; };
+		FCB516292364BDE5004B55DA /* DeploymentLoadListViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentLoadListViewData.swift; sourceTree = "<group>"; };
+		FCB5162B2364BDFC004B55DA /* DeploymentLoadListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeploymentLoadListViewController.swift; sourceTree = "<group>"; };
 		FCBD22342353A8F500699B52 /* LogMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBD22372353A8F500699B52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBD223C2353A8F600699B52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,9 +203,20 @@
 				FCB5161E23643770004B55DA /* DeploymentDetailViewModel.swift */,
 				FCB5162023643784004B55DA /* DeploymentDetailViewData.swift */,
 				FCB5162223643794004B55DA /* DeploymentDetailViewController.swift */,
+				FCB51611236430FC004B55DA /* DeploymentService.swift */,
 				FCB51624236437A0004B55DA /* User.swift */,
 			);
 			path = DeploymentDetail;
+			sourceTree = "<group>";
+		};
+		FCB516262364BD9F004B55DA /* DeploymentLoadList */ = {
+			isa = PBXGroup;
+			children = (
+				FCB516272364BDC9004B55DA /* DeploymentLoadLIstViewModel.swift */,
+				FCB516292364BDE5004B55DA /* DeploymentLoadListViewData.swift */,
+				FCB5162B2364BDFC004B55DA /* DeploymentLoadListViewController.swift */,
+			);
+			path = DeploymentLoadList;
 			sourceTree = "<group>";
 		};
 		FCBD222B2353A8F500699B52 = {
@@ -227,6 +244,7 @@
 		FCBD22362353A8F500699B52 /* LogMan */ = {
 			isa = PBXGroup;
 			children = (
+				FCB516262364BD9F004B55DA /* DeploymentLoadList */,
 				FCB5161D2364373F004B55DA /* DeploymentDetail */,
 				FCB51618236436AD004B55DA /* Common */,
 				FCB51613236435BE004B55DA /* NewDeployment */,
@@ -245,7 +263,6 @@
 				FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */,
 				FCBD226A2355534C00699B52 /* ItemsTableViewController.swift */,
 				FCB5160F23642F90004B55DA /* LoginViewController.swift */,
-				FCB51611236430FC004B55DA /* DeploymentService.swift */,
 				FCBD22412353A8FA00699B52 /* Assets.xcassets */,
 				FCBD22432353A8FA00699B52 /* LaunchScreen.storyboard */,
 				FC5C8EE22361381400B87A73 /* Info.plist */,
@@ -556,6 +573,7 @@
 				FCB5161A236436E6004B55DA /* TableViewAdapter.swift in Sources */,
 				FCB51615236435D5004B55DA /* NewDeploymentViewModel.swift in Sources */,
 				FCB5162123643784004B55DA /* DeploymentDetailViewData.swift in Sources */,
+				FCB5162A2364BDE5004B55DA /* DeploymentLoadListViewData.swift in Sources */,
 				FCBD22402353A8F600699B52 /* LogMan.xcdatamodeld in Sources */,
 				FCB5161023642F90004B55DA /* LoginViewController.swift in Sources */,
 				FCB51612236430FC004B55DA /* DeploymentService.swift in Sources */,
@@ -566,8 +584,10 @@
 				FCBD22382353A8F500699B52 /* AppDelegate.swift in Sources */,
 				FCB51617236435E3004B55DA /* NewDeploymentViewController.swift in Sources */,
 				FCB5161C2364371E004B55DA /* ViewController+Ext.swift in Sources */,
+				FCB516282364BDC9004B55DA /* DeploymentLoadLIstViewModel.swift in Sources */,
 				FC5C8EDA235FABAA00B87A73 /* CargoDetailTableViewCell.swift in Sources */,
 				FCB5160C2364273D004B55DA /* DeploymentListViewController.swift in Sources */,
+				FCB5162C2364BDFC004B55DA /* DeploymentLoadListViewController.swift in Sources */,
 				FCB5160A2364271D004B55DA /* DeploymentListViewData.swift in Sources */,
 				FC7D29DC235BA6380080A167 /* CoreDataStack.swift in Sources */,
 				FCB51625236437A0004B55DA /* User.swift in Sources */,

@@ -20,8 +20,6 @@ class AddItemViewController: UIViewController {
     var currentTextFieldName: String = ""
     var currentIndexPath: Int = -1
     var currentPriority = 0
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,44 +60,18 @@ class AddItemViewController: UIViewController {
     
     @IBAction func done(_ sender: UIButton) {
         
-        //let mainVC = segue.source as! ItemsTableViewController
-        
-        //let index = detailViewController.index
-        
-        //let modelString = detailViewController.editedModel
-        
-        //cargoNamesArray.append(textView.text ?? "")
-        
-        //tableView.reloadData()
-        //let detailVC = segue.source as! AddItemViewController
-        
         dismiss(animated: true)
         bottomConstraint.constant = 0
         
         UIView.animate(withDuration: 0.3, animations: self.view.layoutIfNeeded)
         textView.resignFirstResponder()
     }
-    /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "done" {
-            name = textView.text!
-        }
-    }*/
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        /*
-        if segue.identifier == "done" {
-            let detailVC = segue.source as! AddItemViewController
-            
-               //let index = detailViewController.index
-            
-               //let modelString = detailViewController.editedModel
-                cargoNames.append(detailVC.textView.text ?? "")
-            
-               tableView.reloadData()
-        }*/
+        
         if let _ = sender as? UIButton, let vc = segue.destination as? ItemsTableViewController {
             currentTextFieldName = textView.text!
             if self.currentIndexPath == -1 {
@@ -114,44 +86,6 @@ class AddItemViewController: UIViewController {
             
         }
     }
-    /*
-    @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
-
-        //code
-
-    }
-    */
-    /*
-    func add(){
-     guard let title = textView.text, !title.isEmpty else {
-         return
-     }
-     let cargo = Cargo(context: managedContext)
-     cargo.title = title
-     cargo.priority = Int16(segmentedControl.selectedSegmentIndex)
-     do {
-         try { managedContext.save()
-         dismiss(animated:true)
-         textView.resignFirstResponder()
-         } catch {
-             print("Error saving todo: \(error)")
-         }
-     }
-     }
-     */
-    /*
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    
-
 }
 
 extension AddItemViewController: UITextFieldDelegate {

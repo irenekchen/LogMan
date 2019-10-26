@@ -12,19 +12,13 @@ import Firebase
 import GoogleSignIn
 import FirebaseUI
 
-class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
+class ItemsTableViewController: UITableViewController {
     
     // MARK: - Properties
-    
-    //var resultsController: NSFetchedResultsController<Cargos>!
-    //let cargoSearch = CustomSearchTextField()
     var cargoNames : [String] = [String]()
     var dataSource : [CargoDetailTableViewCellContent] = [CargoDetailTableViewCellContent]()
-    //var managedContext: NSManagedObjectContext
     var editIndex:Int?
     var priorityForCargo:[String:Int] = [String:Int]()
-    //@IBOutlet weak var addCargoTextField: UITextField!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,51 +28,11 @@ class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
         self.tableView.estimatedRowHeight = 60
         self.tableView.rowHeight = UITableView.automaticDimension
 
-        GIDSignIn.sharedInstance()?.presentingViewController = self
-        GIDSignIn.sharedInstance().signIn()
-
-        /*
-        // Request
-        let request:NSFetchRequest<Cargos> = Cargos.fetchRequest()
-        let sortDescriptors = NSSortDescriptor(key: "cargoName", ascending: true)
-        
-        // Init
-        request.sortDescriptors = [sortDescriptors]
-        resultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: coreDataStack.persistentContainer.viewContext, sectionNameKeyPath: nil, cacheName: nil)
-        
-        // Fetch
-        do {
-            try resultsController.performFetch()
-        } catch {
-            print("Perform fetch error: \(error)")
-        }
-*/
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewDidAppear(_ animated: Bool) {
         navigationController?.navigationBar.backgroundColor =  UIColor(patternImage: UIImage(named: "bkg3")!)
         
-        if Auth.auth().currentUser != nil {
-          //do something :D
-        } else {
-            let authUI = FUIAuth.defaultAuthUI()
-            authUI?.delegate = self
-            let providers: [FUIAuthProvider] = [
-                FUIGoogleAuth()]
-
-            authUI?.providers = providers
-            let authViewController = authUI!.authViewController()
-            self.present(authViewController, animated: true, completion: nil)
-        }
-    }
-    
-    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
-      // Handle user returning from authenticating
     }
 
     // MARK: - Table view data source
@@ -102,10 +56,6 @@ class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
         }
         return sectionName
     }
-    /*
-    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        (view as! UITableViewHeaderFooterView).backgroundView?.backgroundColor = UIColor.white.withAlphaComponent(0.4)
-    }*/
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
             let headerView = UIView()
@@ -128,23 +78,6 @@ class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 40
     }
-    
-    /*
-    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-
-        let myLabel = UILabel()
-        myLabel.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 30)
-        myLabel.font = UIFont.boldSystemFont(ofSize: 20)
-        myLabel.textColor = UIColor.darkGray
-        myLabel.text = self.tableView(tableView, titleForHeaderInSection: section)
-        myLabel.backgroundColor = UIColor.white.withAlphaComponent(0.4)
-
-        let headerView = UIView()
-        headerView.addSubview(myLabel)
-
-        return headerView
-    }*/
-    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -184,8 +117,6 @@ class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
             completion(true)
         }
         
-        //self.tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
-        //action.image = UIImage(named: "Image")
         deleteAction.image = UIGraphicsImageRenderer(size: CGSize(width: 30, height: 30)).image { _ in
             UIImage(named: "Trash")?.draw(in: CGRect(x: 0, y: 0, width: 30, height: 30))
         }
@@ -242,28 +173,6 @@ class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        /*
-        if segue.identifier == "done" {
-            let detailVC = segue.source as! AddItemViewController
-            
-               //let index = detailViewController.index
-            
-               //let modelString = detailViewController.editedModel
-                cargoNames.append(detailVC.textView.text ?? "")
-            
-               tableView.reloadData()
-        }*/
-        /*
-        if segue.identifier == "editItem"{
-          let rowClicked = (self.tableView.indexPathForSelectedRow?.row)!
-          let destVC = segue.destination as! AddItemViewController
-          destVC.currentIndexPath = rowClicked
-            destVC.textView.text = cargoNames[rowClicked]
-            destVC.segmentedControl.selectedSegmentIndex = priorityForCargo[cargoNames[rowClicked]] ?? 0
-        } else
-            */
         
         if let _ = sender as? UIButton, let destVC = segue.destination as? AddItemViewController {
             destVC.currentIndexPath = -1
@@ -278,31 +187,11 @@ class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
               destVC.currentPriority = priorityForCargo[cargoNames[rowClicked]] ?? 0
         } else if let _ = sender as? UIButton, let vc = segue.destination as? CargoDetectionViewController {
             vc.navigationController?.navigationBar.backgroundColor = .none
-            /*
-                    currentTextFieldName = textView.text!
-                    if self.currentIndexPath == -1 {
-                        vc.cargoNames.append(currentTextFieldName)
-                        vc.dataSource.append(CargoDetailTableViewCellContent(name: currentTextFieldName))
-                    } else {
-                        vc.cargoNames[self.currentIndexPath] = currentTextFieldName
-                        vc.dataSource[self.currentIndexPath] = CargoDetailTableViewCellContent(name: currentTextFieldName)
-                    }
-                    vc.priorityForCargo[currentTextFieldName] = segmentedControl.selectedSegmentIndex
-                    vc.tableView.reloadData()
-                    
-                }
-            }*/
         }
     }
     
     @IBAction func done(segue:UIStoryboardSegue) {
         let detailVC = segue.source as! AddItemViewController
-            
-               //let index = detailViewController.index
-            
-               //let modelString = detailViewController.editedModel
-               //cargoNames.append(detailVC.textView.text ?? "")
-            
                tableView.reloadData()
     }
     
@@ -310,7 +199,6 @@ class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let content = dataSource[indexPath.row]
         //content.expanded = !content.expanded
-        //content.detailStackView.isHidden = !content.detailStackView.isHidden
         tableView.reloadRows(at: [indexPath], with: .automatic)
     }
     
