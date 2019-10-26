@@ -26,6 +26,7 @@ class CargoDetailTableViewCellContent {
         self.title = cargoData[0]
         self.subtitle = cargoData[1]
         self.expanded = false
+        
     }
 }
 
@@ -37,6 +38,14 @@ class CargoDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var imageHeight: NSLayoutConstraint!
     @IBOutlet weak var titleHeight: NSLayoutConstraint!
     @IBOutlet weak var cargoImage: UIImageView!
+    //@IBOutlet weak var detailStackView: UIStackView!
+    
+    @IBOutlet weak var detailStackView: UIView! {
+        didSet {
+            detailStackView.isHidden = false
+        }
+    }
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -51,10 +60,11 @@ class CargoDetailTableViewCell: UITableViewCell {
 
     func set(content: CargoDetailTableViewCellContent) {
         self.titleLabel.text = content.title
-        self.subtitleLabel.text = content.expanded ? content.subtitle : ""
-        //self.subtitleLabel.text = content.subtitle
+        //self.subtitleLabel.text = content.expanded ? content.subtitle : ""
+        self.subtitleLabel.text = content.subtitle
         self.cargoImage.image = UIImage(named: content.title!)
         //self.layoutImageView(content: content)
+        self.detailStackView.isHidden = !self.detailStackView.isHidden
         
     }
     

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>942299008318-gmf61dae8bepcutdd8kfohbg0urqhq4q.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.942299008318-gmf61dae8bepcutdd8kfohbg0urqhq4q</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAtPtGtPmQSNk1VDGhbRVfODktugEfqumQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>942299008318</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.columbia.ic2409.LogMan</string>
+	<key>PROJECT_ID</key>
+	<string>logman-10032</string>
+	<key>STORAGE_BUCKET</key>
+	<string>logman-10032.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:942299008318:ios:a982a6a5d01350388b706f</string>
+	<key>DATABASE_URL</key>
+	<string>https://logman-10032.firebaseio.com</string>
+</dict>
+</plist>

@@ -8,8 +8,11 @@
 
 import UIKit
 import CoreData
+import Firebase
+import GoogleSignIn
+import FirebaseUI
 
-class ItemsTableViewController: UITableViewController {
+class ItemsTableViewController: UITableViewController, FUIAuthDelegate {
     
     // MARK: - Properties
     
@@ -21,7 +24,7 @@ class ItemsTableViewController: UITableViewController {
     var editIndex:Int?
     var priorityForCargo:[String:Int] = [String:Int]()
     //@IBOutlet weak var addCargoTextField: UITextField!
-
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,8 @@ class ItemsTableViewController: UITableViewController {
         self.tableView.estimatedRowHeight = 60
         self.tableView.rowHeight = UITableView.automaticDimension
 
-
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
 
         /*
         // Request
@@ -57,14 +61,31 @@ class ItemsTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.navigationBar.backgroundColor = UIColor(patternImage: UIImage(named: "bkg3")!)
+        navigationController?.navigationBar.backgroundColor =  UIColor(patternImage: UIImage(named: "bkg3")!)
+        
+        if Auth.auth().currentUser != nil {
+          //do something :D
+        } else {
+            let authUI = FUIAuth.defaultAuthUI()
+            authUI?.delegate = self
+            let providers: [FUIAuthProvider] = [
+                FUIGoogleAuth()]
+
+            authUI?.providers = providers
+            let authViewController = authUI!.authViewController()
+            self.present(authViewController, animated: true, completion: nil)
+        }
+    }
+    
+    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+      // Handle user returning from authenticating
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -243,8 +264,11 @@ class ItemsTableViewController: UITableViewController {
             destVC.segmentedControl.selectedSegmentIndex = priorityForCargo[cargoNames[rowClicked]] ?? 0
         } else
             */
+        
         if let _ = sender as? UIButton, let destVC = segue.destination as? AddItemViewController {
             destVC.currentIndexPath = -1
+            navigationController?.navigationBar.backgroundColor = .none
+
         } else if let _ = sender as? UIContextualAction, let destVC = segue.destination as? AddItemViewController {
             let rowClicked = self.editIndex!
             let destVC = segue.destination as! AddItemViewController
@@ -252,6 +276,22 @@ class ItemsTableViewController: UITableViewController {
             print(cargoNames, rowClicked, cargoNames[rowClicked])
             destVC.currentTextFieldName = cargoNames[rowClicked]
               destVC.currentPriority = priorityForCargo[cargoNames[rowClicked]] ?? 0
+        } else if let _ = sender as? UIButton, let vc = segue.destination as? CargoDetectionViewController {
+            vc.navigationController?.navigationBar.backgroundColor = .none
+            /*
+                    currentTextFieldName = textView.text!
+                    if self.currentIndexPath == -1 {
+                        vc.cargoNames.append(currentTextFieldName)
+                        vc.dataSource.append(CargoDetailTableViewCellContent(name: currentTextFieldName))
+                    } else {
+                        vc.cargoNames[self.currentIndexPath] = currentTextFieldName
+                        vc.dataSource[self.currentIndexPath] = CargoDetailTableViewCellContent(name: currentTextFieldName)
+                    }
+                    vc.priorityForCargo[currentTextFieldName] = segmentedControl.selectedSegmentIndex
+                    vc.tableView.reloadData()
+                    
+                }
+            }*/
         }
     }
     
@@ -269,7 +309,8 @@ class ItemsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let content = dataSource[indexPath.row]
-        content.expanded = !content.expanded
+        //content.expanded = !content.expanded
+        //content.detailStackView.isHidden = !content.detailStackView.isHidden
         tableView.reloadRows(at: [indexPath], with: .automatic)
     }
     
