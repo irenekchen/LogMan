@@ -8,11 +8,14 @@
 
 
 import UIKit
+import FirebaseFirestore
 
 class NewDeploymentViewController: ViewController<NewDeploymentViewModel> {
 
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var createDeploymentButton: UIView!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var placeField: UITextField!
     @IBOutlet weak var nameField: UITextField!
     
     override func viewDidLoad() {
@@ -36,6 +39,6 @@ class NewDeploymentViewController: ViewController<NewDeploymentViewModel> {
         activityIndicator.isHidden = false
         activityIndicator.startAnimating()
 
-        viewModel.saveNewDeployment(name: nameField.text ?? "")
+        viewModel.saveNewDeployment(name: nameField.text ?? "", time: datePicker!.date, place: placeField.text ?? "")
     }
 }

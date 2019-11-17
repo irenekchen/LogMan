@@ -15,4 +15,6 @@ struct DeploymentDetailViewData {
     var deploymentReference: DocumentReference
     var passengers: [User]
     var isUserAPassenger: Bool = false
+    
+    
 }

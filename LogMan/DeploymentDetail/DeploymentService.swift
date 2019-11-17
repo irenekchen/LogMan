@@ -41,8 +41,10 @@ class DeploymentService {
         }
     }
     
-    func saveNewDeployment(name: String, callback: @escaping ((_ success: Bool) -> Void)) {
-        let instance = Deployment(ownerId: (Auth.auth().currentUser?.uid)!, name: name)
+    func saveNewDeployment(name: String, time: Date, place: String, callback: @escaping ((_ success: Bool) -> Void)) {
+        //let timestamp = FirTimestampModel(timestamp: Timestamp(date: Date()))
+        //let data = try! FirestoreEncoder().encode(timestamp)
+        let instance = Deployment(ownerId: (Auth.auth().currentUser?.uid)!, name: name, place: place, time: Timestamp(date: time))
         let newDeployment = try! FirestoreEncoder().encode(instance)
         
         let firestore = Firestore.firestore()

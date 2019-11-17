@@ -12,6 +12,9 @@ import FirebaseFirestore
 import FirebaseAuth
 import CodableFirebase
 
+
+
+
 class DeploymentDetailViewModel {
     var didChangeData: ((DeploymentDetailViewData) -> Void)?
     var deploymentReference: DocumentReference?
@@ -120,3 +123,4 @@ class DeploymentDetailViewModel {
         return user?.displayName ?? ""
     }
 }
+

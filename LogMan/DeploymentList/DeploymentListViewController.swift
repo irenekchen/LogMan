@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseFirestore
+import CodableFirebase
 import SnapKit
 
 class DeploymentListViewController: ViewController<DeploymentListViewModel> {
@@ -113,6 +114,7 @@ class DeploymentListViewController: ViewController<DeploymentListViewModel> {
 
 class DeploymentTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var organiserLabel: UILabel!
     @IBOutlet weak var deploymentIcon: UIImageView!
     @IBOutlet weak var deploymentNameLabel: UILabel!
@@ -120,6 +122,26 @@ class DeploymentTableViewCell: UITableViewCell {
     func populate(deployment: Deployment) {
         organiserLabel.text = deployment.ownerId
         deploymentNameLabel.text = deployment.name
+        
+        //let dateFormatter = DateFormatter()
+        //dateFormatter.dateStyle = .none
+        //dateFormatter.timeStyle = .short
+        let formatter = DateFormatter()
+        // initially set the format based on your datepicker date / server String
+        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+
+        let myString = formatter.string(from: Date()) // string purpose I add here
+        // convert your string to date
+        let yourDate = formatter.date(from: myString)
+        //then again set the date format whhich type of output you need
+        formatter.dateFormat = "HH:mm:ss"
+        // again convert your date to string
+        //let myStringafd = formatter.string(from: yourDate!)
+
+        //print(myStringafd)
+
+        timeLabel.text = formatter.string(from: deployment.time.dateValue())
+            //= dateFormatter.string(from: deployment.time)
         
         
     }
