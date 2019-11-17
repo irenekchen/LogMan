@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQt-xh-73f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LQt-xh-73f">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -196,11 +196,6 @@
                         <color key="sectionIndexColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="sectionIndexTrackingBackgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="NfM-Jf-qJN" customClass="GIDSignInButton">
-                            <rect key="frame" x="0.0" y="221" width="414" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CargoItem" id="vBz-Kd-VX8" customClass="CargoDetailTableViewCell" customModule="LogMan" customModuleProvider="target">
                                 <rect key="frame" x="20" y="55.5" width="374" height="147.5"/>
@@ -473,7 +468,6 @@
         <!--Navigation Controller-->
         <scene sceneID="em9-xL-ILa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EaG-gw-b4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0vT-3s-xYo" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="brx-4x-Vgn">
@@ -493,6 +487,7 @@
                         <segue destination="Xv0-2e-8ZC" kind="relationship" relationship="rootViewController" id="K9y-q1-TFR"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EaG-gw-b4m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-617" y="-99"/>
         </scene>
@@ -934,6 +929,21 @@
             </objects>
             <point key="canvasLocation" x="5366.666666666667" y="-765.40178571428567"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="dd7-y6-lX9">
+            <objects>
+                <viewController id="x0a-zm-uPd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WCl-5p-JLE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qIG-s7-yXY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xOJ-d0-zuE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2473" y="-1099"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="YJb-xs-s8B">
             <objects>
@@ -972,7 +982,7 @@
         <!--showList-->
         <scene sceneID="Xb3-8S-WkJ">
             <objects>
-                <viewController title="showList" id="yhr-ew-FAO" customClass="LoginViewController" customModule="LogMan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" title="showList" id="yhr-ew-FAO" customClass="LoginViewController" customModule="LogMan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7zF-DV-iGq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1053,7 +1063,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNP-I3-zxj">
                                 <rect key="frame" x="0.0" y="808" width="414" height="54"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bl-gz-Jnh">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Deployment Plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bl-gz-Jnh">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                         <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1082,9 +1092,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h9r-NB-4pV"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ayV-lu-nht"/>
+                    <navigationItem key="navigationItem" id="ayV-lu-nht">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="pt2-3f-InS">
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="sG2-kF-iEB" id="29r-0b-kPt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="createDeploymentButton" destination="PNP-I3-zxj" id="sXL-Xv-8RW"/>
+                        <outlet property="logoutButton" destination="pt2-3f-InS" id="Ti6-Gx-uUN"/>
                         <outlet property="tableView" destination="rBL-Ux-gsN" id="zMW-aI-27r"/>
                         <segue destination="uWv-Oz-sDU" kind="show" identifier="showDetail" id="xQ3-zF-Iin"/>
                         <segue destination="xYo-KS-ax3" kind="presentation" identifier="addDeployment" id="4EI-Xd-Yn3"/>
@@ -1140,7 +1157,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YH6-KX-pBL">
                                 <rect key="frame" x="0.0" y="808" width="414" height="54"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmf-Rr-tW6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Deployment Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmf-Rr-tW6">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                         <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1189,11 +1206,19 @@
                         <viewLayoutGuide key="safeArea" id="n4y-2C-EUx"/>
                     </view>
                     <navigationItem key="navigationItem" id="5pt-9P-E1H">
-                        <barButtonItem key="rightBarButtonItem" title="Load List" id="qCI-b5-7e5">
-                            <connections>
-                                <segue destination="Xv0-2e-8ZC" kind="show" id="JNb-En-Zij"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="activity-feed-icon" id="qCI-b5-7e5">
+                                <connections>
+                                    <segue destination="Xv0-2e-8ZC" kind="show" id="JNb-En-Zij"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" image="bubbles-icon" id="7HM-sR-VUw">
+                                <connections>
+                                    <action selector="openChatRoom:" destination="uWv-Oz-sDU" id="uTB-sG-8hY"/>
+                                    <segue destination="TWs-8o-RD8" kind="show" identifier="showChat" id="5Ql-p3-MgC"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicator" destination="kEx-sY-GS5" id="Wtx-9s-9nV"/>
@@ -1209,6 +1234,22 @@
             </objects>
             <point key="canvasLocation" x="-617" y="-956"/>
         </scene>
+        <!--Chat Thread View Controller-->
+        <scene sceneID="8LU-pb-Lpn">
+            <objects>
+                <viewController id="TWs-8o-RD8" customClass="ATCChatThreadViewController" customModule="LogMan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0jm-gN-KLM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="orU-aP-P13"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RhU-ZE-oOK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZt-ix-J5v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="-1089"/>
+        </scene>
         <!--New Deployment View Controller-->
         <scene sceneID="MqM-IX-gtV">
             <objects>
@@ -1220,7 +1261,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0e9-8l-iHP">
                                 <rect key="frame" x="0.0" y="754" width="414" height="54"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Train" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4W-A5-IJs">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Deployment Plan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4W-A5-IJs">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="20"/>
                                         <color key="textColor" red="0.99482670200000001" green="1" blue="0.99780765339999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1242,12 +1283,12 @@
                                     <constraint firstAttribute="height" constant="54" id="z3c-BE-kdy"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Train Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQc-cB-AMF">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Plan Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TQc-cB-AMF">
                                 <rect key="frame" x="25" y="25" width="364" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFA-Ob-nWn">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFA-Ob-nWn">
                                 <rect key="frame" x="25" y="84" width="364" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1285,11 +1326,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="activity-feed-icon" width="25" height="25"/>
+        <image name="bubbles-icon" width="40" height="40"/>
         <image name="burger" width="16" height="16"/>
         <image name="camera.viewfinder" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K9y-q1-TFR"/>
+        <segue reference="JNb-En-Zij"/>
         <segue reference="35S-cK-HPd"/>
     </inferredMetricsTieBreakers>
 </document>

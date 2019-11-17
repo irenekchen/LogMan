@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseFirestore
 import SnapKit
 
@@ -16,6 +17,8 @@ class DeploymentListViewController: ViewController<DeploymentListViewModel> {
     private var selectedDeployment: Deployment?
     private var selectedDeploymentReference: DocumentReference?
 
+    @IBOutlet weak var logoutButton: UIBarButtonItem!
+    
     @IBOutlet weak var createDeploymentButton: UIView!
     private let tableViewAdapter = TableViewAdapter<Deployment>()
 
@@ -54,10 +57,49 @@ class DeploymentListViewController: ViewController<DeploymentListViewModel> {
     func detailPressed() {
         performSegue(withIdentifier: "showDetail", sender: self)
     }
-
-    @objc func addPressed(sender:UITapGestureRecognizer){
-        performSegue(withIdentifier: "addDeployment", sender: self)
+    
+    @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+          let storyboard = UIStoryboard(name: "Main", bundle: nil)
+          let LoginVC = storyboard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
+        navigationController?.pushViewController(LoginVC, animated: true)
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+        
     }
+    
+    
+    
+    @objc func addPressed(sender:UITapGestureRecognizer){
+        let user = ATCUser(firstName: "Test F", lastName: "Test L")
+        let channel = ATCChatChannel(id: "idc", name: "Group Test")
+        let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
+                                              secondaryColor: UIColor(hexString: "#f0f0f0"),
+                                              inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
+                                              inputTextViewTextColor: .black,
+                                              inputPlaceholderTextColor: UIColor(hexString: "#979797"))
+        let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
+        navigationController?.pushViewController(vc, animated: true)
+        //performSegue(withIdentifier: "showChat", sender: self)
+    }
+    
+    @IBAction func openChatRoom(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "showDetail", sender: self)
+        /*
+        let user = ATCUser(firstName: "Test F", lastName: "Test L")
+        let channel = ATCChatChannel(id: "idc", name: "Group Test")
+        let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
+                                              secondaryColor: UIColor(hexString: "#f0f0f0"),
+                                              inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
+                                              inputTextViewTextColor: .black,
+                                              inputPlaceholderTextColor: UIColor(hexString: "#979797"))
+        let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
+        navigationController?.pushViewController(vc, animated: true)*/
+    }
+    
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
@@ -66,6 +108,18 @@ class DeploymentListViewController: ViewController<DeploymentListViewModel> {
             let detailViewModel = DeploymentDetailViewModel(viewData: DeploymentDetailViewData(deployment: selectedDeployment!, deploymentReference: selectedDeploymentReference!, passengers: [], isUserAPassenger: false))
             let vc = segue.destination as? DeploymentDetailViewController
             vc?.viewModel = detailViewModel
+            return
+        }
+        
+        if segue.identifier == "showChat" {
+            let user = ATCUser(firstName: "Test F", lastName: "Test L")
+            let channel = ATCChatChannel(id: "idc", name: "Group Test")
+            let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
+                                                  secondaryColor: UIColor(hexString: "#f0f0f0"),
+                                                  inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
+                                                  inputTextViewTextColor: .black,
+                                                  inputPlaceholderTextColor: UIColor(hexString: "#979797"))
+            let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
             return
         }
 

@@ -10,11 +10,18 @@ target 'LogMan' do
   pod ‘FirebaseUI/Auth'
   pod ‘Firebase/Auth'
   pod 'GoogleSignIn', '~> 5.0'
-  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Google'  
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'Firebase/Firestore'
-  pod 'SnapKit', '~> 5.0.0'
   pod 'CodableFirebase'
 
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'MessageKit'
+
+  pod 'Alamofire'
+  pod 'Kingfisher'
 
 
   target 'LogManTests' do
