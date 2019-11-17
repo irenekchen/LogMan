@@ -1214,8 +1214,7 @@
                             </barButtonItem>
                             <barButtonItem title="Item" image="bubbles-icon" id="7HM-sR-VUw">
                                 <connections>
-                                    <action selector="openChatRoom:" destination="uWv-Oz-sDU" id="uTB-sG-8hY"/>
-                                    <segue destination="TWs-8o-RD8" kind="show" identifier="showChat" id="5Ql-p3-MgC"/>
+                                    <action selector="openChatRoom:" destination="uWv-Oz-sDU" id="qXh-rO-vFb"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>

@@ -74,31 +74,9 @@ class DeploymentListViewController: ViewController<DeploymentListViewModel> {
     
     
     @objc func addPressed(sender:UITapGestureRecognizer){
-        let user = ATCUser(firstName: "Test F", lastName: "Test L")
-        let channel = ATCChatChannel(id: "idc", name: "Group Test")
-        let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
-                                              secondaryColor: UIColor(hexString: "#f0f0f0"),
-                                              inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
-                                              inputTextViewTextColor: .black,
-                                              inputPlaceholderTextColor: UIColor(hexString: "#979797"))
-        let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
-        navigationController?.pushViewController(vc, animated: true)
-        //performSegue(withIdentifier: "showChat", sender: self)
+        performSegue(withIdentifier: "addDeployment", sender: self)
     }
     
-    @IBAction func openChatRoom(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "showDetail", sender: self)
-        /*
-        let user = ATCUser(firstName: "Test F", lastName: "Test L")
-        let channel = ATCChatChannel(id: "idc", name: "Group Test")
-        let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
-                                              secondaryColor: UIColor(hexString: "#f0f0f0"),
-                                              inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
-                                              inputTextViewTextColor: .black,
-                                              inputPlaceholderTextColor: UIColor(hexString: "#979797"))
-        let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
-        navigationController?.pushViewController(vc, animated: true)*/
-    }
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -108,18 +86,6 @@ class DeploymentListViewController: ViewController<DeploymentListViewModel> {
             let detailViewModel = DeploymentDetailViewModel(viewData: DeploymentDetailViewData(deployment: selectedDeployment!, deploymentReference: selectedDeploymentReference!, passengers: [], isUserAPassenger: false))
             let vc = segue.destination as? DeploymentDetailViewController
             vc?.viewModel = detailViewModel
-            return
-        }
-        
-        if segue.identifier == "showChat" {
-            let user = ATCUser(firstName: "Test F", lastName: "Test L")
-            let channel = ATCChatChannel(id: "idc", name: "Group Test")
-            let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
-                                                  secondaryColor: UIColor(hexString: "#f0f0f0"),
-                                                  inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
-                                                  inputTextViewTextColor: .black,
-                                                  inputPlaceholderTextColor: UIColor(hexString: "#979797"))
-            let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
             return
         }
 

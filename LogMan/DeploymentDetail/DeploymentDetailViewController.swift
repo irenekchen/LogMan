@@ -89,4 +89,36 @@ class DeploymentDetailViewController: ViewController<DeploymentDetailViewModel> 
         activityIndicator.isHidden = false
         joinDeploymentLabel.isHidden = true
     }
+    
+    @IBAction func openChatRoom(_ sender: UIBarButtonItem) {
+        //performSegue(withIdentifier: "showChat", sender: self)
+        
+        let user = ATCUser(firstName: "Test F", lastName: "Test L")
+        let channel = ATCChatChannel(id: "idc", name: "Group Test")
+        let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
+                                              secondaryColor: UIColor(hexString: "#f0f0f0"),
+                                              inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
+                                              inputTextViewTextColor: .black,
+                                              inputPlaceholderTextColor: UIColor(hexString: "#979797"))
+        let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+       
+        if segue.identifier == "showChat" {
+            let user = ATCUser(firstName: "Test F", lastName: "Test L")
+            let channel = ATCChatChannel(id: "idc", name: "Group Test")
+            let uiConfig = ATCChatUIConfiguration(primaryColor: UIColor(hexString: "#0084ff"),
+                                                  secondaryColor: UIColor(hexString: "#f0f0f0"),
+                                                  inputTextViewBgColor: UIColor(hexString: "#f4f4f6"),
+                                                  inputTextViewTextColor: .black,
+                                                  inputPlaceholderTextColor: UIColor(hexString: "#979797"))
+            let vc = ATCChatThreadViewController(user: user, channel: channel, uiConfig: uiConfig)
+            return
+        }
+    }
+
 }
