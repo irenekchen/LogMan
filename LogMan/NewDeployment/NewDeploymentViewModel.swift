@@ -19,7 +19,7 @@ class NewDeploymentViewModel {
         //let timestamp = FirTimestampModel(timestamp: Timestamp(date: Date()))
         //let data = try! FirestoreEncoder().encode(timestamp)
         
-        let newDeployment = try! FirestoreEncoder().encode(Deployment(ownerId: (Auth.auth().currentUser?.uid)!, name: name, place: place, time: Timestamp(date: time)))
+        let newDeployment = try! FirestoreEncoder().encode(Deployment(ownerId: getCurrentUserName(), name: name, place: place, time: Timestamp(date: time)))
 
         let firestore = Firestore.firestore()
         let deploymentCollection = firestore.collection("DeploymentPlan")

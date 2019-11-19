@@ -533,7 +533,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "556AFEBC-083E-44FE-B0C3-D2011883C621"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LogMan/DeploymentList/DeploymentListViewModel.swift"
@@ -549,7 +549,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "033C0543-1070-4DD8-9054-2CC5ADC4E1A7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LogMan/DeploymentList/DeploymentListViewModel.swift"
@@ -565,7 +565,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "0406A14F-5740-41CF-84BD-01A5496A8D50"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LogMan/DeploymentList/DeploymentListViewModel.swift"
@@ -578,7 +578,7 @@
             <Locations>
                <Location
                   uuid = "0406A14F-5740-41CF-84BD-01A5496A8D50 - ce31f1a6732a93fa"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "LogMan.DeploymentListViewModel.(baseQuery in _0FB669F82AE02DD0AEA0FBC772B79506)() -&gt; __C.FIRQuery"
@@ -587,13 +587,13 @@
                   urlString = "file:///Users/irenechen/Desktop/LogMan/LogMan/DeploymentList/DeploymentListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
                   offsetFromSymbolStart = "321">
                </Location>
                <Location
                   uuid = "0406A14F-5740-41CF-84BD-01A5496A8D50 - b231a0d847ac9a19"
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Swift.Optional&lt;__C.FIRDocumentSnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in LogMan.DeploymentListViewModel.(baseQuery in _0FB669F82AE02DD0AEA0FBC772B79506)() -&gt; __C.FIRQuery"
@@ -602,8 +602,8 @@
                   urlString = "file:///Users/irenechen/Desktop/LogMan/LogMan/DeploymentList/DeploymentListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
                   offsetFromSymbolStart = "160">
                </Location>
             </Locations>
@@ -629,7 +629,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "DEA05855-95EA-42D9-9000-3EADAB659FBC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LogMan/DeploymentList/DeploymentListViewModel.swift"
@@ -645,7 +645,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "471BFB69-979F-444B-918F-6933037DE3C9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LogMan/DeploymentList/DeploymentListViewModel.swift"
@@ -661,7 +661,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C598A2C3-1429-4503-8324-092775A111D0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LogMan/DeploymentList/DeploymentListViewModel.swift"
@@ -685,8 +685,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "109"
             endingLineNumber = "109"
-            landmarkName = "decode(as:includingId:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -701,7 +701,39 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "103"
             endingLineNumber = "103"
-            landmarkName = "decode(as:includingId:)"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54E72966-73FD-4E19-8264-6155D714CA51"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LogMan/DeploymentList/DeploymentListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "populate(deployment:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68FEC319-941F-4E7C-866F-882A1B3C655D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LogMan/DeploymentList/DeploymentListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
+            landmarkName = "populate(deployment:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

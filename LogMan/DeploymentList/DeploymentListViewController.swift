@@ -118,6 +118,7 @@ class DeploymentTableViewCell: UITableViewCell {
     @IBOutlet weak var organiserLabel: UILabel!
     @IBOutlet weak var deploymentIcon: UIImageView!
     @IBOutlet weak var deploymentNameLabel: UILabel!
+    @IBOutlet weak var remainingTimeLabel: UILabel!
 
     func populate(deployment: Deployment) {
         organiserLabel.text = deployment.ownerId
@@ -130,18 +131,92 @@ class DeploymentTableViewCell: UITableViewCell {
         // initially set the format based on your datepicker date / server String
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
 
+
         let myString = formatter.string(from: Date()) // string purpose I add here
         // convert your string to date
         let yourDate = formatter.date(from: myString)
         //then again set the date format whhich type of output you need
         formatter.dateFormat = "HH:mm:ss"
+        formatter.locale = NSLocale.current
+        //let currDateEST = Calendar.current.date(byAdding: .hour, value: -5, to: deployment.time.dateValue())
+
+        //let curr = formatter.date(from: deployment.time.dateValue())
+        //let currentDateESTLabel = Calendar.current.date(byAdding: .hour, value: -5, to: currDateEST!)
+
+
         // again convert your date to string
         //let myStringafd = formatter.string(from: yourDate!)
 
         //print(myStringafd)
 
-        timeLabel.text = formatter.string(from: deployment.time.dateValue())
+        //timeLabel.text = formatter.string(from: currentDateESTLabel!)
             //= dateFormatter.string(from: deployment.time)
+        timeLabel.text = formatter.string(from: deployment.time.dateValue())
+        
+        // here we set the current date
+
+        let date = NSDate()
+        let calendar = Calendar.current
+
+        let components = calendar.dateComponents([.hour, .minute, .month, .year, .day], from: date as Date)
+
+        let currentDate = calendar.date(from: components)
+
+
+        
+        let currentDateEST = Calendar.current.date(byAdding: .hour, value: -5, to: currentDate!)
+        print(currentDateEST!)
+
+        let endDateEST = Calendar.current.date(byAdding: .hour, value: 7, to: deployment.time.dateValue())
+        print(endDateEST!)
+
+        
+        let difference = Calendar.current.dateComponents([.hour, .minute, .second], from: endDateEST!, to: currentDateEST!)
+        let formattedString = String(format: "%02ld%02ld%02ld", -abs(difference.hour!%12), -abs(difference.minute!), -abs(difference.second!))
+        let component = formattedString.split(separator: "-")
+        print(component)
+        remainingTimeLabel.text = String(format: "%02dhrs %02d%min", Int(component[0])!, Int(component[1])!)
+        print(formattedString)
+        //let formattedString2 = String(format: "%02ld%02ld%02ld", difference.hour!, difference.minute!, difference.second!)
+        //print(formattedString2)
+
+        /*let userCalendar = Calendar.current
+        
+        let completionDate = deployment.time.dateValue() as Date
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        let formattedDate = format.string(from: completionDate)
+        //print(formattedDate)
+
+        let calendar = Calendar.current
+        calendar.component(.year, from: date)
+        calendar.component(.month, from: date)
+        calendar.component(.day, from: date)
+
+            // here we set the due date. When the timer is supposed to finish
+        var completitionDate = calendar.dateComponents([.hour, .minute, .month, .year, .day], from: deployment.time.dateValue() as Date)
+            completitionDate.year = deployment.time.dateValue().year
+            completitionDate.month = deployment.time.dateValue().month
+            completitionDate.day = 16
+            completitionDate.hour = 00
+            completitionDate.minute = 00
+            let completitionDay = userCalendar.date(from: completitionDate as DateComponents)!
+
+            //here we change the seconds to hours,minutes and days
+            let CompetitionDayDifference = calendar.dateComponents([.day, .hour, .minute], from: currentDate!, to: competitionDay)
+
+
+            //finally, here we set the variable to our remaining time
+            let daysLeft = CompetitionDayDifference.day
+            let hoursLeft = CompetitionDayDifference.hour
+            let minutesLeft = CompetitionDayDifference.minute
+
+            print("day:", daysLeft ?? "N/A", "hour:", hoursLeft ?? "N/A", "minute:", minutesLeft ?? "N/A")
+
+            //Set countdown label text
+            countDownLabel.text = "\(daysLeft ?? 0) Days, \(hoursLeft ?? 0) Hours, \(minutesLeft ?? 0) Minutes"
+        shareimprove this answer
+*/
         
         
     }
