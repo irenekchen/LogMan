@@ -40,42 +40,18 @@ class CustomSearchTextField: UITextField{
         buildSearchTableView()
         
     }
-    
-    
-    //////////////////////////////////////////////////////////////////////////////
-    // Text Field related methods
-    //////////////////////////////////////////////////////////////////////////////
+
     
     @objc open func textFieldDidChange(){
-        print("Text changed ...")
         filter()
         updateSearchTableView()
         tableView?.isHidden = false
     }
     
-    @objc open func textFieldDidBeginEditing() {
-        print("Begin Editing")
-    }
-    
-    @objc open func textFieldDidEndEditing() {
-        print("End editing")
-        
-    }
-    
-    @objc open func textFieldDidEndEditingOnExit() {
-        print("End on Exit")
-    }
-    
-    //////////////////////////////////////////////////////////////////////////////
-    // Data Handling methods
-    //////////////////////////////////////////////////////////////////////////////
-    
-    
     // MARK: CoreData manipulation methods
     
     // Don't need this function in this case
     func saveItems() {
-        print("Saving items")
         do {
             try context.save()
         } catch {
@@ -133,15 +109,8 @@ class CustomSearchTextField: UITextField{
 
 extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
     
-    
-    //////////////////////////////////////////////////////////////////////////////
-    // Table View related methods
-    //////////////////////////////////////////////////////////////////////////////
-    
-    
     // MARK: TableView creation and updating
     
-    // Create SearchTableview
     func buildSearchTableView() {
         
         if let tableView = tableView {
@@ -152,14 +121,12 @@ extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
             
         } else {
             addData()
-            print("tableView created")
             tableView = UITableView(frame: CGRect.zero)
         }
         
         updateSearchTableView()
     }
     
-    // Updating SearchtableView
     func updateSearchTableView() {
         
         if let tableView = tableView {
@@ -167,12 +134,10 @@ extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
             var tableHeight: CGFloat = 0
             tableHeight = tableView.contentSize.height
             
-            // Set a bottom margin of 10p
             if tableHeight < tableView.contentSize.height {
                 tableHeight -= 10
             }
             
-            // Set tableView frame
             var tableViewFrame = CGRect(x: 0, y: 0, width: frame.size.width - 4, height: tableHeight)
             tableViewFrame.origin = self.convert(tableViewFrame.origin, to: nil)
             tableViewFrame.origin.x += 2
@@ -229,33 +194,6 @@ extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
     
     
     // MARK: Early testing methods
-    /*
-    func addData(){
-        let a = Cargos(context: context)
-        a.cargoName = "Paris"
-        a.cargoProductCode = "France"
-        let b = Cargos(context: context)
-        b.cargoName = "Porto"
-        b.cargoProductCode = "France"
-        let c = Cargos(context: context)
-        c.cargoName = "Pavard"
-        c.cargoProductCode = "France"
-        let d = Cargos(context: context)
-        d.cargoName = "Parole"
-        d.cargoProductCode = "France"
-        let e = Cargos(context: context)
-        e.cargoName = "Paria"
-        e.cargoProductCode = "France"
-        
-        saveItems()
-        
-        dataList.append(a)
-        dataList.append(b)
-        dataList.append(c)
-        dataList.append(d)
-        dataList.append(e)
-    }
-    */
     func addData() {
         let context = ( UIApplication.shared.delegate as! AppDelegate ).persistentContainer.viewContext
         let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Cargos")

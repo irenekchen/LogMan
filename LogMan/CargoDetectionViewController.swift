@@ -40,12 +40,9 @@ class CargoDetectionViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
 
-    // MARK: - ARSCNViewDelegate
-    
+    // MARK: - ARSCNView Functions to implement protocol as delegate
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        
         let node = SCNNode()
-        
         if let objectAnchor = anchor as? ARObjectAnchor {
             let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
             
