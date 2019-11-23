@@ -106,7 +106,7 @@ class DeploymentDetailViewModel {
         }
     }
     
-    // TODO: can improve this
+    // TODO: need to fix this after authentication
     private func canTheUserJoinTheDeployment() {
         let userId = Auth.auth().currentUser?.uid
         let ownerId = viewData.deployment.ownerId

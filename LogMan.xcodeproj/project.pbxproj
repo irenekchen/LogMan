@@ -166,7 +166,7 @@
 		3358F725A0368F8B09F76F8E /* Pods_LogManUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA9BD9856965C23FCD1BE53 /* Pods_LogManUITests.framework */; };
 		55B3F9228F487CB96D940550 /* Pods_LogManTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC57EE9F4E4CD433D08C21A0 /* Pods_LogManTests.framework */; };
 		FC5C8EDA235FABAA00B87A73 /* CargoDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */; };
-		FC5C8EE1236130DF00B87A73 /* ProductInfo.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC5C8EE0236130DF00B87A73 /* ProductInfo.sks */; };
+		FC5C8EE1236130DF00B87A73 /* ObjectLabelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FC5C8EE0236130DF00B87A73 /* ObjectLabelScene.sks */; };
 		FC6DCFAA2355D96400308F43 /* CustomSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */; };
 		FC6DCFAC2355DB6400308F43 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6DCFAB2355DB6400308F43 /* SearchItem.swift */; };
 		FC7D29DC235BA6380080A167 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D29DB235BA6370080A167 /* CoreDataStack.swift */; };
@@ -459,7 +459,7 @@
 		BC57EE9F4E4CD433D08C21A0 /* Pods_LogManTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogManTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEC22DA7805C2301CBBDDF1 /* Pods-LogManTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogManTests.release.xcconfig"; path = "Target Support Files/Pods-LogManTests/Pods-LogManTests.release.xcconfig"; sourceTree = "<group>"; };
 		FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CargoDetailTableViewCell.swift; sourceTree = "<group>"; };
-		FC5C8EE0236130DF00B87A73 /* ProductInfo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ProductInfo.sks; sourceTree = "<group>"; };
+		FC5C8EE0236130DF00B87A73 /* ObjectLabelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ObjectLabelScene.sks; sourceTree = "<group>"; };
 		FC5C8EE22361381400B87A73 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchTextField.swift; sourceTree = "<group>"; };
 		FC6DCFAB2355DB6400308F43 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
@@ -880,7 +880,7 @@
 				FCBD22372353A8F500699B52 /* AppDelegate.swift */,
 				FCB5151D23614F32004B55DA /* CargoDetectionViewController.swift */,
 				FCBD223B2353A8F600699B52 /* Main.storyboard */,
-				FC5C8EE0236130DF00B87A73 /* ProductInfo.sks */,
+				FC5C8EE0236130DF00B87A73 /* ObjectLabelScene.sks */,
 				FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */,
 				FCBD22682355532E00699B52 /* AddItemViewController.swift */,
 				FC7D29DB235BA6370080A167 /* CoreDataStack.swift */,
@@ -1109,7 +1109,7 @@
 				14113130237FC05B00944829 /* Main.storyboard in Resources */,
 				FCBD22452353A8FA00699B52 /* LaunchScreen.storyboard in Resources */,
 				FCB515F723640B34004B55DA /* GoogleService-Info.plist in Resources */,
-				FC5C8EE1236130DF00B87A73 /* ProductInfo.sks in Resources */,
+				FC5C8EE1236130DF00B87A73 /* ObjectLabelScene.sks in Resources */,
 				FCB5151C23614EE7004B55DA /* art.scnassets in Resources */,
 				14113132237FC09600944829 /* Core in Resources */,
 				FCBD22422353A8FA00699B52 /* Assets.xcassets in Resources */,
