@@ -83,6 +83,8 @@ class DeploymentListViewModel {
         return Firestore.firestore().collection("DeploymentPlan").limit(to: 50)
     }
 }
+
+
 /*
 enum DocumentSnapshotExtensionError:Error {
     case decodingError

@@ -48,10 +48,24 @@ class CustomSearchTextField: UITextField{
         tableView?.isHidden = false
     }
     
+    @objc open func textFieldDidBeginEditing() {
+        print("Begin Editing")
+    }
+    
+    @objc open func textFieldDidEndEditing() {
+        print("End editing")
+        
+    }
+    
+    @objc open func textFieldDidEndEditingOnExit() {
+        print("End on Exit")
+    }
+
     // MARK: CoreData manipulation methods
     
     // Don't need this function in this case
     func saveItems() {
+        print("Saving items")
         do {
             try context.save()
         } catch {
@@ -111,6 +125,7 @@ extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
     
     // MARK: TableView creation and updating
     
+    // Create SearchTableview
     func buildSearchTableView() {
         
         if let tableView = tableView {
@@ -121,12 +136,14 @@ extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
             
         } else {
             addData()
+            print("tableView created")
             tableView = UITableView(frame: CGRect.zero)
         }
         
         updateSearchTableView()
     }
     
+    // Updating SearchtableView
     func updateSearchTableView() {
         
         if let tableView = tableView {
@@ -134,10 +151,12 @@ extension CustomSearchTextField: UITableViewDelegate, UITableViewDataSource {
             var tableHeight: CGFloat = 0
             tableHeight = tableView.contentSize.height
             
+            // Set a bottom margin of 10p
             if tableHeight < tableView.contentSize.height {
                 tableHeight -= 10
             }
             
+            // Set tableView frame
             var tableViewFrame = CGRect(x: 0, y: 0, width: frame.size.width - 4, height: tableHeight)
             tableViewFrame.origin = self.convert(tableViewFrame.origin, to: nil)
             tableViewFrame.origin.x += 2
