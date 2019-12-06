@@ -5,7 +5,6 @@
 //  Created by Florian Marcu on 8/20/18.
 //  Copyright © 2018 Instamobile. All rights reserved.
 //
-
 import Firebase
 import FirebaseFirestore
 import MessageKit

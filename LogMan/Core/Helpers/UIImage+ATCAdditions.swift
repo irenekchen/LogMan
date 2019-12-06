@@ -13,7 +13,6 @@ extension UIImage {
         var image = UIImage(named: name)!
         if template {
             image = image.withRenderingMode(.alwaysTemplate)
-            // YERRRRRRRRRR
         }
         return image
     }

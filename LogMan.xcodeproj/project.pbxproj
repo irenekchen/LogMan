@@ -8,160 +8,99 @@
 
 /* Begin PBXBuildFile section */
 		14113130237FC05B00944829 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBD223B2353A8F600699B52 /* Main.storyboard */; };
-		14113132237FC09600944829 /* Core in Resources */ = {isa = PBXBuildFile; fileRef = 14113131237FC09600944829 /* Core */; };
-		14113135237FC0E400944829 /* ChatUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113133237FC0E300944829 /* ChatUIConfiguration.swift */; };
-		14113136237FC0E400944829 /* ChatHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113134237FC0E300944829 /* ChatHostViewController.swift */; };
-		1411313A237FC19C00944829 /* ATCViewControllerContainerRowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113137237FC19C00944829 /* ATCViewControllerContainerRowAdapter.swift */; };
-		1411313B237FC19C00944829 /* ATCCarouselAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113138237FC19C00944829 /* ATCCarouselAdapter.swift */; };
-		1411313C237FC19C00944829 /* ATCStoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113139237FC19C00944829 /* ATCStoryAdapter.swift */; };
-		1411313F237FC1A600944829 /* ATCChatThreadAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411313D237FC1A500944829 /* ATCChatThreadAdapter.swift */; };
-		14113140237FC1A600944829 /* ATCChatUserStoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411313E237FC1A600944829 /* ATCChatUserStoryAdapter.swift */; };
-		14113143237FC1AB00944829 /* ATCChatChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113141237FC1AB00944829 /* ATCChatChannel.swift */; };
-		14113144237FC1AB00944829 /* ATChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113142237FC1AB00944829 /* ATChatMessage.swift */; };
-		14113147237FC1B000944829 /* ATCChatMockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113145237FC1AF00944829 /* ATCChatMockStore.swift */; };
-		14113148237FC1B000944829 /* ATCRemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113146237FC1B000944829 /* ATCRemoteData.swift */; };
-		1411314B237FC1C000944829 /* ATCUserStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113149237FC1C000944829 /* ATCUserStoryCollectionViewCell.swift */; };
-		1411314C237FC1C000944829 /* ATCThreadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411314A237FC1C000944829 /* ATCThreadCollectionViewCell.swift */; };
-		14113150237FC1C600944829 /* ATCChatHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411314D237FC1C500944829 /* ATCChatHomeViewController.swift */; };
-		14113151237FC1C600944829 /* ATCChatThreadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411314E237FC1C500944829 /* ATCChatThreadsViewController.swift */; };
-		14113152237FC1C600944829 /* ATCChatThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411314F237FC1C500944829 /* ATCChatThreadViewController.swift */; };
-		1411315A237FC1CE00944829 /* ATCGenericLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113153237FC1CE00944829 /* ATCGenericLocalDataSource.swift */; };
-		1411315B237FC1CE00944829 /* UIImage+ATCAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113154237FC1CE00944829 /* UIImage+ATCAdditions.swift */; };
-		1411315C237FC1CE00944829 /* ATCUIGenericConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113155237FC1CE00944829 /* ATCUIGenericConfigurationProtocol.swift */; };
-		1411315D237FC1CE00944829 /* ATCGenericLocalHeteroDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113156237FC1CE00944829 /* ATCGenericLocalHeteroDataSource.swift */; };
-		1411315E237FC1CE00944829 /* UITabBarItem+ATCAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113157237FC1CE00944829 /* UITabBarItem+ATCAdditions.swift */; };
-		1411315F237FC1CE00944829 /* TimeFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113158237FC1CE00944829 /* TimeFormatHelper.swift */; };
-		14113160237FC1CE00944829 /* ATCGenericFirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113159237FC1CE00944829 /* ATCGenericFirebaseDataSource.swift */; };
-		14113163237FC20500944829 /* ATCViewControllerContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113161237FC20500944829 /* ATCViewControllerContainerViewModel.swift */; };
-		14113164237FC20500944829 /* ATCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113162237FC20500944829 /* ATCUser.swift */; };
-		14113188237FC21B00944829 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113165237FC21700944829 /* ConstraintMakerFinalizable.swift */; };
-		14113189237FC21B00944829 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113166237FC21700944829 /* ConstraintDSL.swift */; };
-		1411318A237FC21B00944829 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113167237FC21700944829 /* ConstraintConstantTarget.swift */; };
-		1411318B237FC21B00944829 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113168237FC21700944829 /* Typealiases.swift */; };
-		1411318C237FC21B00944829 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113169237FC21700944829 /* ConstraintLayoutGuide.swift */; };
-		1411318D237FC21B00944829 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411316A237FC21700944829 /* ConstraintLayoutSupportDSL.swift */; };
-		1411318E237FC21B00944829 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411316B237FC21700944829 /* ConstraintAttributes.swift */; };
-		1411318F237FC21B00944829 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411316C237FC21800944829 /* ConstraintConfig.swift */; };
-		14113190237FC21B00944829 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411316D237FC21800944829 /* ConstraintOffsetTarget.swift */; };
-		14113191237FC21B00944829 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411316E237FC21800944829 /* ConstraintRelatableTarget.swift */; };
-		14113192237FC21B00944829 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411316F237FC21800944829 /* ConstraintPriority.swift */; };
-		14113193237FC21B00944829 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113170237FC21800944829 /* ConstraintMakerPriortizable.swift */; };
-		14113194237FC21B00944829 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113171237FC21800944829 /* ConstraintLayoutSupport.swift */; };
-		14113195237FC21B00944829 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113172237FC21800944829 /* ConstraintMakerRelatable.swift */; };
-		14113196237FC21B00944829 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113173237FC21800944829 /* Constraint.swift */; };
-		14113197237FC21B00944829 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113174237FC21900944829 /* ConstraintInsetTarget.swift */; };
-		14113198237FC21B00944829 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113175237FC21900944829 /* ConstraintItem.swift */; };
-		14113199237FC21B00944829 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113176237FC21900944829 /* ConstraintDescription.swift */; };
-		1411319A237FC21B00944829 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113177237FC21900944829 /* ConstraintView.swift */; };
-		1411319B237FC21B00944829 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113178237FC21900944829 /* ConstraintPriorityTarget.swift */; };
-		1411319C237FC21B00944829 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113179237FC21900944829 /* ConstraintMaker.swift */; };
-		1411319D237FC21B00944829 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411317A237FC21900944829 /* ConstraintViewDSL.swift */; };
-		1411319E237FC21B00944829 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411317B237FC21900944829 /* ConstraintLayoutGuide+Extensions.swift */; };
-		1411319F237FC21B00944829 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411317C237FC21900944829 /* ConstraintMakerEditable.swift */; };
-		141131A0237FC21B00944829 /* SnapKit.h in Sources */ = {isa = PBXBuildFile; fileRef = 1411317D237FC21900944829 /* SnapKit.h */; };
-		141131A1237FC21B00944829 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411317E237FC21A00944829 /* ConstraintView+Extensions.swift */; };
-		141131A2237FC21B00944829 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411317F237FC21A00944829 /* ConstraintLayoutGuideDSL.swift */; };
-		141131A3237FC21B00944829 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113180237FC21A00944829 /* ConstraintMakerExtendable.swift */; };
-		141131A4237FC21B00944829 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113181237FC21A00944829 /* ConstraintInsets.swift */; };
-		141131A5237FC21B00944829 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113182237FC21A00944829 /* ConstraintMultiplierTarget.swift */; };
-		141131A6237FC21B00944829 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113183237FC21A00944829 /* ConstraintRelation.swift */; };
-		141131A7237FC21B00944829 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113184237FC21A00944829 /* LayoutConstraint.swift */; };
-		141131A8237FC21B00944829 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113185237FC21A00944829 /* UILayoutSupport+Extensions.swift */; };
-		141131A9237FC21B00944829 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113186237FC21A00944829 /* LayoutConstraintItem.swift */; };
-		141131AA237FC21B00944829 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14113187237FC21A00944829 /* Debugging.swift */; };
-		141131B2237FC22800944829 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131AB237FC22700944829 /* Date.swift */; };
-		141131B3237FC22800944829 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131AC237FC22700944829 /* String.swift */; };
-		141131B4237FC22800944829 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131AD237FC22700944829 /* UIColor.swift */; };
-		141131B5237FC22800944829 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131AE237FC22800944829 /* UIImage.swift */; };
-		141131B6237FC22800944829 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131AF237FC22800944829 /* UIScrollView.swift */; };
-		141131B7237FC22800944829 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131B0237FC22800944829 /* UITextField.swift */; };
-		141131B8237FC22800944829 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131B1237FC22800944829 /* UIView.swift */; };
-		141131BA237FC23600944829 /* ATCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131B9237FC23600944829 /* ATCGenericCollectionViewController.swift */; };
-		141131BC237FC23D00944829 /* UIViewController+ATCAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131BB237FC23D00944829 /* UIViewController+ATCAdditions.swift */; };
-		141131BF237FC24500944829 /* ATCLiquidCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131BD237FC24400944829 /* ATCLiquidCollectionViewLayout.swift */; };
-		141131C0237FC24500944829 /* ATCCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131BE237FC24400944829 /* ATCCollectionViewFlowLayout.swift */; };
-		141131CB237FC24E00944829 /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131C1237FC24D00944829 /* ATCMenuItemCollectionViewCellProtocol.swift */; };
-		141131CC237FC24E00944829 /* ATCMenuHeaderTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 141131C2237FC24D00944829 /* ATCMenuHeaderTableViewCell.xib */; };
-		141131CD237FC24E00944829 /* ATCMenuHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131C3237FC24D00944829 /* ATCMenuHeaderTableViewCell.swift */; };
-		141131CE237FC24E00944829 /* ATCHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131C4237FC24E00944829 /* ATCHostViewController.swift */; };
-		141131CF237FC24E00944829 /* ATCMenuItemRowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131C5237FC24E00944829 /* ATCMenuItemRowAdapter.swift */; };
-		141131D0237FC24E00944829 /* ATCMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131C6237FC24E00944829 /* ATCMenuTableViewController.swift */; };
-		141131D1237FC24E00944829 /* ATCMenuTableViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 141131C7237FC24E00944829 /* ATCMenuTableViewController.xib */; };
-		141131D2237FC24E00944829 /* ATCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131C8237FC24E00944829 /* ATCNavigationController.swift */; };
-		141131D3237FC24E00944829 /* ATCMenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131C9237FC24E00944829 /* ATCMenuCollectionViewController.swift */; };
-		141131D4237FC24E00944829 /* ATCDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131CA237FC24E00944829 /* ATCDrawerController.swift */; };
-		141131DB237FC25C00944829 /* ATCCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131D5237FC25B00944829 /* ATCCarouselCollectionViewCell.swift */; };
-		141131DC237FC25C00944829 /* ATCStoryCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 141131D6237FC25B00944829 /* ATCStoryCollectionViewCell.xib */; };
-		141131DD237FC25C00944829 /* ATCCarouselCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 141131D7237FC25B00944829 /* ATCCarouselCollectionViewCell.xib */; };
-		141131DE237FC25C00944829 /* ATCStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131D8237FC25B00944829 /* ATCStoryCollectionViewCell.swift */; };
-		141131DF237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131D9237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.swift */; };
-		141131E0237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 141131DA237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.xib */; };
-		141131E3237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 141131E1237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.xib */; };
-		141131E4237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131E2237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.swift */; };
-		141131E8237FC26800944829 /* ATCMessengerUserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131E5237FC26800944829 /* ATCMessengerUserAdapter.swift */; };
-		141131E9237FC26800944829 /* ATCMessengerUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141131E6237FC26800944829 /* ATCMessengerUserCollectionViewCell.swift */; };
-		141131EA237FC26800944829 /* ATCMessengerUserCollectionViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 141131E7237FC26800944829 /* ATCMessengerUserCollectionViewCell.xib */; };
-		141132762380F18700944829 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132312380F17F00944829 /* UIView.swift */; };
-		141132772380F18700944829 /* ATCMenuItemRowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132462380F18200944829 /* ATCMenuItemRowAdapter.swift */; };
-		141132782380F18700944829 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132432380F18200944829 /* ConstraintMakerFinalizable.swift */; };
-		141132792380F18700944829 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132672380F18600944829 /* ConstraintConfig.swift */; };
-		1411327A2380F18700944829 /* ATCMenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132372380F18000944829 /* ATCMenuCollectionViewController.swift */; };
-		1411327B2380F18700944829 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411325F2380F18500944829 /* LayoutConstraintItem.swift */; };
-		1411327C2380F18700944829 /* ATCLiquidCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132582380F18400944829 /* ATCLiquidCollectionViewLayout.swift */; };
-		1411327D2380F18700944829 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411324C2380F18300944829 /* ConstraintOffsetTarget.swift */; };
-		1411327E2380F18700944829 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132722380F18700944829 /* Debugging.swift */; };
-		1411327F2380F18700944829 /* ATCStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411324E2380F18300944829 /* ATCStoryCollectionViewCell.swift */; };
-		141132802380F18700944829 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411324B2380F18200944829 /* ConstraintInsetTarget.swift */; };
-		141132812380F18700944829 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411323B2380F18100944829 /* ConstraintItem.swift */; };
-		141132822380F18700944829 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132622380F18500944829 /* ConstraintPriority.swift */; };
-		141132832380F18700944829 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132392380F18100944829 /* Constraint.swift */; };
-		141132842380F18700944829 /* ATCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132492380F18200944829 /* ATCGenericCollectionViewController.swift */; };
-		141132852380F18700944829 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411326E2380F18600944829 /* ConstraintView.swift */; };
-		141132862380F18700944829 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132522380F18300944829 /* LayoutConstraint.swift */; };
-		141132872380F18700944829 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132732380F18700944829 /* UIScrollView.swift */; };
-		141132882380F18700944829 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132692380F18600944829 /* ConstraintDescription.swift */; };
-		141132892380F18700944829 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132412380F18100944829 /* ConstraintPriorityTarget.swift */; };
-		1411328A2380F18700944829 /* ATCCircledIconMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132542380F18300944829 /* ATCCircledIconMenuCollectionViewCell.swift */; };
-		1411328B2380F18700944829 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132632380F18500944829 /* Typealiases.swift */; };
-		1411328C2380F18700944829 /* ATCMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132702380F18600944829 /* ATCMenuTableViewController.swift */; };
-		1411328D2380F18700944829 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411326C2380F18600944829 /* ConstraintMakerRelatable.swift */; };
-		1411328E2380F18700944829 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411324A2380F18200944829 /* ConstraintInsets.swift */; };
-		1411328F2380F18700944829 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132422380F18200944829 /* ConstraintMaker.swift */; };
-		141132902380F18700944829 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132362380F18000944829 /* ConstraintMakerExtendable.swift */; };
-		141132912380F18700944829 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411323F2380F18100944829 /* ConstraintLayoutGuide.swift */; };
-		141132922380F18700944829 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132662380F18500944829 /* UITextField.swift */; };
-		141132932380F18700944829 /* ATCHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411323C2380F18100944829 /* ATCHostViewController.swift */; };
-		141132942380F18700944829 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411325A2380F18400944829 /* ConstraintConstantTarget.swift */; };
-		141132952380F18700944829 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411325B2380F18400944829 /* String.swift */; };
-		141132962380F18700944829 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132572380F18400944829 /* ConstraintLayoutGuideDSL.swift */; };
-		141132972380F18700944829 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132502380F18300944829 /* ConstraintView+Extensions.swift */; };
-		141132982380F18700944829 /* ATCViewControllerContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132442380F18200944829 /* ATCViewControllerContainerCollectionViewCell.swift */; };
-		141132992380F18700944829 /* ATCMenuHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132742380F18700944829 /* ATCMenuHeaderTableViewCell.swift */; };
-		1411329A2380F18700944829 /* ATCCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411326F2380F18600944829 /* ATCCollectionViewFlowLayout.swift */; };
-		1411329B2380F18700944829 /* ATCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132602380F18500944829 /* ATCNavigationController.swift */; };
-		1411329C2380F18700944829 /* ATCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132652380F18500944829 /* ATCUser.swift */; };
-		1411329D2380F18700944829 /* ATCMessengerUserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132642380F18500944829 /* ATCMessengerUserAdapter.swift */; };
-		1411329E2380F18700944829 /* ATCViewControllerContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132382380F18000944829 /* ATCViewControllerContainerViewModel.swift */; };
-		1411329F2380F18700944829 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132402380F18100944829 /* ConstraintMakerPriortizable.swift */; };
-		141132A02380F18700944829 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411323A2380F18100944829 /* ConstraintDSL.swift */; };
-		141132A12380F18700944829 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132712380F18600944829 /* ConstraintLayoutSupport.swift */; };
-		141132A22380F18700944829 /* ATCDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132552380F18400944829 /* ATCDrawerController.swift */; };
-		141132A32380F18700944829 /* ATCMessengerUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132472380F18200944829 /* ATCMessengerUserCollectionViewCell.swift */; };
-		141132A42380F18700944829 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132332380F18000944829 /* ConstraintLayoutSupportDSL.swift */; };
-		141132A52380F18700944829 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132592380F18400944829 /* ConstraintViewDSL.swift */; };
-		141132A62380F18700944829 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132682380F18600944829 /* UILayoutSupport+Extensions.swift */; };
-		141132A72380F18700944829 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411323D2380F18100944829 /* ConstraintMakerEditable.swift */; };
-		141132A82380F18700944829 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132322380F18000944829 /* ConstraintAttributes.swift */; };
-		141132A92380F18700944829 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411326B2380F18600944829 /* ConstraintMultiplierTarget.swift */; };
-		141132AA2380F18700944829 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411325E2380F18500944829 /* ConstraintLayoutGuide+Extensions.swift */; };
-		141132AB2380F18700944829 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411326D2380F18600944829 /* UIColor.swift */; };
-		141132AC2380F18700944829 /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132562380F18400944829 /* ATCMenuItemCollectionViewCellProtocol.swift */; };
-		141132AD2380F18700944829 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132342380F18000944829 /* UIImage.swift */; };
-		141132AE2380F18700944829 /* ATCCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132482380F18200944829 /* ATCCarouselCollectionViewCell.swift */; };
-		141132AF2380F18700944829 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132512380F18300944829 /* ConstraintRelatableTarget.swift */; };
-		141132B02380F18700944829 /* UIViewController+ATCAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132752380F18700944829 /* UIViewController+ATCAdditions.swift */; };
-		141132B12380F18700944829 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411324F2380F18300944829 /* ConstraintRelation.swift */; };
-		141132B22380F18700944829 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141132452380F18200944829 /* Date.swift */; };
+		14DC8EBB239AF2F0001E0AD1 /* ATCChatChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E4A239AF2EF001E0AD1 /* ATCChatChannel.swift */; };
+		14DC8EBC239AF2F0001E0AD1 /* ATChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E4B239AF2EF001E0AD1 /* ATChatMessage.swift */; };
+		14DC8EBD239AF2F0001E0AD1 /* ATCChatUserStoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E4D239AF2EF001E0AD1 /* ATCChatUserStoryAdapter.swift */; };
+		14DC8EBE239AF2F0001E0AD1 /* ATCChatThreadAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E4E239AF2EF001E0AD1 /* ATCChatThreadAdapter.swift */; };
+		14DC8EBF239AF2F0001E0AD1 /* ATCChatThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E50239AF2EF001E0AD1 /* ATCChatThreadViewController.swift */; };
+		14DC8EC0239AF2F0001E0AD1 /* ATCChatHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E51239AF2EF001E0AD1 /* ATCChatHomeViewController.swift */; };
+		14DC8EC1239AF2F0001E0AD1 /* ATCChatThreadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E52239AF2EF001E0AD1 /* ATCChatThreadsViewController.swift */; };
+		14DC8EC2239AF2F0001E0AD1 /* ATCThreadCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E55239AF2EF001E0AD1 /* ATCThreadCollectionViewCell.xib */; };
+		14DC8EC3239AF2F0001E0AD1 /* ATCUserStoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E56239AF2EF001E0AD1 /* ATCUserStoryCollectionViewCell.xib */; };
+		14DC8EC4239AF2F0001E0AD1 /* ATCThreadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E57239AF2EF001E0AD1 /* ATCThreadCollectionViewCell.swift */; };
+		14DC8EC5239AF2F0001E0AD1 /* ATCUserStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E58239AF2EF001E0AD1 /* ATCUserStoryCollectionViewCell.swift */; };
+		14DC8EC6239AF2F0001E0AD1 /* ATCChatMockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E5A239AF2EF001E0AD1 /* ATCChatMockStore.swift */; };
+		14DC8EC7239AF2F0001E0AD1 /* ATCRemoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E5B239AF2EF001E0AD1 /* ATCRemoteData.swift */; };
+		14DC8EC8239AF2F0001E0AD1 /* ATCViewControllerContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E5D239AF2EF001E0AD1 /* ATCViewControllerContainerViewModel.swift */; };
+		14DC8EC9239AF2F0001E0AD1 /* ATCUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E5E239AF2EF001E0AD1 /* ATCUser.swift */; };
+		14DC8ECA239AF2F0001E0AD1 /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E60239AF2EF001E0AD1 /* UIScrollView.swift */; };
+		14DC8ECB239AF2F0001E0AD1 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E61239AF2EF001E0AD1 /* Date.swift */; };
+		14DC8ECC239AF2F0001E0AD1 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E62239AF2EF001E0AD1 /* UIView.swift */; };
+		14DC8ECD239AF2F0001E0AD1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E63239AF2EF001E0AD1 /* UIColor.swift */; };
+		14DC8ECE239AF2F0001E0AD1 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E64239AF2EF001E0AD1 /* UITextField.swift */; };
+		14DC8ECF239AF2F0001E0AD1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E65239AF2EF001E0AD1 /* String.swift */; };
+		14DC8ED0239AF2F0001E0AD1 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E66239AF2EF001E0AD1 /* UIImage.swift */; };
+		14DC8ED1239AF2F0001E0AD1 /* ATCStoryAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E68239AF2EF001E0AD1 /* ATCStoryAdapter.swift */; };
+		14DC8ED2239AF2F0001E0AD1 /* ATCViewControllerContainerRowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E69239AF2EF001E0AD1 /* ATCViewControllerContainerRowAdapter.swift */; };
+		14DC8ED3239AF2F0001E0AD1 /* ATCCarouselAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E6A239AF2EF001E0AD1 /* ATCCarouselAdapter.swift */; };
+		14DC8ED4239AF2F0001E0AD1 /* UIViewController+ATCAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E6C239AF2EF001E0AD1 /* UIViewController+ATCAdditions.swift */; };
+		14DC8ED5239AF2F0001E0AD1 /* ATCHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E6E239AF2EF001E0AD1 /* ATCHostViewController.swift */; };
+		14DC8ED6239AF2F0001E0AD1 /* ATCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E6F239AF2EF001E0AD1 /* ATCNavigationController.swift */; };
+		14DC8ED7239AF2F0001E0AD1 /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E70239AF2EF001E0AD1 /* ATCMenuItemCollectionViewCellProtocol.swift */; };
+		14DC8ED8239AF2F0001E0AD1 /* ATCDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E71239AF2EF001E0AD1 /* ATCDrawerController.swift */; };
+		14DC8ED9239AF2F0001E0AD1 /* ATCMenuTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E72239AF2EF001E0AD1 /* ATCMenuTableViewController.xib */; };
+		14DC8EDA239AF2F0001E0AD1 /* ATCMenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E73239AF2EF001E0AD1 /* ATCMenuCollectionViewController.swift */; };
+		14DC8EDB239AF2F0001E0AD1 /* ATCMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E74239AF2EF001E0AD1 /* ATCMenuTableViewController.swift */; };
+		14DC8EDC239AF2F0001E0AD1 /* ATCMenuHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E75239AF2EF001E0AD1 /* ATCMenuHeaderTableViewCell.xib */; };
+		14DC8EDD239AF2F0001E0AD1 /* ATCMenuHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E76239AF2EF001E0AD1 /* ATCMenuHeaderTableViewCell.swift */; };
+		14DC8EDE239AF2F0001E0AD1 /* ATCMenuItemRowAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E77239AF2EF001E0AD1 /* ATCMenuItemRowAdapter.swift */; };
+		14DC8EDF239AF2F0001E0AD1 /* ATCGenericCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E78239AF2EF001E0AD1 /* ATCGenericCollectionViewController.swift */; };
+		14DC8EE0239AF2F0001E0AD1 /* ATCLiquidCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E7A239AF2EF001E0AD1 /* ATCLiquidCollectionViewLayout.swift */; };
+		14DC8EE1239AF2F0001E0AD1 /* ATCCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E7B239AF2EF001E0AD1 /* ATCCollectionViewFlowLayout.swift */; };
+		14DC8EE2239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E7E239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.swift */; };
+		14DC8EE3239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E7F239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.xib */; };
+		14DC8EE4239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E80239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.xib */; };
+		14DC8EE5239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E81239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.swift */; };
+		14DC8EE6239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E83239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.xib */; };
+		14DC8EE7239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E84239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.swift */; };
+		14DC8EE8239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E86239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.swift */; };
+		14DC8EE9239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E87239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.xib */; };
+		14DC8EEA239AF2F0001E0AD1 /* ATCMessengerUserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E88239AF2F0001E0AD1 /* ATCMessengerUserAdapter.swift */; };
+		14DC8EEB239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E89239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.swift */; };
+		14DC8EEC239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E8A239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.xib */; };
+		14DC8EED239AF2F0001E0AD1 /* Misc.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E8C239AF2F0001E0AD1 /* Misc.xcassets */; };
+		14DC8EEE239AF2F0001E0AD1 /* CoreImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DC8E8D239AF2F0001E0AD1 /* CoreImages.xcassets */; };
+		14DC8EEF239AF2F0001E0AD1 /* ATCGenericLocalHeteroDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E8F239AF2F0001E0AD1 /* ATCGenericLocalHeteroDataSource.swift */; };
+		14DC8EF0239AF2F0001E0AD1 /* ATCGenericLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E90239AF2F0001E0AD1 /* ATCGenericLocalDataSource.swift */; };
+		14DC8EF1239AF2F0001E0AD1 /* ATCUIGenericConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E91239AF2F0001E0AD1 /* ATCUIGenericConfigurationProtocol.swift */; };
+		14DC8EF2239AF2F0001E0AD1 /* UITabBarItem+ATCAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E92239AF2F0001E0AD1 /* UITabBarItem+ATCAdditions.swift */; };
+		14DC8EF3239AF2F0001E0AD1 /* TimeFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E93239AF2F0001E0AD1 /* TimeFormatHelper.swift */; };
+		14DC8EF4239AF2F0001E0AD1 /* ATCGenericFirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E94239AF2F0001E0AD1 /* ATCGenericFirebaseDataSource.swift */; };
+		14DC8EF5239AF2F0001E0AD1 /* UIImage+ATCAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E95239AF2F0001E0AD1 /* UIImage+ATCAdditions.swift */; };
+		14DC8EF6239AF2F0001E0AD1 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E98239AF2F0001E0AD1 /* ConstraintMultiplierTarget.swift */; };
+		14DC8EF7239AF2F0001E0AD1 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E99239AF2F0001E0AD1 /* LayoutConstraintItem.swift */; };
+		14DC8EF8239AF2F0001E0AD1 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E9A239AF2F0001E0AD1 /* ConstraintDescription.swift */; };
+		14DC8EF9239AF2F0001E0AD1 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E9B239AF2F0001E0AD1 /* ConstraintMakerPriortizable.swift */; };
+		14DC8EFA239AF2F0001E0AD1 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E9C239AF2F0001E0AD1 /* ConstraintAttributes.swift */; };
+		14DC8EFB239AF2F0001E0AD1 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E9D239AF2F0001E0AD1 /* ConstraintViewDSL.swift */; };
+		14DC8EFC239AF2F0001E0AD1 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E9E239AF2F0001E0AD1 /* ConstraintPriorityTarget.swift */; };
+		14DC8EFD239AF2F0001E0AD1 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8E9F239AF2F0001E0AD1 /* ConstraintInsets.swift */; };
+		14DC8EFE239AF2F0001E0AD1 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA0239AF2F0001E0AD1 /* ConstraintMakerFinalizable.swift */; };
+		14DC8EFF239AF2F0001E0AD1 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA1239AF2F0001E0AD1 /* ConstraintDSL.swift */; };
+		14DC8F00239AF2F0001E0AD1 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA2239AF2F0001E0AD1 /* ConstraintMakerExtendable.swift */; };
+		14DC8F01239AF2F0001E0AD1 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA3239AF2F0001E0AD1 /* ConstraintPriority.swift */; };
+		14DC8F02239AF2F0001E0AD1 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA4239AF2F0001E0AD1 /* ConstraintInsetTarget.swift */; };
+		14DC8F03239AF2F0001E0AD1 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA6239AF2F0001E0AD1 /* ConstraintConfig.swift */; };
+		14DC8F04239AF2F0001E0AD1 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA7239AF2F0001E0AD1 /* UILayoutSupport+Extensions.swift */; };
+		14DC8F05239AF2F0001E0AD1 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA8239AF2F0001E0AD1 /* ConstraintView.swift */; };
+		14DC8F06239AF2F0001E0AD1 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EA9239AF2F0001E0AD1 /* ConstraintLayoutGuide.swift */; };
+		14DC8F07239AF2F0001E0AD1 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EAA239AF2F0001E0AD1 /* ConstraintLayoutSupport.swift */; };
+		14DC8F08239AF2F0001E0AD1 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EAB239AF2F0001E0AD1 /* Typealiases.swift */; };
+		14DC8F09239AF2F0001E0AD1 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EAC239AF2F0001E0AD1 /* ConstraintConstantTarget.swift */; };
+		14DC8F0A239AF2F0001E0AD1 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EAD239AF2F0001E0AD1 /* ConstraintOffsetTarget.swift */; };
+		14DC8F0B239AF2F0001E0AD1 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EAE239AF2F0001E0AD1 /* ConstraintMakerEditable.swift */; };
+		14DC8F0C239AF2F0001E0AD1 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EAF239AF2F0001E0AD1 /* ConstraintMaker.swift */; };
+		14DC8F0D239AF2F0001E0AD1 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB0239AF2F0001E0AD1 /* ConstraintRelation.swift */; };
+		14DC8F0E239AF2F0001E0AD1 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB1239AF2F0001E0AD1 /* ConstraintLayoutGuideDSL.swift */; };
+		14DC8F0F239AF2F0001E0AD1 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB2239AF2F0001E0AD1 /* ConstraintView+Extensions.swift */; };
+		14DC8F10239AF2F0001E0AD1 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB3239AF2F0001E0AD1 /* ConstraintItem.swift */; };
+		14DC8F11239AF2F0001E0AD1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB4239AF2F0001E0AD1 /* Constraint.swift */; };
+		14DC8F12239AF2F0001E0AD1 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB5239AF2F0001E0AD1 /* Debugging.swift */; };
+		14DC8F13239AF2F0001E0AD1 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB6239AF2F0001E0AD1 /* ConstraintRelatableTarget.swift */; };
+		14DC8F14239AF2F0001E0AD1 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB7239AF2F0001E0AD1 /* LayoutConstraint.swift */; };
+		14DC8F15239AF2F0001E0AD1 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB8239AF2F0001E0AD1 /* ConstraintLayoutGuide+Extensions.swift */; };
+		14DC8F16239AF2F0001E0AD1 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EB9239AF2F0001E0AD1 /* ConstraintLayoutSupportDSL.swift */; };
+		14DC8F17239AF2F0001E0AD1 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DC8EBA239AF2F0001E0AD1 /* ConstraintMakerRelatable.swift */; };
 		175BFD1C07B0CB44CA99AC27 /* Pods_LogMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C71FC08E315CE862E243D46 /* Pods_LogMan.framework */; };
 		3358F725A0368F8B09F76F8E /* Pods_LogManUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA9BD9856965C23FCD1BE53 /* Pods_LogManUITests.framework */; };
 		55B3F9228F487CB96D940550 /* Pods_LogManTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC57EE9F4E4CD433D08C21A0 /* Pods_LogManTests.framework */; };
@@ -220,237 +159,100 @@
 /* Begin PBXFileReference section */
 		05AFCA7B1BA0122A63A0DF42 /* Pods-LogMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogMan.release.xcconfig"; path = "Target Support Files/Pods-LogMan/Pods-LogMan.release.xcconfig"; sourceTree = "<group>"; };
 		0FA84A2D9E0E443E379F89B6 /* Pods-LogManUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogManUITests.debug.xcconfig"; path = "Target Support Files/Pods-LogManUITests/Pods-LogManUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		14113131237FC09600944829 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Core; sourceTree = "<group>"; };
-		14113133237FC0E300944829 /* ChatUIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatUIConfiguration.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 3/ChatApp/ChatUIConfiguration.swift"; sourceTree = "<group>"; };
-		14113134237FC0E300944829 /* ChatHostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatHostViewController.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 3/ChatApp/ChatHostViewController.swift"; sourceTree = "<group>"; };
-		14113137237FC19C00944829 /* ATCViewControllerContainerRowAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCViewControllerContainerRowAdapter.swift; path = ../LogMan/Core/Adapters/ATCViewControllerContainerRowAdapter.swift; sourceTree = "<group>"; };
-		14113138237FC19C00944829 /* ATCCarouselAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCCarouselAdapter.swift; path = ../LogMan/Core/Adapters/ATCCarouselAdapter.swift; sourceTree = "<group>"; };
-		14113139237FC19C00944829 /* ATCStoryAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCStoryAdapter.swift; path = ../LogMan/Core/Adapters/ATCStoryAdapter.swift; sourceTree = "<group>"; };
-		1411313D237FC1A500944829 /* ATCChatThreadAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCChatThreadAdapter.swift; path = ../LogMan/Core/Chat/Adapters/ATCChatThreadAdapter.swift; sourceTree = "<group>"; };
-		1411313E237FC1A600944829 /* ATCChatUserStoryAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCChatUserStoryAdapter.swift; path = ../LogMan/Core/Chat/Adapters/ATCChatUserStoryAdapter.swift; sourceTree = "<group>"; };
-		14113141237FC1AB00944829 /* ATCChatChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCChatChannel.swift; path = ../LogMan/Core/Chat/Models/ATCChatChannel.swift; sourceTree = "<group>"; };
-		14113142237FC1AB00944829 /* ATChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATChatMessage.swift; path = ../LogMan/Core/Chat/Models/ATChatMessage.swift; sourceTree = "<group>"; };
-		14113145237FC1AF00944829 /* ATCChatMockStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCChatMockStore.swift; path = ../LogMan/Core/Chat/Store/ATCChatMockStore.swift; sourceTree = "<group>"; };
-		14113146237FC1B000944829 /* ATCRemoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCRemoteData.swift; path = ../LogMan/Core/Chat/Store/ATCRemoteData.swift; sourceTree = "<group>"; };
-		14113149237FC1C000944829 /* ATCUserStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCUserStoryCollectionViewCell.swift; path = ../LogMan/Core/Chat/Themes/Messenger/ATCUserStoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		1411314A237FC1C000944829 /* ATCThreadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCThreadCollectionViewCell.swift; path = ../LogMan/Core/Chat/Themes/Messenger/ATCThreadCollectionViewCell.swift; sourceTree = "<group>"; };
-		1411314D237FC1C500944829 /* ATCChatHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCChatHomeViewController.swift; path = ../LogMan/Core/Chat/ViewControllers/ATCChatHomeViewController.swift; sourceTree = "<group>"; };
-		1411314E237FC1C500944829 /* ATCChatThreadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCChatThreadsViewController.swift; path = ../LogMan/Core/Chat/ViewControllers/ATCChatThreadsViewController.swift; sourceTree = "<group>"; };
-		1411314F237FC1C500944829 /* ATCChatThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCChatThreadViewController.swift; path = ../LogMan/Core/Chat/ViewControllers/ATCChatThreadViewController.swift; sourceTree = "<group>"; };
-		14113153237FC1CE00944829 /* ATCGenericLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCGenericLocalDataSource.swift; path = ../LogMan/Core/Helpers/ATCGenericLocalDataSource.swift; sourceTree = "<group>"; };
-		14113154237FC1CE00944829 /* UIImage+ATCAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIImage+ATCAdditions.swift"; path = "../LogMan/Core/Helpers/UIImage+ATCAdditions.swift"; sourceTree = "<group>"; };
-		14113155237FC1CE00944829 /* ATCUIGenericConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCUIGenericConfigurationProtocol.swift; path = ../LogMan/Core/Helpers/ATCUIGenericConfigurationProtocol.swift; sourceTree = "<group>"; };
-		14113156237FC1CE00944829 /* ATCGenericLocalHeteroDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCGenericLocalHeteroDataSource.swift; path = ../LogMan/Core/Helpers/ATCGenericLocalHeteroDataSource.swift; sourceTree = "<group>"; };
-		14113157237FC1CE00944829 /* UITabBarItem+ATCAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITabBarItem+ATCAdditions.swift"; path = "../LogMan/Core/Helpers/UITabBarItem+ATCAdditions.swift"; sourceTree = "<group>"; };
-		14113158237FC1CE00944829 /* TimeFormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeFormatHelper.swift; path = ../LogMan/Core/Helpers/TimeFormatHelper.swift; sourceTree = "<group>"; };
-		14113159237FC1CE00944829 /* ATCGenericFirebaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCGenericFirebaseDataSource.swift; path = ../LogMan/Core/Helpers/ATCGenericFirebaseDataSource.swift; sourceTree = "<group>"; };
-		14113161237FC20500944829 /* ATCViewControllerContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCViewControllerContainerViewModel.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Models/ATCViewControllerContainerViewModel.swift"; sourceTree = "<group>"; };
-		14113162237FC20500944829 /* ATCUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCUser.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Models/ATCUser.swift"; sourceTree = "<group>"; };
-		14113165237FC21700944829 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerFinalizable.swift"; sourceTree = "<group>"; };
-		14113166237FC21700944829 /* ConstraintDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintDSL.swift"; sourceTree = "<group>"; };
-		14113167237FC21700944829 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintConstantTarget.swift"; sourceTree = "<group>"; };
-		14113168237FC21700944829 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/Typealiases.swift"; sourceTree = "<group>"; };
-		14113169237FC21700944829 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutGuide.swift"; sourceTree = "<group>"; };
-		1411316A237FC21700944829 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutSupportDSL.swift"; sourceTree = "<group>"; };
-		1411316B237FC21700944829 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintAttributes.swift"; sourceTree = "<group>"; };
-		1411316C237FC21800944829 /* ConstraintConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintConfig.swift"; sourceTree = "<group>"; };
-		1411316D237FC21800944829 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintOffsetTarget.swift"; sourceTree = "<group>"; };
-		1411316E237FC21800944829 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintRelatableTarget.swift"; sourceTree = "<group>"; };
-		1411316F237FC21800944829 /* ConstraintPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintPriority.swift"; sourceTree = "<group>"; };
-		14113170237FC21800944829 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerPriortizable.swift"; sourceTree = "<group>"; };
-		14113171237FC21800944829 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutSupport.swift"; sourceTree = "<group>"; };
-		14113172237FC21800944829 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerRelatable.swift"; sourceTree = "<group>"; };
-		14113173237FC21800944829 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/Constraint.swift"; sourceTree = "<group>"; };
-		14113174237FC21900944829 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintInsetTarget.swift"; sourceTree = "<group>"; };
-		14113175237FC21900944829 /* ConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintItem.swift"; sourceTree = "<group>"; };
-		14113176237FC21900944829 /* ConstraintDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintDescription.swift"; sourceTree = "<group>"; };
-		14113177237FC21900944829 /* ConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintView.swift"; sourceTree = "<group>"; };
-		14113178237FC21900944829 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintPriorityTarget.swift"; sourceTree = "<group>"; };
-		14113179237FC21900944829 /* ConstraintMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMaker.swift"; sourceTree = "<group>"; };
-		1411317A237FC21900944829 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintViewDSL.swift"; sourceTree = "<group>"; };
-		1411317B237FC21900944829 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		1411317C237FC21900944829 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerEditable.swift"; sourceTree = "<group>"; };
-		1411317D237FC21900944829 /* SnapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SnapKit.h; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/SnapKit.h"; sourceTree = "<group>"; };
-		1411317E237FC21A00944829 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		1411317F237FC21A00944829 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutGuideDSL.swift"; sourceTree = "<group>"; };
-		14113180237FC21A00944829 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerExtendable.swift"; sourceTree = "<group>"; };
-		14113181237FC21A00944829 /* ConstraintInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintInsets.swift"; sourceTree = "<group>"; };
-		14113182237FC21A00944829 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMultiplierTarget.swift"; sourceTree = "<group>"; };
-		14113183237FC21A00944829 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintRelation.swift"; sourceTree = "<group>"; };
-		14113184237FC21A00944829 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/LayoutConstraint.swift"; sourceTree = "<group>"; };
-		14113185237FC21A00944829 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		14113186237FC21A00944829 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/LayoutConstraintItem.swift"; sourceTree = "<group>"; };
-		14113187237FC21A00944829 /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/Debugging.swift"; sourceTree = "<group>"; };
-		141131AB237FC22700944829 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Date.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/Date.swift"; sourceTree = "<group>"; };
-		141131AC237FC22700944829 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/String.swift"; sourceTree = "<group>"; };
-		141131AD237FC22700944829 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIColor.swift"; sourceTree = "<group>"; };
-		141131AE237FC22800944829 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIImage.swift"; sourceTree = "<group>"; };
-		141131AF237FC22800944829 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIScrollView.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIScrollView.swift"; sourceTree = "<group>"; };
-		141131B0237FC22800944829 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextField.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UITextField.swift"; sourceTree = "<group>"; };
-		141131B1237FC22800944829 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIView.swift"; sourceTree = "<group>"; };
-		141131B9237FC23600944829 /* ATCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCGenericCollectionViewController.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/ATCGenericCollectionViewController.swift"; sourceTree = "<group>"; };
-		141131BB237FC23D00944829 /* UIViewController+ATCAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+ATCAdditions.swift"; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/UIViewController+ATCAdditions.swift"; sourceTree = "<group>"; };
-		141131BD237FC24400944829 /* ATCLiquidCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCLiquidCollectionViewLayout.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Layouts/ATCLiquidCollectionViewLayout.swift"; sourceTree = "<group>"; };
-		141131BE237FC24400944829 /* ATCCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCCollectionViewFlowLayout.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Layouts/ATCCollectionViewFlowLayout.swift"; sourceTree = "<group>"; };
-		141131C1237FC24D00944829 /* ATCMenuItemCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuItemCollectionViewCellProtocol.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuItemCollectionViewCellProtocol.swift"; sourceTree = "<group>"; };
-		141131C2237FC24D00944829 /* ATCMenuHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCMenuHeaderTableViewCell.xib; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuHeaderTableViewCell.xib"; sourceTree = "<group>"; };
-		141131C3237FC24D00944829 /* ATCMenuHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuHeaderTableViewCell.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuHeaderTableViewCell.swift"; sourceTree = "<group>"; };
-		141131C4237FC24E00944829 /* ATCHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCHostViewController.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCHostViewController.swift"; sourceTree = "<group>"; };
-		141131C5237FC24E00944829 /* ATCMenuItemRowAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuItemRowAdapter.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuItemRowAdapter.swift"; sourceTree = "<group>"; };
-		141131C6237FC24E00944829 /* ATCMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuTableViewController.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuTableViewController.swift"; sourceTree = "<group>"; };
-		141131C7237FC24E00944829 /* ATCMenuTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCMenuTableViewController.xib; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuTableViewController.xib"; sourceTree = "<group>"; };
-		141131C8237FC24E00944829 /* ATCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCNavigationController.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCNavigationController.swift"; sourceTree = "<group>"; };
-		141131C9237FC24E00944829 /* ATCMenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuCollectionViewController.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuCollectionViewController.swift"; sourceTree = "<group>"; };
-		141131CA237FC24E00944829 /* ATCDrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCDrawerController.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCDrawerController.swift"; sourceTree = "<group>"; };
-		141131D5237FC25B00944829 /* ATCCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCCarouselCollectionViewCell.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCCarouselCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141131D6237FC25B00944829 /* ATCStoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCStoryCollectionViewCell.xib; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCStoryCollectionViewCell.xib"; sourceTree = "<group>"; };
-		141131D7237FC25B00944829 /* ATCCarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCCarouselCollectionViewCell.xib; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCCarouselCollectionViewCell.xib"; sourceTree = "<group>"; };
-		141131D8237FC25B00944829 /* ATCStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCStoryCollectionViewCell.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCStoryCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141131D9237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCViewControllerContainerCollectionViewCell.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCViewControllerContainerCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141131DA237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCViewControllerContainerCollectionViewCell.xib; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCViewControllerContainerCollectionViewCell.xib"; sourceTree = "<group>"; };
-		141131E1237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCCircledIconMenuCollectionViewCell.xib; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/MenuCells/ATCCircledIconMenuCollectionViewCell.xib"; sourceTree = "<group>"; };
-		141131E2237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCCircledIconMenuCollectionViewCell.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/MenuCells/ATCCircledIconMenuCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141131E5237FC26800944829 /* ATCMessengerUserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMessengerUserAdapter.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/Users/ATCMessengerUserAdapter.swift"; sourceTree = "<group>"; };
-		141131E6237FC26800944829 /* ATCMessengerUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMessengerUserCollectionViewCell.swift; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/Users/ATCMessengerUserCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141131E7237FC26800944829 /* ATCMessengerUserCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCMessengerUserCollectionViewCell.xib; path = "../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/Users/ATCMessengerUserCollectionViewCell.xib"; sourceTree = "<group>"; };
-		141131EC2380DAB400944829 /* ATCMenuItemRowAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCMenuItemRowAdapter.swift; sourceTree = "<group>"; };
-		141131ED2380DAB700944829 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
-		141131EE2380DABA00944829 /* ConstraintMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
-		141131EF2380DABD00944829 /* ATCMenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCMenuCollectionViewController.swift; sourceTree = "<group>"; };
-		141131F02380DAC000944829 /* ATCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCNavigationController.swift; sourceTree = "<group>"; };
-		141131F12380DAC200944829 /* ATCMessengerUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCMessengerUserCollectionViewCell.swift; sourceTree = "<group>"; };
-		141131F22380DAC600944829 /* ATCStoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCStoryCollectionViewCell.xib; sourceTree = "<group>"; };
-		141131F32380DAC900944829 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		141131F42380DACC00944829 /* ATCMessengerUserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCMessengerUserAdapter.swift; sourceTree = "<group>"; };
-		141131F52380DACE00944829 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
-		141131F62380DAD100944829 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
-		141131F72380DAD400944829 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
-		141131F82380DAD700944829 /* SnapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
-		141131F92380DAD900944829 /* ATCMessengerUserCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCMessengerUserCollectionViewCell.xib; sourceTree = "<group>"; };
-		141131FA2380DADC00944829 /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
-		141131FB2380DADF00944829 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
-		141131FC2380DAE100944829 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
-		141131FD2380DAE400944829 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
-		141131FE2380DAE600944829 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		141131FF2380DAE900944829 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		141132002380DAED00944829 /* ConstraintDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
-		141132012380DAEF00944829 /* ConstraintInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
-		141132022380DAF200944829 /* ATCViewControllerContainerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCViewControllerContainerCollectionViewCell.xib; sourceTree = "<group>"; };
-		141132032380DAF400944829 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
-		141132042380DAF700944829 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		141132052380DAF900944829 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
-		141132062380DAFD00944829 /* ATCStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCStoryCollectionViewCell.swift; sourceTree = "<group>"; };
-		141132072380DB0000944829 /* ATCMenuTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCMenuTableViewController.xib; sourceTree = "<group>"; };
-		141132082380DB0200944829 /* ATCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCGenericCollectionViewController.swift; sourceTree = "<group>"; };
-		141132092380DB0500944829 /* ATCHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCHostViewController.swift; sourceTree = "<group>"; };
-		1411320A2380DB0700944829 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
-		1411320B2380DB0A00944829 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		1411320C2380DB0C00944829 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		1411320D2380DB0F00944829 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		1411320E2380DB1200944829 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
-		1411320F2380DB1500944829 /* UIViewController+ATCAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ATCAdditions.swift"; sourceTree = "<group>"; };
-		141132102380DB1800944829 /* ATCLiquidCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCLiquidCollectionViewLayout.swift; sourceTree = "<group>"; };
-		141132112380DB1B00944829 /* ConstraintPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintPriority.swift; sourceTree = "<group>"; };
-		141132122380DB2000944829 /* ATCCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
-		141132132380DB2200944829 /* ConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
-		141132142380DB2600944829 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		141132152380DB2A00944829 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		141132162380DB2F00944829 /* ATCMenuHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCMenuHeaderTableViewCell.xib; sourceTree = "<group>"; };
-		141132172380DB3400944829 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
-		141132182380DB3900944829 /* ATCCircledIconMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCCircledIconMenuCollectionViewCell.swift; sourceTree = "<group>"; };
-		141132192380DB3F00944829 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		1411321A2380DB4400944829 /* ATCUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCUser.swift; sourceTree = "<group>"; };
-		1411321B2380DB4700944829 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		1411321C2380DB4C00944829 /* ConstraintDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
-		1411321D2380DB5100944829 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
-		1411321E2380DB5600944829 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		1411321F2380DB5B00944829 /* ATCDrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCDrawerController.swift; sourceTree = "<group>"; };
-		141132202380DB5E00944829 /* ATCMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCMenuTableViewController.swift; sourceTree = "<group>"; };
-		141132212380DB6200944829 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		141132222380DB6500944829 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		141132232380DB6800944829 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
-		141132242380DB6B00944829 /* ATCViewControllerContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCViewControllerContainerViewModel.swift; sourceTree = "<group>"; };
-		141132252380DB6F00944829 /* ATCCarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCCarouselCollectionViewCell.xib; sourceTree = "<group>"; };
-		141132262380DB7300944829 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
-		141132272380DB7800944829 /* ConstraintConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
-		141132282380DB7B00944829 /* ATCCircledIconMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ATCCircledIconMenuCollectionViewCell.xib; sourceTree = "<group>"; };
-		141132292380DB7F00944829 /* ConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
-		1411322A2380DB8200944829 /* ATCViewControllerContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCViewControllerContainerCollectionViewCell.swift; sourceTree = "<group>"; };
-		1411322B2380DB8400944829 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
-		1411322C2380DB8600944829 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
-		1411322D2380DB8900944829 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
-		1411322E2380DB8C00944829 /* ATCMenuHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCMenuHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		1411322F2380DB8E00944829 /* ATCMenuItemCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCMenuItemCollectionViewCellProtocol.swift; sourceTree = "<group>"; };
-		141132302380DB9000944829 /* ATCCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATCCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
-		141132312380F17F00944829 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIView.swift"; sourceTree = "<group>"; };
-		141132322380F18000944829 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintAttributes.swift"; sourceTree = "<group>"; };
-		141132332380F18000944829 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutSupportDSL.swift"; sourceTree = "<group>"; };
-		141132342380F18000944829 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIImage.swift"; sourceTree = "<group>"; };
-		141132352380F18000944829 /* ATCCircledIconMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCCircledIconMenuCollectionViewCell.xib; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/MenuCells/ATCCircledIconMenuCollectionViewCell.xib"; sourceTree = "<group>"; };
-		141132362380F18000944829 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerExtendable.swift"; sourceTree = "<group>"; };
-		141132372380F18000944829 /* ATCMenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuCollectionViewController.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuCollectionViewController.swift"; sourceTree = "<group>"; };
-		141132382380F18000944829 /* ATCViewControllerContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCViewControllerContainerViewModel.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Models/ATCViewControllerContainerViewModel.swift"; sourceTree = "<group>"; };
-		141132392380F18100944829 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/Constraint.swift"; sourceTree = "<group>"; };
-		1411323A2380F18100944829 /* ConstraintDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintDSL.swift"; sourceTree = "<group>"; };
-		1411323B2380F18100944829 /* ConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintItem.swift"; sourceTree = "<group>"; };
-		1411323C2380F18100944829 /* ATCHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCHostViewController.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCHostViewController.swift"; sourceTree = "<group>"; };
-		1411323D2380F18100944829 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerEditable.swift"; sourceTree = "<group>"; };
-		1411323E2380F18100944829 /* ATCStoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCStoryCollectionViewCell.xib; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCStoryCollectionViewCell.xib"; sourceTree = "<group>"; };
-		1411323F2380F18100944829 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutGuide.swift"; sourceTree = "<group>"; };
-		141132402380F18100944829 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerPriortizable.swift"; sourceTree = "<group>"; };
-		141132412380F18100944829 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintPriorityTarget.swift"; sourceTree = "<group>"; };
-		141132422380F18200944829 /* ConstraintMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMaker.swift"; sourceTree = "<group>"; };
-		141132432380F18200944829 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerFinalizable.swift"; sourceTree = "<group>"; };
-		141132442380F18200944829 /* ATCViewControllerContainerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCViewControllerContainerCollectionViewCell.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCViewControllerContainerCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141132452380F18200944829 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Date.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/Date.swift"; sourceTree = "<group>"; };
-		141132462380F18200944829 /* ATCMenuItemRowAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuItemRowAdapter.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuItemRowAdapter.swift"; sourceTree = "<group>"; };
-		141132472380F18200944829 /* ATCMessengerUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMessengerUserCollectionViewCell.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/Users/ATCMessengerUserCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141132482380F18200944829 /* ATCCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCCarouselCollectionViewCell.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCCarouselCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141132492380F18200944829 /* ATCGenericCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCGenericCollectionViewController.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/ATCGenericCollectionViewController.swift"; sourceTree = "<group>"; };
-		1411324A2380F18200944829 /* ConstraintInsets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintInsets.swift"; sourceTree = "<group>"; };
-		1411324B2380F18200944829 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintInsetTarget.swift"; sourceTree = "<group>"; };
-		1411324C2380F18300944829 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintOffsetTarget.swift"; sourceTree = "<group>"; };
-		1411324D2380F18300944829 /* ATCMessengerUserCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCMessengerUserCollectionViewCell.xib; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/Users/ATCMessengerUserCollectionViewCell.xib"; sourceTree = "<group>"; };
-		1411324E2380F18300944829 /* ATCStoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCStoryCollectionViewCell.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCStoryCollectionViewCell.swift"; sourceTree = "<group>"; };
-		1411324F2380F18300944829 /* ConstraintRelation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintRelation.swift"; sourceTree = "<group>"; };
-		141132502380F18300944829 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		141132512380F18300944829 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintRelatableTarget.swift"; sourceTree = "<group>"; };
-		141132522380F18300944829 /* LayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/LayoutConstraint.swift"; sourceTree = "<group>"; };
-		141132532380F18300944829 /* SnapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SnapKit.h; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/SnapKit.h"; sourceTree = "<group>"; };
-		141132542380F18300944829 /* ATCCircledIconMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCCircledIconMenuCollectionViewCell.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/MenuCells/ATCCircledIconMenuCollectionViewCell.swift"; sourceTree = "<group>"; };
-		141132552380F18400944829 /* ATCDrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCDrawerController.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCDrawerController.swift"; sourceTree = "<group>"; };
-		141132562380F18400944829 /* ATCMenuItemCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuItemCollectionViewCellProtocol.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuItemCollectionViewCellProtocol.swift"; sourceTree = "<group>"; };
-		141132572380F18400944829 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutGuideDSL.swift"; sourceTree = "<group>"; };
-		141132582380F18400944829 /* ATCLiquidCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCLiquidCollectionViewLayout.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Layouts/ATCLiquidCollectionViewLayout.swift"; sourceTree = "<group>"; };
-		141132592380F18400944829 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintViewDSL.swift"; sourceTree = "<group>"; };
-		1411325A2380F18400944829 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintConstantTarget.swift"; sourceTree = "<group>"; };
-		1411325B2380F18400944829 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = String.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/String.swift"; sourceTree = "<group>"; };
-		1411325C2380F18400944829 /* ATCViewControllerContainerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCViewControllerContainerCollectionViewCell.xib; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCViewControllerContainerCollectionViewCell.xib"; sourceTree = "<group>"; };
-		1411325D2380F18400944829 /* ATCCarouselCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCCarouselCollectionViewCell.xib; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/ATCCarouselCollectionViewCell.xib"; sourceTree = "<group>"; };
-		1411325E2380F18500944829 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
-		1411325F2380F18500944829 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/LayoutConstraintItem.swift"; sourceTree = "<group>"; };
-		141132602380F18500944829 /* ATCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCNavigationController.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCNavigationController.swift"; sourceTree = "<group>"; };
-		141132612380F18500944829 /* ATCMenuHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCMenuHeaderTableViewCell.xib; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuHeaderTableViewCell.xib"; sourceTree = "<group>"; };
-		141132622380F18500944829 /* ConstraintPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintPriority.swift"; sourceTree = "<group>"; };
-		141132632380F18500944829 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/Typealiases.swift"; sourceTree = "<group>"; };
-		141132642380F18500944829 /* ATCMessengerUserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMessengerUserAdapter.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Views/Cells/Users/ATCMessengerUserAdapter.swift"; sourceTree = "<group>"; };
-		141132652380F18500944829 /* ATCUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCUser.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/Models/ATCUser.swift"; sourceTree = "<group>"; };
-		141132662380F18500944829 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITextField.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UITextField.swift"; sourceTree = "<group>"; };
-		141132672380F18600944829 /* ConstraintConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintConfig.swift"; sourceTree = "<group>"; };
-		141132682380F18600944829 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
-		141132692380F18600944829 /* ConstraintDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintDescription.swift"; sourceTree = "<group>"; };
-		1411326A2380F18600944829 /* ATCMenuTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ATCMenuTableViewController.xib; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuTableViewController.xib"; sourceTree = "<group>"; };
-		1411326B2380F18600944829 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMultiplierTarget.swift"; sourceTree = "<group>"; };
-		1411326C2380F18600944829 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintMakerRelatable.swift"; sourceTree = "<group>"; };
-		1411326D2380F18600944829 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIColor.swift"; sourceTree = "<group>"; };
-		1411326E2380F18600944829 /* ConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintView.swift"; sourceTree = "<group>"; };
-		1411326F2380F18600944829 /* ATCCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCCollectionViewFlowLayout.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Layouts/ATCCollectionViewFlowLayout.swift"; sourceTree = "<group>"; };
-		141132702380F18600944829 /* ATCMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuTableViewController.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuTableViewController.swift"; sourceTree = "<group>"; };
-		141132712380F18600944829 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/ConstraintLayoutSupport.swift"; sourceTree = "<group>"; };
-		141132722380F18700944829 /* Debugging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ThirdParty/SnapKit/Debugging.swift"; sourceTree = "<group>"; };
-		141132732380F18700944829 /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIScrollView.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/UIExtensions/UIScrollView.swift"; sourceTree = "<group>"; };
-		141132742380F18700944829 /* ATCMenuHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ATCMenuHeaderTableViewCell.swift; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/Navigation/ATCMenuHeaderTableViewCell.swift"; sourceTree = "<group>"; };
-		141132752380F18700944829 /* UIViewController+ATCAdditions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+ATCAdditions.swift"; path = "../../../Downloads/messenger-iOS-chat-swift-firestore-master 4/ChatApp/Core/ViewControllers/UIViewController+ATCAdditions.swift"; sourceTree = "<group>"; };
+		14DC8E4A239AF2EF001E0AD1 /* ATCChatChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCChatChannel.swift; sourceTree = "<group>"; };
+		14DC8E4B239AF2EF001E0AD1 /* ATChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATChatMessage.swift; sourceTree = "<group>"; };
+		14DC8E4D239AF2EF001E0AD1 /* ATCChatUserStoryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCChatUserStoryAdapter.swift; sourceTree = "<group>"; };
+		14DC8E4E239AF2EF001E0AD1 /* ATCChatThreadAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCChatThreadAdapter.swift; sourceTree = "<group>"; };
+		14DC8E50239AF2EF001E0AD1 /* ATCChatThreadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCChatThreadViewController.swift; sourceTree = "<group>"; };
+		14DC8E51239AF2EF001E0AD1 /* ATCChatHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCChatHomeViewController.swift; sourceTree = "<group>"; };
+		14DC8E52239AF2EF001E0AD1 /* ATCChatThreadsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCChatThreadsViewController.swift; sourceTree = "<group>"; };
+		14DC8E55239AF2EF001E0AD1 /* ATCThreadCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCThreadCollectionViewCell.xib; sourceTree = "<group>"; };
+		14DC8E56239AF2EF001E0AD1 /* ATCUserStoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCUserStoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		14DC8E57239AF2EF001E0AD1 /* ATCThreadCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCThreadCollectionViewCell.swift; sourceTree = "<group>"; };
+		14DC8E58239AF2EF001E0AD1 /* ATCUserStoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCUserStoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		14DC8E5A239AF2EF001E0AD1 /* ATCChatMockStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCChatMockStore.swift; sourceTree = "<group>"; };
+		14DC8E5B239AF2EF001E0AD1 /* ATCRemoteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCRemoteData.swift; sourceTree = "<group>"; };
+		14DC8E5D239AF2EF001E0AD1 /* ATCViewControllerContainerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCViewControllerContainerViewModel.swift; sourceTree = "<group>"; };
+		14DC8E5E239AF2EF001E0AD1 /* ATCUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCUser.swift; sourceTree = "<group>"; };
+		14DC8E60239AF2EF001E0AD1 /* UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		14DC8E61239AF2EF001E0AD1 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		14DC8E62239AF2EF001E0AD1 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		14DC8E63239AF2EF001E0AD1 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		14DC8E64239AF2EF001E0AD1 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		14DC8E65239AF2EF001E0AD1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		14DC8E66239AF2EF001E0AD1 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		14DC8E68239AF2EF001E0AD1 /* ATCStoryAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCStoryAdapter.swift; sourceTree = "<group>"; };
+		14DC8E69239AF2EF001E0AD1 /* ATCViewControllerContainerRowAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCViewControllerContainerRowAdapter.swift; sourceTree = "<group>"; };
+		14DC8E6A239AF2EF001E0AD1 /* ATCCarouselAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCCarouselAdapter.swift; sourceTree = "<group>"; };
+		14DC8E6C239AF2EF001E0AD1 /* UIViewController+ATCAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ATCAdditions.swift"; sourceTree = "<group>"; };
+		14DC8E6E239AF2EF001E0AD1 /* ATCHostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCHostViewController.swift; sourceTree = "<group>"; };
+		14DC8E6F239AF2EF001E0AD1 /* ATCNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCNavigationController.swift; sourceTree = "<group>"; };
+		14DC8E70239AF2EF001E0AD1 /* ATCMenuItemCollectionViewCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCMenuItemCollectionViewCellProtocol.swift; sourceTree = "<group>"; };
+		14DC8E71239AF2EF001E0AD1 /* ATCDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCDrawerController.swift; sourceTree = "<group>"; };
+		14DC8E72239AF2EF001E0AD1 /* ATCMenuTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCMenuTableViewController.xib; sourceTree = "<group>"; };
+		14DC8E73239AF2EF001E0AD1 /* ATCMenuCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCMenuCollectionViewController.swift; sourceTree = "<group>"; };
+		14DC8E74239AF2EF001E0AD1 /* ATCMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCMenuTableViewController.swift; sourceTree = "<group>"; };
+		14DC8E75239AF2EF001E0AD1 /* ATCMenuHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCMenuHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		14DC8E76239AF2EF001E0AD1 /* ATCMenuHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCMenuHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		14DC8E77239AF2EF001E0AD1 /* ATCMenuItemRowAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCMenuItemRowAdapter.swift; sourceTree = "<group>"; };
+		14DC8E78239AF2EF001E0AD1 /* ATCGenericCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCGenericCollectionViewController.swift; sourceTree = "<group>"; };
+		14DC8E7A239AF2EF001E0AD1 /* ATCLiquidCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCLiquidCollectionViewLayout.swift; sourceTree = "<group>"; };
+		14DC8E7B239AF2EF001E0AD1 /* ATCCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		14DC8E7E239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCStoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		14DC8E7F239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCViewControllerContainerCollectionViewCell.xib; sourceTree = "<group>"; };
+		14DC8E80239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCStoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		14DC8E81239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCViewControllerContainerCollectionViewCell.swift; sourceTree = "<group>"; };
+		14DC8E83239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCCircledIconMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		14DC8E84239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCCircledIconMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		14DC8E86239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCMessengerUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		14DC8E87239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCMessengerUserCollectionViewCell.xib; sourceTree = "<group>"; };
+		14DC8E88239AF2F0001E0AD1 /* ATCMessengerUserAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCMessengerUserAdapter.swift; sourceTree = "<group>"; };
+		14DC8E89239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCCarouselCollectionViewCell.swift; sourceTree = "<group>"; };
+		14DC8E8A239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ATCCarouselCollectionViewCell.xib; sourceTree = "<group>"; };
+		14DC8E8C239AF2F0001E0AD1 /* Misc.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Misc.xcassets; sourceTree = "<group>"; };
+		14DC8E8D239AF2F0001E0AD1 /* CoreImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CoreImages.xcassets; sourceTree = "<group>"; };
+		14DC8E8F239AF2F0001E0AD1 /* ATCGenericLocalHeteroDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCGenericLocalHeteroDataSource.swift; sourceTree = "<group>"; };
+		14DC8E90239AF2F0001E0AD1 /* ATCGenericLocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCGenericLocalDataSource.swift; sourceTree = "<group>"; };
+		14DC8E91239AF2F0001E0AD1 /* ATCUIGenericConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCUIGenericConfigurationProtocol.swift; sourceTree = "<group>"; };
+		14DC8E92239AF2F0001E0AD1 /* UITabBarItem+ATCAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+ATCAdditions.swift"; sourceTree = "<group>"; };
+		14DC8E93239AF2F0001E0AD1 /* TimeFormatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFormatHelper.swift; sourceTree = "<group>"; };
+		14DC8E94239AF2F0001E0AD1 /* ATCGenericFirebaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATCGenericFirebaseDataSource.swift; sourceTree = "<group>"; };
+		14DC8E95239AF2F0001E0AD1 /* UIImage+ATCAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ATCAdditions.swift"; sourceTree = "<group>"; };
+		14DC8E98239AF2F0001E0AD1 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		14DC8E99239AF2F0001E0AD1 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		14DC8E9A239AF2F0001E0AD1 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		14DC8E9B239AF2F0001E0AD1 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		14DC8E9C239AF2F0001E0AD1 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		14DC8E9D239AF2F0001E0AD1 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		14DC8E9E239AF2F0001E0AD1 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		14DC8E9F239AF2F0001E0AD1 /* ConstraintInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
+		14DC8EA0239AF2F0001E0AD1 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		14DC8EA1239AF2F0001E0AD1 /* ConstraintDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
+		14DC8EA2239AF2F0001E0AD1 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		14DC8EA3239AF2F0001E0AD1 /* ConstraintPriority.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriority.swift; sourceTree = "<group>"; };
+		14DC8EA4239AF2F0001E0AD1 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		14DC8EA5239AF2F0001E0AD1 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		14DC8EA6239AF2F0001E0AD1 /* ConstraintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
+		14DC8EA7239AF2F0001E0AD1 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		14DC8EA8239AF2F0001E0AD1 /* ConstraintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
+		14DC8EA9239AF2F0001E0AD1 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		14DC8EAA239AF2F0001E0AD1 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		14DC8EAB239AF2F0001E0AD1 /* Typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		14DC8EAC239AF2F0001E0AD1 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		14DC8EAD239AF2F0001E0AD1 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		14DC8EAE239AF2F0001E0AD1 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		14DC8EAF239AF2F0001E0AD1 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		14DC8EB0239AF2F0001E0AD1 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		14DC8EB1239AF2F0001E0AD1 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		14DC8EB2239AF2F0001E0AD1 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		14DC8EB3239AF2F0001E0AD1 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		14DC8EB4239AF2F0001E0AD1 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		14DC8EB5239AF2F0001E0AD1 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		14DC8EB6239AF2F0001E0AD1 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		14DC8EB7239AF2F0001E0AD1 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		14DC8EB8239AF2F0001E0AD1 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		14DC8EB9239AF2F0001E0AD1 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		14DC8EBA239AF2F0001E0AD1 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
 		1C71FC08E315CE862E243D46 /* Pods_LogMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		447D484339C136B9C6DA174E /* Pods-LogManTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogManTests.debug.xcconfig"; path = "Target Support Files/Pods-LogManTests/Pods-LogManTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DA9BD9856965C23FCD1BE53 /* Pods_LogManUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogManUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -530,170 +332,273 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		141131EB2380DA9D00944829 /* ChatCore */ = {
+		14DC8E47239AF2EF001E0AD1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				141131F42380DACC00944829 /* ATCMessengerUserAdapter.swift */,
-				141132642380F18500944829 /* ATCMessengerUserAdapter.swift */,
-				141131F12380DAC200944829 /* ATCMessengerUserCollectionViewCell.swift */,
-				141131F92380DAD900944829 /* ATCMessengerUserCollectionViewCell.xib */,
-				141132182380DB3900944829 /* ATCCircledIconMenuCollectionViewCell.swift */,
-				141132472380F18200944829 /* ATCMessengerUserCollectionViewCell.swift */,
-				1411324D2380F18300944829 /* ATCMessengerUserCollectionViewCell.xib */,
-				141132542380F18300944829 /* ATCCircledIconMenuCollectionViewCell.swift */,
-				141132282380DB7B00944829 /* ATCCircledIconMenuCollectionViewCell.xib */,
-				141132122380DB2000944829 /* ATCCarouselCollectionViewCell.swift */,
-				141132252380DB6F00944829 /* ATCCarouselCollectionViewCell.xib */,
-				1411325D2380F18400944829 /* ATCCarouselCollectionViewCell.xib */,
-				141132062380DAFD00944829 /* ATCStoryCollectionViewCell.swift */,
-				141132482380F18200944829 /* ATCCarouselCollectionViewCell.swift */,
-				1411324E2380F18300944829 /* ATCStoryCollectionViewCell.swift */,
-				141131F22380DAC600944829 /* ATCStoryCollectionViewCell.xib */,
-				1411322A2380DB8200944829 /* ATCViewControllerContainerCollectionViewCell.swift */,
-				141132022380DAF200944829 /* ATCViewControllerContainerCollectionViewCell.xib */,
-				1411325C2380F18400944829 /* ATCViewControllerContainerCollectionViewCell.xib */,
-				1411321F2380DB5B00944829 /* ATCDrawerController.swift */,
-				1411323E2380F18100944829 /* ATCStoryCollectionViewCell.xib */,
-				141132442380F18200944829 /* ATCViewControllerContainerCollectionViewCell.swift */,
-				141132552380F18400944829 /* ATCDrawerController.swift */,
-				141132092380DB0500944829 /* ATCHostViewController.swift */,
-				1411323C2380F18100944829 /* ATCHostViewController.swift */,
-				141131EF2380DABD00944829 /* ATCMenuCollectionViewController.swift */,
-				1411322E2380DB8C00944829 /* ATCMenuHeaderTableViewCell.swift */,
-				141132742380F18700944829 /* ATCMenuHeaderTableViewCell.swift */,
-				141132162380DB2F00944829 /* ATCMenuHeaderTableViewCell.xib */,
-				141132612380F18500944829 /* ATCMenuHeaderTableViewCell.xib */,
-				1411322F2380DB8E00944829 /* ATCMenuItemCollectionViewCellProtocol.swift */,
-				141132562380F18400944829 /* ATCMenuItemCollectionViewCellProtocol.swift */,
-				141131EC2380DAB400944829 /* ATCMenuItemRowAdapter.swift */,
-				141132202380DB5E00944829 /* ATCMenuTableViewController.swift */,
-				141132702380F18600944829 /* ATCMenuTableViewController.swift */,
-				141132072380DB0000944829 /* ATCMenuTableViewController.xib */,
-				1411326A2380F18600944829 /* ATCMenuTableViewController.xib */,
-				141131F02380DAC000944829 /* ATCNavigationController.swift */,
-				141132302380DB9000944829 /* ATCCollectionViewFlowLayout.swift */,
-				141132602380F18500944829 /* ATCNavigationController.swift */,
-				1411326F2380F18600944829 /* ATCCollectionViewFlowLayout.swift */,
-				141132102380DB1800944829 /* ATCLiquidCollectionViewLayout.swift */,
-				1411320F2380DB1500944829 /* UIViewController+ATCAdditions.swift */,
-				141132582380F18400944829 /* ATCLiquidCollectionViewLayout.swift */,
-				141132752380F18700944829 /* UIViewController+ATCAdditions.swift */,
-				141132082380DB0200944829 /* ATCGenericCollectionViewController.swift */,
-				141132462380F18200944829 /* ATCMenuItemRowAdapter.swift */,
-				141132492380F18200944829 /* ATCGenericCollectionViewController.swift */,
-				141131FE2380DAE600944829 /* Date.swift */,
-				1411321B2380DB4700944829 /* String.swift */,
-				141132042380DAF700944829 /* UIColor.swift */,
-				141132352380F18000944829 /* ATCCircledIconMenuCollectionViewCell.xib */,
-				141132372380F18000944829 /* ATCMenuCollectionViewController.swift */,
-				141132452380F18200944829 /* Date.swift */,
-				1411325B2380F18400944829 /* String.swift */,
-				1411326D2380F18600944829 /* UIColor.swift */,
-				141131F62380DAD100944829 /* UIImage.swift */,
-				141131F72380DAD400944829 /* UIScrollView.swift */,
-				141132732380F18700944829 /* UIScrollView.swift */,
-				141132052380DAF900944829 /* UITextField.swift */,
-				141132342380F18000944829 /* UIImage.swift */,
-				141132662380F18500944829 /* UITextField.swift */,
-				1411320C2380DB0C00944829 /* UIView.swift */,
-				141132172380DB3400944829 /* Constraint.swift */,
-				141132392380F18100944829 /* Constraint.swift */,
-				1411321D2380DB5100944829 /* ConstraintAttributes.swift */,
-				141132272380DB7800944829 /* ConstraintConfig.swift */,
-				141132672380F18600944829 /* ConstraintConfig.swift */,
-				1411320E2380DB1200944829 /* ConstraintConstantTarget.swift */,
-				1411321C2380DB4C00944829 /* ConstraintDescription.swift */,
-				1411325A2380F18400944829 /* ConstraintConstantTarget.swift */,
-				141132692380F18600944829 /* ConstraintDescription.swift */,
-				141132002380DAED00944829 /* ConstraintDSL.swift */,
-				141132012380DAEF00944829 /* ConstraintInsets.swift */,
-				141131ED2380DAB700944829 /* ConstraintInsetTarget.swift */,
-				1411324A2380F18200944829 /* ConstraintInsets.swift */,
-				1411324B2380F18200944829 /* ConstraintInsetTarget.swift */,
-				141132132380DB2200944829 /* ConstraintItem.swift */,
-				1411322B2380DB8400944829 /* ConstraintLayoutGuide.swift */,
-				1411320B2380DB0A00944829 /* ConstraintLayoutGuide+Extensions.swift */,
-				1411325E2380F18500944829 /* ConstraintLayoutGuide+Extensions.swift */,
-				141131FB2380DADF00944829 /* ConstraintLayoutGuideDSL.swift */,
-				1411321E2380DB5600944829 /* ConstraintLayoutSupport.swift */,
-				1411323A2380F18100944829 /* ConstraintDSL.swift */,
-				1411323B2380F18100944829 /* ConstraintItem.swift */,
-				1411323F2380F18100944829 /* ConstraintLayoutGuide.swift */,
-				141132572380F18400944829 /* ConstraintLayoutGuideDSL.swift */,
-				141132712380F18600944829 /* ConstraintLayoutSupport.swift */,
-				141132262380DB7300944829 /* ConstraintLayoutSupportDSL.swift */,
-				141131EE2380DABA00944829 /* ConstraintMaker.swift */,
-				141132422380F18200944829 /* ConstraintMaker.swift */,
-				141132142380DB2600944829 /* ConstraintMakerEditable.swift */,
-				1411323D2380F18100944829 /* ConstraintMakerEditable.swift */,
-				141132212380DB6200944829 /* ConstraintMakerExtendable.swift */,
-				141132032380DAF400944829 /* ConstraintMakerFinalizable.swift */,
-				141132432380F18200944829 /* ConstraintMakerFinalizable.swift */,
-				1411320A2380DB0700944829 /* ConstraintMakerPriortizable.swift */,
-				141132222380DB6500944829 /* ConstraintMakerRelatable.swift */,
-				1411326C2380F18600944829 /* ConstraintMakerRelatable.swift */,
-				141131FD2380DAE400944829 /* ConstraintMultiplierTarget.swift */,
-				1411326B2380F18600944829 /* ConstraintMultiplierTarget.swift */,
-				1411322C2380DB8600944829 /* ConstraintOffsetTarget.swift */,
-				141132112380DB1B00944829 /* ConstraintPriority.swift */,
-				1411324C2380F18300944829 /* ConstraintOffsetTarget.swift */,
-				141132622380F18500944829 /* ConstraintPriority.swift */,
-				1411322D2380DB8900944829 /* ConstraintPriorityTarget.swift */,
-				141131F52380DACE00944829 /* ConstraintRelatableTarget.swift */,
-				141132512380F18300944829 /* ConstraintRelatableTarget.swift */,
-				141132232380DB6800944829 /* ConstraintRelation.swift */,
-				141132292380DB7F00944829 /* ConstraintView.swift */,
-				1411326E2380F18600944829 /* ConstraintView.swift */,
-				1411320D2380DB0F00944829 /* ConstraintView+Extensions.swift */,
-				141132192380DB3F00944829 /* ConstraintViewDSL.swift */,
-				141131FA2380DADC00944829 /* Debugging.swift */,
-				141132592380F18400944829 /* ConstraintViewDSL.swift */,
-				141132722380F18700944829 /* Debugging.swift */,
-				141131FC2380DAE100944829 /* LayoutConstraint.swift */,
-				141132152380DB2A00944829 /* LayoutConstraintItem.swift */,
-				1411325F2380F18500944829 /* LayoutConstraintItem.swift */,
-				141131F82380DAD700944829 /* SnapKit.h */,
-				141131FF2380DAE900944829 /* Typealiases.swift */,
-				141131F32380DAC900944829 /* UILayoutSupport+Extensions.swift */,
-				141132682380F18600944829 /* UILayoutSupport+Extensions.swift */,
-				1411321A2380DB4400944829 /* ATCUser.swift */,
-				141132402380F18100944829 /* ConstraintMakerPriortizable.swift */,
-				141132412380F18100944829 /* ConstraintPriorityTarget.swift */,
-				1411324F2380F18300944829 /* ConstraintRelation.swift */,
-				141132502380F18300944829 /* ConstraintView+Extensions.swift */,
-				141132522380F18300944829 /* LayoutConstraint.swift */,
-				141132532380F18300944829 /* SnapKit.h */,
-				141132632380F18500944829 /* Typealiases.swift */,
-				141132652380F18500944829 /* ATCUser.swift */,
-				141132242380DB6B00944829 /* ATCViewControllerContainerViewModel.swift */,
-				141132312380F17F00944829 /* UIView.swift */,
-				141132322380F18000944829 /* ConstraintAttributes.swift */,
-				141132332380F18000944829 /* ConstraintLayoutSupportDSL.swift */,
-				141132362380F18000944829 /* ConstraintMakerExtendable.swift */,
-				141132382380F18000944829 /* ATCViewControllerContainerViewModel.swift */,
-				14113159237FC1CE00944829 /* ATCGenericFirebaseDataSource.swift */,
-				14113153237FC1CE00944829 /* ATCGenericLocalDataSource.swift */,
-				14113156237FC1CE00944829 /* ATCGenericLocalHeteroDataSource.swift */,
-				14113155237FC1CE00944829 /* ATCUIGenericConfigurationProtocol.swift */,
-				14113158237FC1CE00944829 /* TimeFormatHelper.swift */,
-				14113154237FC1CE00944829 /* UIImage+ATCAdditions.swift */,
-				14113157237FC1CE00944829 /* UITabBarItem+ATCAdditions.swift */,
-				1411314D237FC1C500944829 /* ATCChatHomeViewController.swift */,
-				1411314E237FC1C500944829 /* ATCChatThreadsViewController.swift */,
-				1411314F237FC1C500944829 /* ATCChatThreadViewController.swift */,
-				1411314A237FC1C000944829 /* ATCThreadCollectionViewCell.swift */,
-				14113149237FC1C000944829 /* ATCUserStoryCollectionViewCell.swift */,
-				14113145237FC1AF00944829 /* ATCChatMockStore.swift */,
-				14113146237FC1B000944829 /* ATCRemoteData.swift */,
-				14113141237FC1AB00944829 /* ATCChatChannel.swift */,
-				14113142237FC1AB00944829 /* ATChatMessage.swift */,
-				1411313D237FC1A500944829 /* ATCChatThreadAdapter.swift */,
-				1411313E237FC1A600944829 /* ATCChatUserStoryAdapter.swift */,
-				14113138237FC19C00944829 /* ATCCarouselAdapter.swift */,
-				14113139237FC19C00944829 /* ATCStoryAdapter.swift */,
-				14113137237FC19C00944829 /* ATCViewControllerContainerRowAdapter.swift */,
+				14DC8E48239AF2EF001E0AD1 /* Chat */,
+				14DC8E5C239AF2EF001E0AD1 /* Models */,
+				14DC8E5F239AF2EF001E0AD1 /* UIExtensions */,
+				14DC8E67239AF2EF001E0AD1 /* Adapters */,
+				14DC8E6B239AF2EF001E0AD1 /* ViewControllers */,
+				14DC8E7C239AF2EF001E0AD1 /* Views */,
+				14DC8E8B239AF2F0001E0AD1 /* Assets */,
+				14DC8E8E239AF2F0001E0AD1 /* Helpers */,
+				14DC8E96239AF2F0001E0AD1 /* ThirdParty */,
 			);
-			path = ChatCore;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		14DC8E48239AF2EF001E0AD1 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E49239AF2EF001E0AD1 /* Models */,
+				14DC8E4C239AF2EF001E0AD1 /* Adapters */,
+				14DC8E4F239AF2EF001E0AD1 /* ViewControllers */,
+				14DC8E53239AF2EF001E0AD1 /* Themes */,
+				14DC8E59239AF2EF001E0AD1 /* Store */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		14DC8E49239AF2EF001E0AD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E4A239AF2EF001E0AD1 /* ATCChatChannel.swift */,
+				14DC8E4B239AF2EF001E0AD1 /* ATChatMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14DC8E4C239AF2EF001E0AD1 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E4D239AF2EF001E0AD1 /* ATCChatUserStoryAdapter.swift */,
+				14DC8E4E239AF2EF001E0AD1 /* ATCChatThreadAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		14DC8E4F239AF2EF001E0AD1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E50239AF2EF001E0AD1 /* ATCChatThreadViewController.swift */,
+				14DC8E51239AF2EF001E0AD1 /* ATCChatHomeViewController.swift */,
+				14DC8E52239AF2EF001E0AD1 /* ATCChatThreadsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14DC8E53239AF2EF001E0AD1 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E54239AF2EF001E0AD1 /* Messenger */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		14DC8E54239AF2EF001E0AD1 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E55239AF2EF001E0AD1 /* ATCThreadCollectionViewCell.xib */,
+				14DC8E56239AF2EF001E0AD1 /* ATCUserStoryCollectionViewCell.xib */,
+				14DC8E57239AF2EF001E0AD1 /* ATCThreadCollectionViewCell.swift */,
+				14DC8E58239AF2EF001E0AD1 /* ATCUserStoryCollectionViewCell.swift */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		14DC8E59239AF2EF001E0AD1 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E5A239AF2EF001E0AD1 /* ATCChatMockStore.swift */,
+				14DC8E5B239AF2EF001E0AD1 /* ATCRemoteData.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		14DC8E5C239AF2EF001E0AD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E5D239AF2EF001E0AD1 /* ATCViewControllerContainerViewModel.swift */,
+				14DC8E5E239AF2EF001E0AD1 /* ATCUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		14DC8E5F239AF2EF001E0AD1 /* UIExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E60239AF2EF001E0AD1 /* UIScrollView.swift */,
+				14DC8E61239AF2EF001E0AD1 /* Date.swift */,
+				14DC8E62239AF2EF001E0AD1 /* UIView.swift */,
+				14DC8E63239AF2EF001E0AD1 /* UIColor.swift */,
+				14DC8E64239AF2EF001E0AD1 /* UITextField.swift */,
+				14DC8E65239AF2EF001E0AD1 /* String.swift */,
+				14DC8E66239AF2EF001E0AD1 /* UIImage.swift */,
+			);
+			path = UIExtensions;
+			sourceTree = "<group>";
+		};
+		14DC8E67239AF2EF001E0AD1 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E68239AF2EF001E0AD1 /* ATCStoryAdapter.swift */,
+				14DC8E69239AF2EF001E0AD1 /* ATCViewControllerContainerRowAdapter.swift */,
+				14DC8E6A239AF2EF001E0AD1 /* ATCCarouselAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		14DC8E6B239AF2EF001E0AD1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E6C239AF2EF001E0AD1 /* UIViewController+ATCAdditions.swift */,
+				14DC8E6D239AF2EF001E0AD1 /* Navigation */,
+				14DC8E78239AF2EF001E0AD1 /* ATCGenericCollectionViewController.swift */,
+				14DC8E79239AF2EF001E0AD1 /* Layouts */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		14DC8E6D239AF2EF001E0AD1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E6E239AF2EF001E0AD1 /* ATCHostViewController.swift */,
+				14DC8E6F239AF2EF001E0AD1 /* ATCNavigationController.swift */,
+				14DC8E70239AF2EF001E0AD1 /* ATCMenuItemCollectionViewCellProtocol.swift */,
+				14DC8E71239AF2EF001E0AD1 /* ATCDrawerController.swift */,
+				14DC8E72239AF2EF001E0AD1 /* ATCMenuTableViewController.xib */,
+				14DC8E73239AF2EF001E0AD1 /* ATCMenuCollectionViewController.swift */,
+				14DC8E74239AF2EF001E0AD1 /* ATCMenuTableViewController.swift */,
+				14DC8E75239AF2EF001E0AD1 /* ATCMenuHeaderTableViewCell.xib */,
+				14DC8E76239AF2EF001E0AD1 /* ATCMenuHeaderTableViewCell.swift */,
+				14DC8E77239AF2EF001E0AD1 /* ATCMenuItemRowAdapter.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		14DC8E79239AF2EF001E0AD1 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E7A239AF2EF001E0AD1 /* ATCLiquidCollectionViewLayout.swift */,
+				14DC8E7B239AF2EF001E0AD1 /* ATCCollectionViewFlowLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		14DC8E7C239AF2EF001E0AD1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E7D239AF2F0001E0AD1 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		14DC8E7D239AF2F0001E0AD1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E7E239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.swift */,
+				14DC8E7F239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.xib */,
+				14DC8E80239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.xib */,
+				14DC8E81239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.swift */,
+				14DC8E82239AF2F0001E0AD1 /* MenuCells */,
+				14DC8E85239AF2F0001E0AD1 /* Users */,
+				14DC8E89239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.swift */,
+				14DC8E8A239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		14DC8E82239AF2F0001E0AD1 /* MenuCells */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E83239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.xib */,
+				14DC8E84239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.swift */,
+			);
+			path = MenuCells;
+			sourceTree = "<group>";
+		};
+		14DC8E85239AF2F0001E0AD1 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E86239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.swift */,
+				14DC8E87239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.xib */,
+				14DC8E88239AF2F0001E0AD1 /* ATCMessengerUserAdapter.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		14DC8E8B239AF2F0001E0AD1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E8C239AF2F0001E0AD1 /* Misc.xcassets */,
+				14DC8E8D239AF2F0001E0AD1 /* CoreImages.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		14DC8E8E239AF2F0001E0AD1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E8F239AF2F0001E0AD1 /* ATCGenericLocalHeteroDataSource.swift */,
+				14DC8E90239AF2F0001E0AD1 /* ATCGenericLocalDataSource.swift */,
+				14DC8E91239AF2F0001E0AD1 /* ATCUIGenericConfigurationProtocol.swift */,
+				14DC8E92239AF2F0001E0AD1 /* UITabBarItem+ATCAdditions.swift */,
+				14DC8E93239AF2F0001E0AD1 /* TimeFormatHelper.swift */,
+				14DC8E94239AF2F0001E0AD1 /* ATCGenericFirebaseDataSource.swift */,
+				14DC8E95239AF2F0001E0AD1 /* UIImage+ATCAdditions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		14DC8E96239AF2F0001E0AD1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E97239AF2F0001E0AD1 /* SnapKit */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		14DC8E97239AF2F0001E0AD1 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				14DC8E98239AF2F0001E0AD1 /* ConstraintMultiplierTarget.swift */,
+				14DC8E99239AF2F0001E0AD1 /* LayoutConstraintItem.swift */,
+				14DC8E9A239AF2F0001E0AD1 /* ConstraintDescription.swift */,
+				14DC8E9B239AF2F0001E0AD1 /* ConstraintMakerPriortizable.swift */,
+				14DC8E9C239AF2F0001E0AD1 /* ConstraintAttributes.swift */,
+				14DC8E9D239AF2F0001E0AD1 /* ConstraintViewDSL.swift */,
+				14DC8E9E239AF2F0001E0AD1 /* ConstraintPriorityTarget.swift */,
+				14DC8E9F239AF2F0001E0AD1 /* ConstraintInsets.swift */,
+				14DC8EA0239AF2F0001E0AD1 /* ConstraintMakerFinalizable.swift */,
+				14DC8EA1239AF2F0001E0AD1 /* ConstraintDSL.swift */,
+				14DC8EA2239AF2F0001E0AD1 /* ConstraintMakerExtendable.swift */,
+				14DC8EA3239AF2F0001E0AD1 /* ConstraintPriority.swift */,
+				14DC8EA4239AF2F0001E0AD1 /* ConstraintInsetTarget.swift */,
+				14DC8EA5239AF2F0001E0AD1 /* SnapKit.h */,
+				14DC8EA6239AF2F0001E0AD1 /* ConstraintConfig.swift */,
+				14DC8EA7239AF2F0001E0AD1 /* UILayoutSupport+Extensions.swift */,
+				14DC8EA8239AF2F0001E0AD1 /* ConstraintView.swift */,
+				14DC8EA9239AF2F0001E0AD1 /* ConstraintLayoutGuide.swift */,
+				14DC8EAA239AF2F0001E0AD1 /* ConstraintLayoutSupport.swift */,
+				14DC8EAB239AF2F0001E0AD1 /* Typealiases.swift */,
+				14DC8EAC239AF2F0001E0AD1 /* ConstraintConstantTarget.swift */,
+				14DC8EAD239AF2F0001E0AD1 /* ConstraintOffsetTarget.swift */,
+				14DC8EAE239AF2F0001E0AD1 /* ConstraintMakerEditable.swift */,
+				14DC8EAF239AF2F0001E0AD1 /* ConstraintMaker.swift */,
+				14DC8EB0239AF2F0001E0AD1 /* ConstraintRelation.swift */,
+				14DC8EB1239AF2F0001E0AD1 /* ConstraintLayoutGuideDSL.swift */,
+				14DC8EB2239AF2F0001E0AD1 /* ConstraintView+Extensions.swift */,
+				14DC8EB3239AF2F0001E0AD1 /* ConstraintItem.swift */,
+				14DC8EB4239AF2F0001E0AD1 /* Constraint.swift */,
+				14DC8EB5239AF2F0001E0AD1 /* Debugging.swift */,
+				14DC8EB6239AF2F0001E0AD1 /* ConstraintRelatableTarget.swift */,
+				14DC8EB7239AF2F0001E0AD1 /* LayoutConstraint.swift */,
+				14DC8EB8239AF2F0001E0AD1 /* ConstraintLayoutGuide+Extensions.swift */,
+				14DC8EB9239AF2F0001E0AD1 /* ConstraintLayoutSupportDSL.swift */,
+				14DC8EBA239AF2F0001E0AD1 /* ConstraintMakerRelatable.swift */,
+			);
+			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		B873391D63D5689F51E5DB7C /* Pods */ = {
@@ -773,76 +678,6 @@
 		FCBD222B2353A8F500699B52 = {
 			isa = PBXGroup;
 			children = (
-				141131E5237FC26800944829 /* ATCMessengerUserAdapter.swift */,
-				141131E6237FC26800944829 /* ATCMessengerUserCollectionViewCell.swift */,
-				141131E7237FC26800944829 /* ATCMessengerUserCollectionViewCell.xib */,
-				141131E2237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.swift */,
-				141131E1237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.xib */,
-				141131D5237FC25B00944829 /* ATCCarouselCollectionViewCell.swift */,
-				141131D7237FC25B00944829 /* ATCCarouselCollectionViewCell.xib */,
-				141131D8237FC25B00944829 /* ATCStoryCollectionViewCell.swift */,
-				141131D6237FC25B00944829 /* ATCStoryCollectionViewCell.xib */,
-				141131D9237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.swift */,
-				141131DA237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.xib */,
-				141131CA237FC24E00944829 /* ATCDrawerController.swift */,
-				141131C4237FC24E00944829 /* ATCHostViewController.swift */,
-				141131C9237FC24E00944829 /* ATCMenuCollectionViewController.swift */,
-				141131C3237FC24D00944829 /* ATCMenuHeaderTableViewCell.swift */,
-				141131C2237FC24D00944829 /* ATCMenuHeaderTableViewCell.xib */,
-				141131C1237FC24D00944829 /* ATCMenuItemCollectionViewCellProtocol.swift */,
-				141131C5237FC24E00944829 /* ATCMenuItemRowAdapter.swift */,
-				141131C6237FC24E00944829 /* ATCMenuTableViewController.swift */,
-				141131C7237FC24E00944829 /* ATCMenuTableViewController.xib */,
-				141131C8237FC24E00944829 /* ATCNavigationController.swift */,
-				141131BE237FC24400944829 /* ATCCollectionViewFlowLayout.swift */,
-				141131BD237FC24400944829 /* ATCLiquidCollectionViewLayout.swift */,
-				141131BB237FC23D00944829 /* UIViewController+ATCAdditions.swift */,
-				141131B9237FC23600944829 /* ATCGenericCollectionViewController.swift */,
-				141131AB237FC22700944829 /* Date.swift */,
-				141131AC237FC22700944829 /* String.swift */,
-				141131AD237FC22700944829 /* UIColor.swift */,
-				141131AE237FC22800944829 /* UIImage.swift */,
-				141131AF237FC22800944829 /* UIScrollView.swift */,
-				141131B0237FC22800944829 /* UITextField.swift */,
-				141131B1237FC22800944829 /* UIView.swift */,
-				14113173237FC21800944829 /* Constraint.swift */,
-				1411316B237FC21700944829 /* ConstraintAttributes.swift */,
-				1411316C237FC21800944829 /* ConstraintConfig.swift */,
-				14113167237FC21700944829 /* ConstraintConstantTarget.swift */,
-				14113176237FC21900944829 /* ConstraintDescription.swift */,
-				14113166237FC21700944829 /* ConstraintDSL.swift */,
-				14113181237FC21A00944829 /* ConstraintInsets.swift */,
-				14113174237FC21900944829 /* ConstraintInsetTarget.swift */,
-				14113175237FC21900944829 /* ConstraintItem.swift */,
-				14113169237FC21700944829 /* ConstraintLayoutGuide.swift */,
-				1411317B237FC21900944829 /* ConstraintLayoutGuide+Extensions.swift */,
-				1411317F237FC21A00944829 /* ConstraintLayoutGuideDSL.swift */,
-				14113171237FC21800944829 /* ConstraintLayoutSupport.swift */,
-				1411316A237FC21700944829 /* ConstraintLayoutSupportDSL.swift */,
-				14113179237FC21900944829 /* ConstraintMaker.swift */,
-				1411317C237FC21900944829 /* ConstraintMakerEditable.swift */,
-				14113180237FC21A00944829 /* ConstraintMakerExtendable.swift */,
-				14113165237FC21700944829 /* ConstraintMakerFinalizable.swift */,
-				14113170237FC21800944829 /* ConstraintMakerPriortizable.swift */,
-				14113172237FC21800944829 /* ConstraintMakerRelatable.swift */,
-				14113182237FC21A00944829 /* ConstraintMultiplierTarget.swift */,
-				1411316D237FC21800944829 /* ConstraintOffsetTarget.swift */,
-				1411316F237FC21800944829 /* ConstraintPriority.swift */,
-				14113178237FC21900944829 /* ConstraintPriorityTarget.swift */,
-				1411316E237FC21800944829 /* ConstraintRelatableTarget.swift */,
-				14113183237FC21A00944829 /* ConstraintRelation.swift */,
-				14113177237FC21900944829 /* ConstraintView.swift */,
-				1411317E237FC21A00944829 /* ConstraintView+Extensions.swift */,
-				1411317A237FC21900944829 /* ConstraintViewDSL.swift */,
-				14113187237FC21A00944829 /* Debugging.swift */,
-				14113184237FC21A00944829 /* LayoutConstraint.swift */,
-				14113186237FC21A00944829 /* LayoutConstraintItem.swift */,
-				1411317D237FC21900944829 /* SnapKit.h */,
-				14113168237FC21700944829 /* Typealiases.swift */,
-				14113185237FC21A00944829 /* UILayoutSupport+Extensions.swift */,
-				14113162237FC20500944829 /* ATCUser.swift */,
-				14113161237FC20500944829 /* ATCViewControllerContainerViewModel.swift */,
-				141131EB2380DA9D00944829 /* ChatCore */,
 				FCBD22362353A8F500699B52 /* LogMan */,
 				FCBD224E2353A8FA00699B52 /* LogManTests */,
 				FCBD22592353A8FA00699B52 /* LogManUITests */,
@@ -865,9 +700,7 @@
 		FCBD22362353A8F500699B52 /* LogMan */ = {
 			isa = PBXGroup;
 			children = (
-				14113134237FC0E300944829 /* ChatHostViewController.swift */,
-				14113133237FC0E300944829 /* ChatUIConfiguration.swift */,
-				14113131237FC09600944829 /* Core */,
+				14DC8E47239AF2EF001E0AD1 /* Core */,
 				FCB516262364BD9F004B55DA /* DeploymentLoadList */,
 				FCB5161D2364373F004B55DA /* DeploymentDetail */,
 				FCB51618236436AD004B55DA /* Common */,
@@ -1107,12 +940,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				14113130237FC05B00944829 /* Main.storyboard in Resources */,
+				14DC8EEE239AF2F0001E0AD1 /* CoreImages.xcassets in Resources */,
 				FCBD22452353A8FA00699B52 /* LaunchScreen.storyboard in Resources */,
+				14DC8EC3239AF2F0001E0AD1 /* ATCUserStoryCollectionViewCell.xib in Resources */,
+				14DC8ED9239AF2F0001E0AD1 /* ATCMenuTableViewController.xib in Resources */,
+				14DC8EEC239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.xib in Resources */,
+				14DC8EED239AF2F0001E0AD1 /* Misc.xcassets in Resources */,
+				14DC8EDC239AF2F0001E0AD1 /* ATCMenuHeaderTableViewCell.xib in Resources */,
 				FCB515F723640B34004B55DA /* GoogleService-Info.plist in Resources */,
 				FC5C8EE1236130DF00B87A73 /* ObjectLabelScene.sks in Resources */,
+				14DC8EC2239AF2F0001E0AD1 /* ATCThreadCollectionViewCell.xib in Resources */,
+				14DC8EE6239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.xib in Resources */,
 				FCB5151C23614EE7004B55DA /* art.scnassets in Resources */,
-				14113132237FC09600944829 /* Core in Resources */,
+				14DC8EE9239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.xib in Resources */,
 				FCBD22422353A8FA00699B52 /* Assets.xcassets in Resources */,
+				14DC8EE3239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.xib in Resources */,
+				14DC8EE4239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1240,185 +1083,114 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14DC8EF0239AF2F0001E0AD1 /* ATCGenericLocalDataSource.swift in Sources */,
 				FC6DCFAA2355D96400308F43 /* CustomSearchTextField.swift in Sources */,
+				14DC8EF9239AF2F0001E0AD1 /* ConstraintMakerPriortizable.swift in Sources */,
+				14DC8ED4239AF2F0001E0AD1 /* UIViewController+ATCAdditions.swift in Sources */,
 				FCB5151E23614F32004B55DA /* CargoDetectionViewController.swift in Sources */,
-				1411313A237FC19C00944829 /* ATCViewControllerContainerRowAdapter.swift in Sources */,
-				1411313B237FC19C00944829 /* ATCCarouselAdapter.swift in Sources */,
-				141131E8237FC26800944829 /* ATCMessengerUserAdapter.swift in Sources */,
-				141131E9237FC26800944829 /* ATCMessengerUserCollectionViewCell.swift in Sources */,
-				141131EA237FC26800944829 /* ATCMessengerUserCollectionViewCell.xib in Sources */,
-				14113163237FC20500944829 /* ATCViewControllerContainerViewModel.swift in Sources */,
-				14113164237FC20500944829 /* ATCUser.swift in Sources */,
-				141131BF237FC24500944829 /* ATCLiquidCollectionViewLayout.swift in Sources */,
-				141131C0237FC24500944829 /* ATCCollectionViewFlowLayout.swift in Sources */,
-				1411313C237FC19C00944829 /* ATCStoryAdapter.swift in Sources */,
-				141131DB237FC25C00944829 /* ATCCarouselCollectionViewCell.swift in Sources */,
-				1411329D2380F18700944829 /* ATCMessengerUserAdapter.swift in Sources */,
-				141131E3237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.xib in Sources */,
-				141131E4237FC26100944829 /* ATCCircledIconMenuCollectionViewCell.swift in Sources */,
-				141132912380F18700944829 /* ConstraintLayoutGuide.swift in Sources */,
-				141131DC237FC25C00944829 /* ATCStoryCollectionViewCell.xib in Sources */,
-				141132AF2380F18700944829 /* ConstraintRelatableTarget.swift in Sources */,
-				1411329E2380F18700944829 /* ATCViewControllerContainerViewModel.swift in Sources */,
-				141131DD237FC25C00944829 /* ATCCarouselCollectionViewCell.xib in Sources */,
-				141131DE237FC25C00944829 /* ATCStoryCollectionViewCell.swift in Sources */,
-				141131DF237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.swift in Sources */,
-				141131E0237FC25C00944829 /* ATCViewControllerContainerCollectionViewCell.xib in Sources */,
-				141131CB237FC24E00944829 /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */,
-				141132A92380F18700944829 /* ConstraintMultiplierTarget.swift in Sources */,
-				1411329F2380F18700944829 /* ConstraintMakerPriortizable.swift in Sources */,
-				141131CC237FC24E00944829 /* ATCMenuHeaderTableViewCell.xib in Sources */,
-				141132B22380F18700944829 /* Date.swift in Sources */,
-				141131CD237FC24E00944829 /* ATCMenuHeaderTableViewCell.swift in Sources */,
-				141131CE237FC24E00944829 /* ATCHostViewController.swift in Sources */,
-				141131CF237FC24E00944829 /* ATCMenuItemRowAdapter.swift in Sources */,
-				141131D0237FC24E00944829 /* ATCMenuTableViewController.swift in Sources */,
-				141132782380F18700944829 /* ConstraintMakerFinalizable.swift in Sources */,
-				141131D1237FC24E00944829 /* ATCMenuTableViewController.xib in Sources */,
-				141131D2237FC24E00944829 /* ATCNavigationController.swift in Sources */,
-				141131D3237FC24E00944829 /* ATCMenuCollectionViewController.swift in Sources */,
-				1411329A2380F18700944829 /* ATCCollectionViewFlowLayout.swift in Sources */,
-				1411328D2380F18700944829 /* ConstraintMakerRelatable.swift in Sources */,
-				141131D4237FC24E00944829 /* ATCDrawerController.swift in Sources */,
-				141131BA237FC23600944829 /* ATCGenericCollectionViewController.swift in Sources */,
+				14DC8F14239AF2F0001E0AD1 /* LayoutConstraint.swift in Sources */,
+				14DC8F0F239AF2F0001E0AD1 /* ConstraintView+Extensions.swift in Sources */,
+				14DC8F12239AF2F0001E0AD1 /* Debugging.swift in Sources */,
+				14DC8ED1239AF2F0001E0AD1 /* ATCStoryAdapter.swift in Sources */,
 				FCB5161A236436E6004B55DA /* TableViewAdapter.swift in Sources */,
-				1411329B2380F18700944829 /* ATCNavigationController.swift in Sources */,
-				14113188237FC21B00944829 /* ConstraintMakerFinalizable.swift in Sources */,
-				14113189237FC21B00944829 /* ConstraintDSL.swift in Sources */,
-				141131BC237FC23D00944829 /* UIViewController+ATCAdditions.swift in Sources */,
-				141131B2237FC22800944829 /* Date.swift in Sources */,
-				141131B3237FC22800944829 /* String.swift in Sources */,
-				141131B4237FC22800944829 /* UIColor.swift in Sources */,
-				141132962380F18700944829 /* ConstraintLayoutGuideDSL.swift in Sources */,
-				141131B5237FC22800944829 /* UIImage.swift in Sources */,
-				141132952380F18700944829 /* String.swift in Sources */,
-				141131B6237FC22800944829 /* UIScrollView.swift in Sources */,
-				141131B7237FC22800944829 /* UITextField.swift in Sources */,
-				141132922380F18700944829 /* UITextField.swift in Sources */,
-				141131B8237FC22800944829 /* UIView.swift in Sources */,
-				1411318A237FC21B00944829 /* ConstraintConstantTarget.swift in Sources */,
-				141132AC2380F18700944829 /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */,
-				141132932380F18700944829 /* ATCHostViewController.swift in Sources */,
-				1411318B237FC21B00944829 /* Typealiases.swift in Sources */,
-				141132A22380F18700944829 /* ATCDrawerController.swift in Sources */,
-				1411318C237FC21B00944829 /* ConstraintLayoutGuide.swift in Sources */,
-				1411318D237FC21B00944829 /* ConstraintLayoutSupportDSL.swift in Sources */,
-				1411318E237FC21B00944829 /* ConstraintAttributes.swift in Sources */,
-				1411318F237FC21B00944829 /* ConstraintConfig.swift in Sources */,
-				14113190237FC21B00944829 /* ConstraintOffsetTarget.swift in Sources */,
-				141132862380F18700944829 /* LayoutConstraint.swift in Sources */,
-				141132A72380F18700944829 /* ConstraintMakerEditable.swift in Sources */,
-				14113191237FC21B00944829 /* ConstraintRelatableTarget.swift in Sources */,
-				141132982380F18700944829 /* ATCViewControllerContainerCollectionViewCell.swift in Sources */,
-				14113192237FC21B00944829 /* ConstraintPriority.swift in Sources */,
-				14113193237FC21B00944829 /* ConstraintMakerPriortizable.swift in Sources */,
-				14113194237FC21B00944829 /* ConstraintLayoutSupport.swift in Sources */,
-				1411327F2380F18700944829 /* ATCStoryCollectionViewCell.swift in Sources */,
-				141132A02380F18700944829 /* ConstraintDSL.swift in Sources */,
-				14113195237FC21B00944829 /* ConstraintMakerRelatable.swift in Sources */,
-				14113196237FC21B00944829 /* Constraint.swift in Sources */,
-				14113197237FC21B00944829 /* ConstraintInsetTarget.swift in Sources */,
-				14113198237FC21B00944829 /* ConstraintItem.swift in Sources */,
-				14113199237FC21B00944829 /* ConstraintDescription.swift in Sources */,
-				1411327B2380F18700944829 /* LayoutConstraintItem.swift in Sources */,
-				1411319A237FC21B00944829 /* ConstraintView.swift in Sources */,
-				1411319B237FC21B00944829 /* ConstraintPriorityTarget.swift in Sources */,
-				1411319C237FC21B00944829 /* ConstraintMaker.swift in Sources */,
-				1411319D237FC21B00944829 /* ConstraintViewDSL.swift in Sources */,
-				1411327D2380F18700944829 /* ConstraintOffsetTarget.swift in Sources */,
-				1411319E237FC21B00944829 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
-				141132B12380F18700944829 /* ConstraintRelation.swift in Sources */,
-				141132A32380F18700944829 /* ATCMessengerUserCollectionViewCell.swift in Sources */,
-				1411319F237FC21B00944829 /* ConstraintMakerEditable.swift in Sources */,
-				141131A0237FC21B00944829 /* SnapKit.h in Sources */,
-				141131A1237FC21B00944829 /* ConstraintView+Extensions.swift in Sources */,
-				141131A2237FC21B00944829 /* ConstraintLayoutGuideDSL.swift in Sources */,
-				1411328B2380F18700944829 /* Typealiases.swift in Sources */,
-				141131A3237FC21B00944829 /* ConstraintMakerExtendable.swift in Sources */,
-				141132A42380F18700944829 /* ConstraintLayoutSupportDSL.swift in Sources */,
-				141131A4237FC21B00944829 /* ConstraintInsets.swift in Sources */,
-				141131A5237FC21B00944829 /* ConstraintMultiplierTarget.swift in Sources */,
-				141131A6237FC21B00944829 /* ConstraintRelation.swift in Sources */,
-				141131A7237FC21B00944829 /* LayoutConstraint.swift in Sources */,
-				141131A8237FC21B00944829 /* UILayoutSupport+Extensions.swift in Sources */,
-				141131A9237FC21B00944829 /* LayoutConstraintItem.swift in Sources */,
-				141132892380F18700944829 /* ConstraintPriorityTarget.swift in Sources */,
-				141131AA237FC21B00944829 /* Debugging.swift in Sources */,
-				141132772380F18700944829 /* ATCMenuItemRowAdapter.swift in Sources */,
-				1411329C2380F18700944829 /* ATCUser.swift in Sources */,
-				1411327A2380F18700944829 /* ATCMenuCollectionViewController.swift in Sources */,
-				1411313F237FC1A600944829 /* ATCChatThreadAdapter.swift in Sources */,
-				1411328A2380F18700944829 /* ATCCircledIconMenuCollectionViewCell.swift in Sources */,
-				141132A12380F18700944829 /* ConstraintLayoutSupport.swift in Sources */,
-				1411315A237FC1CE00944829 /* ATCGenericLocalDataSource.swift in Sources */,
-				1411315B237FC1CE00944829 /* UIImage+ATCAdditions.swift in Sources */,
-				141132832380F18700944829 /* Constraint.swift in Sources */,
-				1411315C237FC1CE00944829 /* ATCUIGenericConfigurationProtocol.swift in Sources */,
-				1411315D237FC1CE00944829 /* ATCGenericLocalHeteroDataSource.swift in Sources */,
-				1411315E237FC1CE00944829 /* UITabBarItem+ATCAdditions.swift in Sources */,
-				141132822380F18700944829 /* ConstraintPriority.swift in Sources */,
-				1411315F237FC1CE00944829 /* TimeFormatHelper.swift in Sources */,
-				14113160237FC1CE00944829 /* ATCGenericFirebaseDataSource.swift in Sources */,
-				14113143237FC1AB00944829 /* ATCChatChannel.swift in Sources */,
-				141132A82380F18700944829 /* ConstraintAttributes.swift in Sources */,
-				14113144237FC1AB00944829 /* ATChatMessage.swift in Sources */,
-				141132902380F18700944829 /* ConstraintMakerExtendable.swift in Sources */,
-				14113140237FC1A600944829 /* ATCChatUserStoryAdapter.swift in Sources */,
-				14113150237FC1C600944829 /* ATCChatHomeViewController.swift in Sources */,
-				14113151237FC1C600944829 /* ATCChatThreadsViewController.swift in Sources */,
-				1411328F2380F18700944829 /* ConstraintMaker.swift in Sources */,
-				14113152237FC1C600944829 /* ATCChatThreadViewController.swift in Sources */,
-				141132AA2380F18700944829 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
-				14113147237FC1B000944829 /* ATCChatMockStore.swift in Sources */,
-				141132882380F18700944829 /* ConstraintDescription.swift in Sources */,
-				1411314B237FC1C000944829 /* ATCUserStoryCollectionViewCell.swift in Sources */,
-				1411327C2380F18700944829 /* ATCLiquidCollectionViewLayout.swift in Sources */,
-				141132B02380F18700944829 /* UIViewController+ATCAdditions.swift in Sources */,
-				1411314C237FC1C000944829 /* ATCThreadCollectionViewCell.swift in Sources */,
-				141132792380F18700944829 /* ConstraintConfig.swift in Sources */,
-				141132802380F18700944829 /* ConstraintInsetTarget.swift in Sources */,
-				141132852380F18700944829 /* ConstraintView.swift in Sources */,
-				141132A62380F18700944829 /* UILayoutSupport+Extensions.swift in Sources */,
-				141132AD2380F18700944829 /* UIImage.swift in Sources */,
-				141132A52380F18700944829 /* ConstraintViewDSL.swift in Sources */,
-				141132972380F18700944829 /* ConstraintView+Extensions.swift in Sources */,
-				1411328C2380F18700944829 /* ATCMenuTableViewController.swift in Sources */,
-				14113148237FC1B000944829 /* ATCRemoteData.swift in Sources */,
+				14DC8ECE239AF2F0001E0AD1 /* UITextField.swift in Sources */,
 				FCB51615236435D5004B55DA /* NewDeploymentViewModel.swift in Sources */,
+				14DC8EBE239AF2F0001E0AD1 /* ATCChatThreadAdapter.swift in Sources */,
+				14DC8ECA239AF2F0001E0AD1 /* UIScrollView.swift in Sources */,
+				14DC8EC5239AF2F0001E0AD1 /* ATCUserStoryCollectionViewCell.swift in Sources */,
+				14DC8EDF239AF2F0001E0AD1 /* ATCGenericCollectionViewController.swift in Sources */,
+				14DC8EC4239AF2F0001E0AD1 /* ATCThreadCollectionViewCell.swift in Sources */,
 				FCB5162123643784004B55DA /* DeploymentDetailViewData.swift in Sources */,
+				14DC8EEB239AF2F0001E0AD1 /* ATCCarouselCollectionViewCell.swift in Sources */,
+				14DC8F02239AF2F0001E0AD1 /* ConstraintInsetTarget.swift in Sources */,
+				14DC8F04239AF2F0001E0AD1 /* UILayoutSupport+Extensions.swift in Sources */,
+				14DC8EBD239AF2F0001E0AD1 /* ATCChatUserStoryAdapter.swift in Sources */,
+				14DC8ECC239AF2F0001E0AD1 /* UIView.swift in Sources */,
+				14DC8F06239AF2F0001E0AD1 /* ConstraintLayoutGuide.swift in Sources */,
+				14DC8F16239AF2F0001E0AD1 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				14DC8EE0239AF2F0001E0AD1 /* ATCLiquidCollectionViewLayout.swift in Sources */,
+				14DC8EDB239AF2F0001E0AD1 /* ATCMenuTableViewController.swift in Sources */,
+				14DC8ED3239AF2F0001E0AD1 /* ATCCarouselAdapter.swift in Sources */,
+				14DC8F07239AF2F0001E0AD1 /* ConstraintLayoutSupport.swift in Sources */,
+				14DC8EFB239AF2F0001E0AD1 /* ConstraintViewDSL.swift in Sources */,
+				14DC8ECF239AF2F0001E0AD1 /* String.swift in Sources */,
+				14DC8EFE239AF2F0001E0AD1 /* ConstraintMakerFinalizable.swift in Sources */,
+				14DC8EEA239AF2F0001E0AD1 /* ATCMessengerUserAdapter.swift in Sources */,
+				14DC8EC9239AF2F0001E0AD1 /* ATCUser.swift in Sources */,
+				14DC8EFF239AF2F0001E0AD1 /* ConstraintDSL.swift in Sources */,
+				14DC8ED8239AF2F0001E0AD1 /* ATCDrawerController.swift in Sources */,
+				14DC8EF6239AF2F0001E0AD1 /* ConstraintMultiplierTarget.swift in Sources */,
+				14DC8EE1239AF2F0001E0AD1 /* ATCCollectionViewFlowLayout.swift in Sources */,
+				14DC8F17239AF2F0001E0AD1 /* ConstraintMakerRelatable.swift in Sources */,
+				14DC8EF3239AF2F0001E0AD1 /* TimeFormatHelper.swift in Sources */,
+				14DC8F11239AF2F0001E0AD1 /* Constraint.swift in Sources */,
+				14DC8F08239AF2F0001E0AD1 /* Typealiases.swift in Sources */,
 				FCB5162A2364BDE5004B55DA /* DeploymentLoadListViewData.swift in Sources */,
+				14DC8F0C239AF2F0001E0AD1 /* ConstraintMaker.swift in Sources */,
+				14DC8F0D239AF2F0001E0AD1 /* ConstraintRelation.swift in Sources */,
 				FCBD22402353A8F600699B52 /* LogMan.xcdatamodeld in Sources */,
+				14DC8EE7239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.swift in Sources */,
+				14DC8F0B239AF2F0001E0AD1 /* ConstraintMakerEditable.swift in Sources */,
+				14DC8ECB239AF2F0001E0AD1 /* Date.swift in Sources */,
+				14DC8ED5239AF2F0001E0AD1 /* ATCHostViewController.swift in Sources */,
+				14DC8EDE239AF2F0001E0AD1 /* ATCMenuItemRowAdapter.swift in Sources */,
 				FCB5161023642F90004B55DA /* LoginViewController.swift in Sources */,
+				14DC8EDD239AF2F0001E0AD1 /* ATCMenuHeaderTableViewCell.swift in Sources */,
 				FCB51612236430FC004B55DA /* DeploymentService.swift in Sources */,
-				141132842380F18700944829 /* ATCGenericCollectionViewController.swift in Sources */,
+				14DC8F10239AF2F0001E0AD1 /* ConstraintItem.swift in Sources */,
+				14DC8ED0239AF2F0001E0AD1 /* UIImage.swift in Sources */,
+				14DC8EEF239AF2F0001E0AD1 /* ATCGenericLocalHeteroDataSource.swift in Sources */,
 				FCBD22692355532E00699B52 /* AddItemViewController.swift in Sources */,
-				1411327E2380F18700944829 /* Debugging.swift in Sources */,
+				14DC8F05239AF2F0001E0AD1 /* ConstraintView.swift in Sources */,
+				14DC8EBF239AF2F0001E0AD1 /* ATCChatThreadViewController.swift in Sources */,
+				14DC8F0E239AF2F0001E0AD1 /* ConstraintLayoutGuideDSL.swift in Sources */,
 				FCBD226B2355534C00699B52 /* ItemsTableViewController.swift in Sources */,
+				14DC8ED2239AF2F0001E0AD1 /* ATCViewControllerContainerRowAdapter.swift in Sources */,
+				14DC8EBB239AF2F0001E0AD1 /* ATCChatChannel.swift in Sources */,
+				14DC8EBC239AF2F0001E0AD1 /* ATChatMessage.swift in Sources */,
+				14DC8EFD239AF2F0001E0AD1 /* ConstraintInsets.swift in Sources */,
+				14DC8EC8239AF2F0001E0AD1 /* ATCViewControllerContainerViewModel.swift in Sources */,
+				14DC8EE8239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.swift in Sources */,
+				14DC8EDA239AF2F0001E0AD1 /* ATCMenuCollectionViewController.swift in Sources */,
+				14DC8F01239AF2F0001E0AD1 /* ConstraintPriority.swift in Sources */,
+				14DC8EF7239AF2F0001E0AD1 /* LayoutConstraintItem.swift in Sources */,
 				FCB5160E23642897004B55DA /* NetworkService.swift in Sources */,
-				141132872380F18700944829 /* UIScrollView.swift in Sources */,
+				14DC8ECD239AF2F0001E0AD1 /* UIColor.swift in Sources */,
+				14DC8EFA239AF2F0001E0AD1 /* ConstraintAttributes.swift in Sources */,
+				14DC8EF5239AF2F0001E0AD1 /* UIImage+ATCAdditions.swift in Sources */,
 				FC6DCFAC2355DB6400308F43 /* SearchItem.swift in Sources */,
 				FCBD22382353A8F500699B52 /* AppDelegate.swift in Sources */,
-				14113135237FC0E400944829 /* ChatUIConfiguration.swift in Sources */,
-				141132AB2380F18700944829 /* UIColor.swift in Sources */,
-				141132992380F18700944829 /* ATCMenuHeaderTableViewCell.swift in Sources */,
 				FCB51617236435E3004B55DA /* NewDeploymentViewController.swift in Sources */,
-				141132942380F18700944829 /* ConstraintConstantTarget.swift in Sources */,
-				14113136237FC0E400944829 /* ChatHostViewController.swift in Sources */,
+				14DC8EF8239AF2F0001E0AD1 /* ConstraintDescription.swift in Sources */,
+				14DC8ED6239AF2F0001E0AD1 /* ATCNavigationController.swift in Sources */,
 				FCB5161C2364371E004B55DA /* ViewController+Ext.swift in Sources */,
 				FCB516282364BDC9004B55DA /* DeploymentLoadLIstViewModel.swift in Sources */,
-				141132812380F18700944829 /* ConstraintItem.swift in Sources */,
+				14DC8EFC239AF2F0001E0AD1 /* ConstraintPriorityTarget.swift in Sources */,
+				14DC8EF4239AF2F0001E0AD1 /* ATCGenericFirebaseDataSource.swift in Sources */,
 				FC5C8EDA235FABAA00B87A73 /* CargoDetailTableViewCell.swift in Sources */,
+				14DC8F13239AF2F0001E0AD1 /* ConstraintRelatableTarget.swift in Sources */,
+				14DC8EC1239AF2F0001E0AD1 /* ATCChatThreadsViewController.swift in Sources */,
+				14DC8F0A239AF2F0001E0AD1 /* ConstraintOffsetTarget.swift in Sources */,
+				14DC8EE5239AF2F0001E0AD1 /* ATCViewControllerContainerCollectionViewCell.swift in Sources */,
 				FCB5160C2364273D004B55DA /* DeploymentListViewController.swift in Sources */,
+				14DC8EF2239AF2F0001E0AD1 /* UITabBarItem+ATCAdditions.swift in Sources */,
 				FCB5162C2364BDFC004B55DA /* DeploymentLoadListViewController.swift in Sources */,
+				14DC8EC6239AF2F0001E0AD1 /* ATCChatMockStore.swift in Sources */,
 				FCB5160A2364271D004B55DA /* DeploymentListViewData.swift in Sources */,
+				14DC8EC0239AF2F0001E0AD1 /* ATCChatHomeViewController.swift in Sources */,
+				14DC8EE2239AF2F0001E0AD1 /* ATCStoryCollectionViewCell.swift in Sources */,
+				14DC8ED7239AF2F0001E0AD1 /* ATCMenuItemCollectionViewCellProtocol.swift in Sources */,
 				FC7D29DC235BA6380080A167 /* CoreDataStack.swift in Sources */,
-				1411328E2380F18700944829 /* ConstraintInsets.swift in Sources */,
 				FCB51625236437A0004B55DA /* User.swift in Sources */,
-				141132762380F18700944829 /* UIView.swift in Sources */,
 				FCB5162323643794004B55DA /* DeploymentDetailViewController.swift in Sources */,
+				14DC8EC7239AF2F0001E0AD1 /* ATCRemoteData.swift in Sources */,
 				FCB5161F23643770004B55DA /* DeploymentDetailViewModel.swift in Sources */,
-				141132AE2380F18700944829 /* ATCCarouselCollectionViewCell.swift in Sources */,
+				14DC8F09239AF2F0001E0AD1 /* ConstraintConstantTarget.swift in Sources */,
+				14DC8F03239AF2F0001E0AD1 /* ConstraintConfig.swift in Sources */,
 				FCB5160823642707004B55DA /* DeploymentListViewModel.swift in Sources */,
+				14DC8F15239AF2F0001E0AD1 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				14DC8F00239AF2F0001E0AD1 /* ConstraintMakerExtendable.swift in Sources */,
+				14DC8EF1239AF2F0001E0AD1 /* ATCUIGenericConfigurationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -350,7 +350,6 @@ extension ATCChatThreadViewController {
 }
 
 // MARK: - MessagesDisplayDelegate
-
 extension ATCChatThreadViewController: MessagesDisplayDelegate {
   
   func backgroundColor(for message: MessageType, at indexPath: IndexPath, in messagesCollectionView: MessagesCollectionView) -> UIColor {
@@ -379,7 +378,6 @@ extension ATCChatThreadViewController: MessagesDisplayDelegate {
 }
 
 // MARK: - UIImagePickerControllerDelegate
-
 extension ATCChatThreadViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
   
   func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
