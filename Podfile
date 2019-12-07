@@ -22,6 +22,12 @@ target 'LogMan' do
 
   pod 'Alamofire'
   pod 'Kingfisher'
+  pod 'YesWeScan', '~> 2.0'
+  pod 'TOCropViewController'
+  pod 'SwiftLint'
+  pod 'SwiftyTesseract',    '~> 2.0'
+
+
 
 
   target 'LogManTests' do

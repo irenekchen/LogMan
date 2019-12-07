@@ -1,6 +1,0 @@
-framework module Pods_LogManUITests {
-  umbrella header "Pods-LogManUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

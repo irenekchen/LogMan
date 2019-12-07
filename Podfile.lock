@@ -159,11 +159,11 @@ PODS:
     - abseil/base/config
     - abseil/meta/type_traits
   - Alamofire (4.9.1)
-  - AppAuth (1.2.0):
-    - AppAuth/Core (= 1.2.0)
-    - AppAuth/ExternalUserAgent (= 1.2.0)
-  - AppAuth/Core (1.2.0)
-  - AppAuth/ExternalUserAgent (1.2.0)
+  - AppAuth (1.3.0):
+    - AppAuth/Core (= 1.3.0)
+    - AppAuth/ExternalUserAgent (= 1.3.0)
+  - AppAuth/Core (1.3.0)
+  - AppAuth/ExternalUserAgent (1.3.0)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
@@ -211,7 +211,7 @@ PODS:
     - FirebaseCoreDiagnosticsInterop (~> 1.0)
     - GoogleUtilities/Environment (~> 6.2)
     - GoogleUtilities/Logger (~> 6.2)
-  - FirebaseCoreDiagnostics (1.1.1):
+  - FirebaseCoreDiagnostics (1.1.2):
     - FirebaseCoreDiagnosticsInterop (~> 1.0)
     - GoogleDataTransportCCTSupport (~> 1.0)
     - GoogleUtilities/Environment (~> 6.2)
@@ -222,7 +222,7 @@ PODS:
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.0)
     - leveldb-library (~> 1.22)
-  - FirebaseFirestore (1.8.0):
+  - FirebaseFirestore (1.8.1):
     - abseil/algorithm (= 0.20190808)
     - abseil/base (= 0.20190808)
     - abseil/memory (= 0.20190808)
@@ -255,9 +255,9 @@ PODS:
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (= 0.3.9011)
-  - GoogleDataTransport (3.1.0)
-  - GoogleDataTransportCCTSupport (1.2.1):
-    - GoogleDataTransport (~> 3.0)
+  - GoogleDataTransport (3.2.0)
+  - GoogleDataTransportCCTSupport (1.2.2):
+    - GoogleDataTransport (~> 3.2)
     - nanopb (~> 0.3.901)
   - GoogleSignIn (5.0.2):
     - AppAuth (~> 1.2)
@@ -306,9 +306,9 @@ PODS:
   - GTMSessionFetcher/Full (1.3.0):
     - GTMSessionFetcher/Core (= 1.3.0)
   - InputBarAccessoryView (4.2.2)
-  - Kingfisher (5.9.0):
-    - Kingfisher/Core (= 5.9.0)
-  - Kingfisher/Core (5.9.0)
+  - Kingfisher (5.11.0):
+    - Kingfisher/Core (= 5.11.0)
+  - Kingfisher/Core (5.11.0)
   - leveldb-library (1.22)
   - MessageKit (3.0.0):
     - InputBarAccessoryView (~> 4.2.2)
@@ -318,6 +318,10 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - SnapKit (5.0.1)
+  - SwiftLint (0.38.0)
+  - SwiftyTesseract (2.2.2)
+  - TOCropViewController (2.5.2)
+  - YesWeScan (2.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -334,6 +338,10 @@ DEPENDENCIES:
   - Kingfisher
   - MessageKit
   - SnapKit (~> 5.0.0)
+  - SwiftLint
+  - SwiftyTesseract (~> 2.0)
+  - TOCropViewController
+  - YesWeScan (~> 2.0)
 
 SPEC REPOS:
   trunk:
@@ -369,11 +377,15 @@ SPEC REPOS:
     - MessageKit
     - nanopb
     - SnapKit
+    - SwiftLint
+    - SwiftyTesseract
+    - TOCropViewController
+    - YesWeScan
 
 SPEC CHECKSUMS:
   abseil: 18063d773f5366ff8736a050fe035a28f635fd27
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AppAuth: bce82c76043657c99d91e7882e8a9e1a93650cd4
+  AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   CodableFirebase: 0bf201991eeec35eb9fcd987d271ea463cf34a80
   Firebase: 458d109512200d1aca2e1b9b6cf7d68a869a4a46
@@ -381,16 +393,16 @@ SPEC CHECKSUMS:
   FirebaseAuth: 7d0f84873926f6648bbd1391a318dfb1a26b5e4f
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
   FirebaseCore: 307ea2508df730c5865334e41965bd9ea344b0e5
-  FirebaseCoreDiagnostics: af29e43048607588c050889d19204f4d7b758c9f
+  FirebaseCoreDiagnostics: 511f4f3ed7d440bb69127e8b97c2bc8befae639e
   FirebaseCoreDiagnosticsInterop: e9b1b023157e3a2fc6418b5cb601e79b9af7b3a0
   FirebaseDatabase: 963515d232ded06f36f6ce830507c94551866170
-  FirebaseFirestore: 7acd8c85ce6b8955cedc0b9be17d456473605a93
+  FirebaseFirestore: 2e92e977280d63ecbf3fd58bdbfaf9145abb880f
   FirebaseInstanceID: ebd2ea79ee38db0cb5f5167b17a0d387e1cc7b6e
   FirebaseStorage: 046abe9ac4e2a1a0e47d72f536490ffa50896632
   FirebaseUI: 433550cb9e3d03ec7ee2c25f87493f76358d9b68
   GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
-  GoogleDataTransport: 67cc56f6280d1bc9d470285e851ec49ee9013dba
-  GoogleDataTransportCCTSupport: f6ab1962e9dc05ab1fb938b795e5b310209edeec
+  GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
+  GoogleDataTransportCCTSupport: ef79a4728b864946a8aafdbab770d5294faf3b5f
   GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
   GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
@@ -398,12 +410,16 @@ SPEC CHECKSUMS:
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   InputBarAccessoryView: 2b937602598e2fab3149f37f51dd7ad795653812
-  Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
+  Kingfisher: 4569606189149e19c7d9439f47e885d0679b7a90
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   MessageKit: e892a9ca49ebe6d82684d3a93ad84021fa23e2c6
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: 4105f061f9812b214568b736dab580ab2c73a582
+  SwiftyTesseract: a05d2c6771872f203a9ba65055cb2a8b6a385552
+  TOCropViewController: e9da34f484aedd4e5d5a8ab230ba217cfe16c729
+  YesWeScan: 441b7f86d0a9959d7b7ef265ab7db56d39138ffb
 
-PODFILE CHECKSUM: 109aec47668d1c9565a2be46b5f166f4e8d60544
+PODFILE CHECKSUM: b2814bd1cf871c4b18be329a0ba45283bc9af93b
 
 COCOAPODS: 1.8.4

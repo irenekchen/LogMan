@@ -1,0 +1,6 @@
+framework module YesWeScan {
+  umbrella header "YesWeScan-umbrella.h"
+
+  export *
+  module * { export * }
+}

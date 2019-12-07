@@ -59,5 +59,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>com.columbia.ic2409.LogMan.OpenDocumentScanner</string>
+	</array>
 </dict>
 </plist>

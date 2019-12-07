@@ -187,6 +187,8 @@ class ItemsTableViewController: UITableViewController {
               destVC.currentPriority = priorityForCargo[cargoNames[rowClicked]] ?? 0
         } else if let _ = sender as? UIButton, let vc = segue.destination as? CargoDetectionViewController {
             vc.navigationController?.navigationBar.backgroundColor = .none
+        } else if let _ = sender as? UIBarButtonItem, let vc = segue.destination as? DocumentScannerViewController {
+            vc.openDocumentScanner()
         }
     }
     
@@ -203,6 +205,34 @@ class ItemsTableViewController: UITableViewController {
     }
     
     
+    @IBAction func scanTable(_ sender: Any) {
+        let userActivity = NSUserActivity()
+        if #available(iOS 12.0, *) {
+            //let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let vc = DocumentScannerViewController()
+            navigationController?.pushViewController(vc, animated: true)
+            //let viewController = storyboard.instantiateViewController(withIdentifier: "DocumentScanner") as! DocumentScannerViewController
+        //navigationController?.pushViewController(viewController, animated: true)
+        
+        
+            vc.openDocumentScanner()
+        }
+        
+        
+    }
+/*
+        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+       
+        if segue.identifier == "showScanner" {
+            
+            let vc = DocumentScannerViewController()
+            vc.openDocumentScanner()
+        }
+    }*/
     
     
 
