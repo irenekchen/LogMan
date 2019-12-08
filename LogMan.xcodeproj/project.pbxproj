@@ -352,7 +352,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14DC8E47239AF2EF001E0AD1 /* Core */ = {
+		14B614DB239D515600F328C7 /* CargoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */,
+				FCBD226A2355534C00699B52 /* ItemsTableViewController.swift */,
+				FCBD22682355532E00699B52 /* AddItemViewController.swift */,
+				FC6DCFAB2355DB6400308F43 /* SearchItem.swift */,
+				FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */,
+				FC7D29DB235BA6370080A167 /* CoreDataStack.swift */,
+			);
+			path = CargoDetail;
+			sourceTree = "<group>";
+		};
+		14B614DC239D519600F328C7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FCB5160F23642F90004B55DA /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		14B614DD239D51B100F328C7 /* ARFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				FCB5151D23614F32004B55DA /* CargoDetectionViewController.swift */,
+				FC5C8EE0236130DF00B87A73 /* ObjectLabelScene.sks */,
+				FCB5151B23614EE7004B55DA /* art.scnassets */,
+			);
+			path = ARFunctions;
+			sourceTree = "<group>";
+		};
+		14B614DE239D51DC00F328C7 /* TableOCR */ = {
+			isa = PBXGroup;
+			children = (
+				14A251E5239B59C70012702B /* DocumentTilerViewController.swift */,
+				14A251E7239B5AC20012702B /* DocumentPartitionerVIew.swift */,
+				14C3CF49239B18D900B9D52F /* DocumentScannerViewController.swift */,
+				14C3CF4B239B194400B9D52F /* DocumentScannerUIViewController.swift */,
+				14C3CF4D239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift */,
+				14C3CF4F239B4D5D00B9D52F /* EditButton.swift */,
+				14C3CF51239B4D7B00B9D52F /* IconButton.swift */,
+				14C3CF53239B4D9400B9D52F /* LogoView.swift */,
+				14C3CF55239B4DC400B9D52F /* ScanButton.swift */,
+			);
+			path = TableOCR;
+			sourceTree = "<group>";
+		};
+		14B614DF239D522F00F328C7 /* CatalogCoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				FCBD223E2353A8F600699B52 /* LogMan.xcdatamodeld */,
+			);
+			path = CatalogCoreDataStack;
+			sourceTree = "<group>";
+		};
+		14B614E0239D527800F328C7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FCBD223B2353A8F600699B52 /* Main.storyboard */,
+				FCBD22432353A8FA00699B52 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		14DC8E47239AF2EF001E0AD1 /* ChatCore */ = {
 			isa = PBXGroup;
 			children = (
 				14DC8E48239AF2EF001E0AD1 /* Chat */,
@@ -365,7 +429,7 @@
 				14DC8E8E239AF2F0001E0AD1 /* Helpers */,
 				14DC8E96239AF2F0001E0AD1 /* ThirdParty */,
 			);
-			path = Core;
+			path = ChatCore;
 			sourceTree = "<group>";
 		};
 		14DC8E48239AF2EF001E0AD1 /* Chat */ = {
@@ -720,41 +784,25 @@
 		FCBD22362353A8F500699B52 /* LogMan */ = {
 			isa = PBXGroup;
 			children = (
+				FCBD22372353A8F500699B52 /* AppDelegate.swift */,
 				14A251EC239B601E0012702B /* tessdata */,
-				14DC8E47239AF2EF001E0AD1 /* Core */,
+				14DC8E47239AF2EF001E0AD1 /* ChatCore */,
 				FCB516262364BD9F004B55DA /* DeploymentLoadList */,
 				FCB5161D2364373F004B55DA /* DeploymentDetail */,
 				FCB51618236436AD004B55DA /* Common */,
 				FCB51613236435BE004B55DA /* NewDeployment */,
 				FCB51606236426EB004B55DA /* DeploymentList */,
+				14B614E0239D527800F328C7 /* Storyboards */,
+				14B614DE239D51DC00F328C7 /* TableOCR */,
+				14B614DD239D51B100F328C7 /* ARFunctions */,
+				14B614DB239D515600F328C7 /* CargoDetail */,
+				14B614DC239D519600F328C7 /* Login */,
+				14B614DF239D522F00F328C7 /* CatalogCoreDataStack */,
+				FCBD22412353A8FA00699B52 /* Assets.xcassets */,
 				FCB515F623640B33004B55DA /* GoogleService-Info.plist */,
+				FC5C8EE22361381400B87A73 /* Info.plist */,
 				FCB515202362DEF3004B55DA /* LogMan.entitlements */,
 				FCB5151F2362D589004B55DA /* LogManRelease.entitlements */,
-				FCB5151B23614EE7004B55DA /* art.scnassets */,
-				FCBD22372353A8F500699B52 /* AppDelegate.swift */,
-				FCB5151D23614F32004B55DA /* CargoDetectionViewController.swift */,
-				FCBD223B2353A8F600699B52 /* Main.storyboard */,
-				14A251E5239B59C70012702B /* DocumentTilerViewController.swift */,
-				14A251E7239B5AC20012702B /* DocumentPartitionerVIew.swift */,
-				FC5C8EE0236130DF00B87A73 /* ObjectLabelScene.sks */,
-				FC5C8ED9235FABAA00B87A73 /* CargoDetailTableViewCell.swift */,
-				FCBD22682355532E00699B52 /* AddItemViewController.swift */,
-				FC7D29DB235BA6370080A167 /* CoreDataStack.swift */,
-				FC6DCFA92355D96400308F43 /* CustomSearchTextField.swift */,
-				FCBD226A2355534C00699B52 /* ItemsTableViewController.swift */,
-				FCB5160F23642F90004B55DA /* LoginViewController.swift */,
-				FCBD22412353A8FA00699B52 /* Assets.xcassets */,
-				FCBD22432353A8FA00699B52 /* LaunchScreen.storyboard */,
-				14C3CF49239B18D900B9D52F /* DocumentScannerViewController.swift */,
-				14C3CF4D239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift */,
-				14C3CF4B239B194400B9D52F /* DocumentScannerUIViewController.swift */,
-				FC5C8EE22361381400B87A73 /* Info.plist */,
-				FCBD223E2353A8F600699B52 /* LogMan.xcdatamodeld */,
-				FC6DCFAB2355DB6400308F43 /* SearchItem.swift */,
-				14C3CF4F239B4D5D00B9D52F /* EditButton.swift */,
-				14C3CF51239B4D7B00B9D52F /* IconButton.swift */,
-				14C3CF53239B4D9400B9D52F /* LogoView.swift */,
-				14C3CF55239B4DC400B9D52F /* ScanButton.swift */,
 			);
 			path = LogMan;
 			sourceTree = "<group>";
