@@ -24,7 +24,7 @@ class ItemsTableViewController: UITableViewController, DocumentTilerViewControll
         super.viewDidLoad()
         cargoNames = ["Hammer, UPC-654207165712", "Tank, EAN-4895135119798", "Air Compressor Tank, UPC-818223185547"]
         dataSource = [CargoDetailTableViewCellContent(name: "Hammer, UPC-654207165712"), CargoDetailTableViewCellContent(name: "Tank, EAN-4895135119798"), CargoDetailTableViewCellContent(name: "Air Compressor Tank, UPC-818223185547")]
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bkg3")!)
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "bkg3")!)
         self.tableView.estimatedRowHeight = 60
         self.tableView.rowHeight = UITableView.automaticDimension
 
