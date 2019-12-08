@@ -184,7 +184,7 @@ class DocumentTilerViewController: UIViewController {
                 if let vc = aViewController as? ItemsTableViewController {
                     //vc.cargoNames = self.detectedNomenclature
                     for name in self.detectedNomenclature {
-                        let NSN = self.catalogDictionary[name]
+                        let NSN = self.catalogDictionary[name]!
                         //vc.importContext.append("\(name), \(NSN)")
                         vc.cargoNames.append("\(name), \(NSN)")
                         vc.dataSource.append(CargoDetailTableViewCellContent(name: "\(name), \(NSN)"))
