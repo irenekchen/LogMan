@@ -6,6 +6,7 @@
 //  Copyright © 2019 Irene Chen. All rights reserved.
 //
 
+// TODO: - Add aiblity to integrate with new peripherals and integrate with medical health checkins
 import Foundation
 import MultipeerConnectivity
 
