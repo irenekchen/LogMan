@@ -15,6 +15,7 @@
 		14B614E6239F6CF100F328C7 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614E5239F6CF100F328C7 /* RulerViewController.swift */; };
 		14B614E8239F6D3C00F328C7 /* SCNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614E7239F6D3C00F328C7 /* SCNExtensions.swift */; };
 		14B614EA239F860B00F328C7 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614E9239F860B00F328C7 /* ColorService.swift */; };
+		14B614EC239F868500F328C7 /* ColorSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614EB239F868400F328C7 /* ColorSwitchViewController.swift */; };
 		14C3CF4A239B18D900B9D52F /* DocumentScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3CF49239B18D900B9D52F /* DocumentScannerViewController.swift */; };
 		14C3CF4C239B194400B9D52F /* DocumentScannerUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3CF4B239B194400B9D52F /* DocumentScannerUIViewController.swift */; };
 		14C3CF4E239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3CF4D239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift */; };
@@ -180,6 +181,7 @@
 		14B614E5239F6CF100F328C7 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
 		14B614E7239F6D3C00F328C7 /* SCNExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNExtensions.swift; sourceTree = "<group>"; };
 		14B614E9239F860B00F328C7 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
+		14B614EB239F868400F328C7 /* ColorSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwitchViewController.swift; sourceTree = "<group>"; };
 		14C3CF49239B18D900B9D52F /* DocumentScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerViewController.swift; sourceTree = "<group>"; };
 		14C3CF4B239B194400B9D52F /* DocumentScannerUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerUIViewController.swift; sourceTree = "<group>"; };
 		14C3CF4D239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+UserActivityIdentifier.swift"; sourceTree = "<group>"; };
@@ -425,6 +427,15 @@
 				FCBD22432353A8FA00699B52 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		14B614ED23A0168D00F328C7 /* BluetoothMeshNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				14B614E9239F860B00F328C7 /* ColorService.swift */,
+				14B614EB239F868400F328C7 /* ColorSwitchViewController.swift */,
+			);
+			path = BluetoothMeshNetworking;
 			sourceTree = "<group>";
 		};
 		14DC8E47239AF2EF001E0AD1 /* ChatCore */ = {
@@ -806,7 +817,7 @@
 				14B614E0239D527800F328C7 /* Storyboards */,
 				14B614DE239D51DC00F328C7 /* TableOCR */,
 				14B614DD239D51B100F328C7 /* ARFunctions */,
-				14B614E9239F860B00F328C7 /* ColorService.swift */,
+				14B614ED23A0168D00F328C7 /* BluetoothMeshNetworking */,
 				14B614DB239D515600F328C7 /* CargoDetail */,
 				14B614DC239D519600F328C7 /* Login */,
 				14B614DF239D522F00F328C7 /* CatalogCoreDataStack */,
@@ -1246,6 +1257,7 @@
 				14DC8EBC239AF2F0001E0AD1 /* ATChatMessage.swift in Sources */,
 				14DC8EFD239AF2F0001E0AD1 /* ConstraintInsets.swift in Sources */,
 				14DC8EC8239AF2F0001E0AD1 /* ATCViewControllerContainerViewModel.swift in Sources */,
+				14B614EC239F868500F328C7 /* ColorSwitchViewController.swift in Sources */,
 				14DC8EE8239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.swift in Sources */,
 				14C3CF4A239B18D900B9D52F /* DocumentScannerViewController.swift in Sources */,
 				14DC8EDA239AF2F0001E0AD1 /* ATCMenuCollectionViewController.swift in Sources */,
