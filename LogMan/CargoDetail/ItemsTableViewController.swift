@@ -247,6 +247,48 @@ class ItemsTableViewController: UITableViewController, DocumentTilerViewControll
        self.tableView.reloadData()
     }
 
+    @IBAction func exportToCSV(_ sender: UIBarButtonItem) {
+        let fileName = "Export.csv"
+        let path = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName)
+        var csvText = "Item #, Nomenclature, NSN, Length, Width, Height, Weight, Hazardous, SHI\n"
+        let width = 20
+        let length = 30
+        let height = 50
+        let weight = 150
+        let hazardous = "yes"
+        let shi = "N/A"
+        var index = 0
+        for name in self.cargoNames {
+            let data = name.components(separatedBy:",").map { $0.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)}
+            let nomenclature = data[0]
+            let nsn = data[1]
+            let newLine = "\(index), \(nomenclature), \(nsn), \(length), \(width), \(height), \(weight), \(hazardous), \(shi)\n"
+            csvText.append(newLine)
+            index = index + 1
+
+        }
+        do {
+            try csvText.write(to: path!, atomically: true, encoding: String.Encoding.utf8)
+            let vc = UIActivityViewController(activityItems: [path], applicationActivities: [])
+            vc.excludedActivityTypes = [
+                UIActivity.ActivityType.assignToContact,
+                UIActivity.ActivityType.saveToCameraRoll,
+                UIActivity.ActivityType.postToFlickr,
+                UIActivity.ActivityType.postToVimeo,
+                UIActivity.ActivityType.postToTencentWeibo,
+                UIActivity.ActivityType.postToTwitter,
+                UIActivity.ActivityType.postToFacebook,
+                UIActivity.ActivityType.openInIBooks
+            ]
+            present(vc, animated: true, completion: nil)
+        } catch {
+            print("Failed to create file")
+            print("\(error)")
+        }
+        
+        
+        
+    }
     
     
 

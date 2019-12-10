@@ -11,6 +11,10 @@
 		14A251E6239B59C70012702B /* DocumentTilerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A251E5239B59C70012702B /* DocumentTilerViewController.swift */; };
 		14A251E8239B5AC20012702B /* DocumentPartitionerVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A251E7239B5AC20012702B /* DocumentPartitionerVIew.swift */; };
 		14A251ED239B601E0012702B /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 14A251EC239B601E0012702B /* tessdata */; };
+		14B614E4239F3CF600F328C7 /* ExportCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614E3239F3CF600F328C7 /* ExportCSV.swift */; };
+		14B614E6239F6CF100F328C7 /* RulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614E5239F6CF100F328C7 /* RulerViewController.swift */; };
+		14B614E8239F6D3C00F328C7 /* SCNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614E7239F6D3C00F328C7 /* SCNExtensions.swift */; };
+		14B614EA239F860B00F328C7 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B614E9239F860B00F328C7 /* ColorService.swift */; };
 		14C3CF4A239B18D900B9D52F /* DocumentScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3CF49239B18D900B9D52F /* DocumentScannerViewController.swift */; };
 		14C3CF4C239B194400B9D52F /* DocumentScannerUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3CF4B239B194400B9D52F /* DocumentScannerUIViewController.swift */; };
 		14C3CF4E239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3CF4D239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift */; };
@@ -172,6 +176,10 @@
 		14A251E5239B59C70012702B /* DocumentTilerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTilerViewController.swift; sourceTree = "<group>"; };
 		14A251E7239B5AC20012702B /* DocumentPartitionerVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPartitionerVIew.swift; sourceTree = "<group>"; };
 		14A251EC239B601E0012702B /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = ../../../Downloads/tessdata; sourceTree = "<group>"; };
+		14B614E3239F3CF600F328C7 /* ExportCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportCSV.swift; sourceTree = "<group>"; };
+		14B614E5239F6CF100F328C7 /* RulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulerViewController.swift; sourceTree = "<group>"; };
+		14B614E7239F6D3C00F328C7 /* SCNExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNExtensions.swift; sourceTree = "<group>"; };
+		14B614E9239F860B00F328C7 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
 		14C3CF49239B18D900B9D52F /* DocumentScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerViewController.swift; sourceTree = "<group>"; };
 		14C3CF4B239B194400B9D52F /* DocumentScannerUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerUIViewController.swift; sourceTree = "<group>"; };
 		14C3CF4D239B19DF00B9D52F /* Bundle+UserActivityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+UserActivityIdentifier.swift"; sourceTree = "<group>"; };
@@ -379,6 +387,8 @@
 				FCB5151D23614F32004B55DA /* CargoDetectionViewController.swift */,
 				FC5C8EE0236130DF00B87A73 /* ObjectLabelScene.sks */,
 				FCB5151B23614EE7004B55DA /* art.scnassets */,
+				14B614E5239F6CF100F328C7 /* RulerViewController.swift */,
+				14B614E7239F6D3C00F328C7 /* SCNExtensions.swift */,
 			);
 			path = ARFunctions;
 			sourceTree = "<group>";
@@ -395,6 +405,7 @@
 				14C3CF51239B4D7B00B9D52F /* IconButton.swift */,
 				14C3CF53239B4D9400B9D52F /* LogoView.swift */,
 				14C3CF55239B4DC400B9D52F /* ScanButton.swift */,
+				14B614E3239F3CF600F328C7 /* ExportCSV.swift */,
 			);
 			path = TableOCR;
 			sourceTree = "<group>";
@@ -795,6 +806,7 @@
 				14B614E0239D527800F328C7 /* Storyboards */,
 				14B614DE239D51DC00F328C7 /* TableOCR */,
 				14B614DD239D51B100F328C7 /* ARFunctions */,
+				14B614E9239F860B00F328C7 /* ColorService.swift */,
 				14B614DB239D515600F328C7 /* CargoDetail */,
 				14B614DC239D519600F328C7 /* Login */,
 				14B614DF239D522F00F328C7 /* CatalogCoreDataStack */,
@@ -1176,6 +1188,7 @@
 				14DC8ECE239AF2F0001E0AD1 /* UITextField.swift in Sources */,
 				FCB51615236435D5004B55DA /* NewDeploymentViewModel.swift in Sources */,
 				14DC8EBE239AF2F0001E0AD1 /* ATCChatThreadAdapter.swift in Sources */,
+				14B614E4239F3CF600F328C7 /* ExportCSV.swift in Sources */,
 				14A251E8239B5AC20012702B /* DocumentPartitionerVIew.swift in Sources */,
 				14DC8ECA239AF2F0001E0AD1 /* UIScrollView.swift in Sources */,
 				14DC8EC5239AF2F0001E0AD1 /* ATCUserStoryCollectionViewCell.swift in Sources */,
@@ -1213,6 +1226,7 @@
 				14DC8EE7239AF2F0001E0AD1 /* ATCCircledIconMenuCollectionViewCell.swift in Sources */,
 				14DC8F0B239AF2F0001E0AD1 /* ConstraintMakerEditable.swift in Sources */,
 				14DC8ECB239AF2F0001E0AD1 /* Date.swift in Sources */,
+				14B614EA239F860B00F328C7 /* ColorService.swift in Sources */,
 				14DC8ED5239AF2F0001E0AD1 /* ATCHostViewController.swift in Sources */,
 				14DC8EDE239AF2F0001E0AD1 /* ATCMenuItemRowAdapter.swift in Sources */,
 				FCB5161023642F90004B55DA /* LoginViewController.swift in Sources */,
@@ -1235,6 +1249,7 @@
 				14DC8EE8239AF2F0001E0AD1 /* ATCMessengerUserCollectionViewCell.swift in Sources */,
 				14C3CF4A239B18D900B9D52F /* DocumentScannerViewController.swift in Sources */,
 				14DC8EDA239AF2F0001E0AD1 /* ATCMenuCollectionViewController.swift in Sources */,
+				14B614E8239F6D3C00F328C7 /* SCNExtensions.swift in Sources */,
 				14DC8F01239AF2F0001E0AD1 /* ConstraintPriority.swift in Sources */,
 				14DC8EF7239AF2F0001E0AD1 /* LayoutConstraintItem.swift in Sources */,
 				FCB5160E23642897004B55DA /* NetworkService.swift in Sources */,
@@ -1278,6 +1293,7 @@
 				FCB5160823642707004B55DA /* DeploymentListViewModel.swift in Sources */,
 				14DC8F15239AF2F0001E0AD1 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
 				14DC8F00239AF2F0001E0AD1 /* ConstraintMakerExtendable.swift in Sources */,
+				14B614E6239F6CF100F328C7 /* RulerViewController.swift in Sources */,
 				14DC8EF1239AF2F0001E0AD1 /* ATCUIGenericConfigurationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
